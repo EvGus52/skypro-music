@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/app/page.module.css"],"sourcesContent":[".wrapper {\n  width: 100%;\n  min-height: 100%;\n  overflow: hidden;\n  background-color: #383838;\n}\n\n.container {\n  max-width: 1920px;\n  height: 100vh;\n  margin: 0 auto;\n  position: relative;\n  background-color: #181818;\n}\n\n.main {\n  -webkit-box-flex: 1;\n  -ms-flex: 1 1 auto;\n  flex: 1 1 auto;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap;\n  -webkit-box-pack: justify;\n  -ms-flex-pack: justify;\n  justify-content: space-between;\n}\n"],"names":[],"mappings":"AAAA;;;;;;;AAOA;;;;;;;;AAQA"}}]
+}

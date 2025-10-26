@@ -448,3 +448,2834 @@ Module not found: Can't resolve './page.css'
 
 https://nextjs.org/docs/messages/module-not-found
 [07:57:01.290] Server  LOG      ✓ Compiled in 67ms
+[08:10:45.776] Server  LOG      ✓ Compiled in 20ms
+[08:10:46.472] Browser ERROR   ./src/app/globals.css:25:2
+Parsing CSS source code failed
+  23 | }
+  24 |
+> 25 | ф
+     |  ^
+
+Unexpected end of input
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[08:10:51.089] Server  LOG      ✓ Compiled in 6ms
+[08:10:51.480] Browser ERROR   ./src/app/globals.css:27:1
+Parsing CSS source code failed
+  25 | a {
+  26 |   td
+> 27 | }
+     | ^
+
+Unexpected end of input
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[08:11:11.331] Server  LOG      ✓ Compiled in 4ms
+[08:11:11.472] Browser ERROR   ./src/app/globals.css:5:1
+Parsing CSS source code failed
+  3 |   padding: 0;
+  4 |   bs
+> 5 | }
+    | ^
+  6 |
+  7 | body {
+  8 |   font-family: var(--font-montserrat), Arial;
+
+Unexpected end of input
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[08:14:41.826] Server  LOG      ✓ Compiled in 5ms
+[08:14:46.419] Server  LOG      ✓ Compiled in 8ms
+[08:15:19.367] Server  LOG      ✓ Compiled in 5ms
+[08:15:45.698] Server  LOG      ✓ Compiled in 11ms
+[08:16:06.980] Server  LOG      ✓ Compiled in 8ms
+[08:20:02.241] Server  ERROR    ⨯ ReferenceError: Image is not defined
+[08:20:02.475] Browser ERROR   uncaughtError: ReferenceError: Image is not defined
+[08:20:03.406] Server  ERROR    ⨯ ReferenceError: Image is not defined
+[08:20:04.038] Browser ERROR   uncaughtError: ReferenceError: Image is not defined
+[08:20:04.122] Server  ERROR    ⨯ ReferenceError: Image is not defined
+[08:20:04.609] Browser ERROR   uncaughtError: ReferenceError: Image is not defined
+[08:20:04.737] Server  ERROR    ⨯ ReferenceError: Image is not defined
+[08:20:05.470] Browser ERROR   uncaughtError: ReferenceError: Image is not defined
+[08:25:08.392] Server  ERROR    ⨯ ReferenceError: Image is not defined
+[08:25:09.514] Browser ERROR   uncaughtError: ReferenceError: Image is not defined
+[08:25:14.474] Browser ERROR   ./src/app/page.tsx:4:1
+Parsing ecmascript source code failed
+  2 | import st
+  3 |
+> 4 | export default function Home() {
+    | ^^^^^^
+  5 |   return (
+  6 |     <div className={'wrapper'}>
+  7 |       <div className={'container'}>
+
+Expected ',', got 'export'
+[08:25:16.470] Browser ERROR   ./src/app/page.tsx:4:1
+Parsing ecmascript source code failed
+  2 | import sty
+  3 |
+> 4 | export default function Home() {
+    | ^^^^^^
+  5 |   return (
+  6 |     <div className={'wrapper'}>
+  7 |       <div className={'container'}>
+
+Expected ',', got 'export'
+[08:25:23.473] Browser ERROR   ./src/app/page.tsx:4:1
+Parsing ecmascript source code failed
+  2 | import styles from
+  3 |
+> 4 | export default function Home() {
+    | ^^^^^^
+  5 |   return (
+  6 |     <div className={'wrapper'}>
+  7 |       <div className={'container'}>
+
+Unexpected token `export`. Expected a string literal
+[08:25:24.480] Browser ERROR   ./src/app/page.tsx:4:1
+Parsing ecmascript source code failed
+  2 | import styles from
+  3 |
+> 4 | export default function Home() {
+    | ^^^^^^
+  5 |   return (
+  6 |     <div className={'wrapper'}>
+  7 |       <div className={'container'}>
+
+Unexpected token `export`. Expected a string literal
+[08:25:35.476] Browser ERROR   ./src/app/page.tsx:4:1
+Parsing ecmascript source code failed
+  2 | import styles from 
+  3 |
+> 4 | export default function Home() {
+    | ^^^^^^
+  5 |   return (
+  6 |     <div className={'wrapper'}>
+  7 |       <div className={'container'}>
+
+Unexpected token `export`. Expected a string literal
+[08:25:37.522] Server  LOG      ✓ Compiled in 19ms
+[08:25:37.575] Server  ERROR    ⨯ ReferenceError: Image is not defined
+[08:25:38.483] Browser ERROR   uncaughtError: ReferenceError: Image is not defined
+[08:26:21.479] Browser ERROR   ./src/app/page.tsx:6:20
+Parsing ecmascript source code failed
+  4 | export default function Home() {
+  5 |   return (
+> 6 |     <div className=wrapper'}>
+    |                    ^^^^^^^
+  7 |       <div className={'container'}>
+  8 |         <main className={'main'}>
+  9 |           <nav className={'main__nav'}>
+
+JSX value should be either an expression or a quoted JSX text
+[08:26:23.466] Browser ERROR   ./src/app/page.tsx:6:20
+Parsing ecmascript source code failed
+  4 | export default function Home() {
+  5 |   return (
+> 6 |     <div className=styleswrapper'}>
+    |                    ^^^^^^^^^^^^^
+  7 |       <div className={'container'}>
+  8 |         <main className={'main'}>
+  9 |           <nav className={'main__nav'}>
+
+JSX value should be either an expression or a quoted JSX text
+[08:26:24.475] Browser ERROR   ./src/app/page.tsx:6:20
+Parsing ecmascript source code failed
+  4 | export default function Home() {
+  5 |   return (
+> 6 |     <div className=styles.wrapper'}>
+    |                    ^^^^^^
+  7 |       <div className={'container'}>
+  8 |         <main className={'main'}>
+  9 |           <nav className={'main__nav'}>
+
+JSX value should be either an expression or a quoted JSX text
+[08:26:27.478] Browser ERROR   ./src/app/page.tsx:6:20
+Parsing ecmascript source code failed
+  4 | export default function Home() {
+  5 |   return (
+> 6 |     <div className=styles.wrapper}>
+    |                    ^^^^^^
+  7 |       <div className={'container'}>
+  8 |         <main className={'main'}>
+  9 |           <nav className={'main__nav'}>
+
+JSX value should be either an expression or a quoted JSX text
+[08:26:50.185] Server  LOG      ✓ Compiled in 60ms
+[08:26:50.311] Server  ERROR    ⨯ ReferenceError: Image is not defined
+[08:26:51.474] Browser ERROR   uncaughtError: ReferenceError: Image is not defined
+[08:27:01.466] Browser ERROR   ./src/app/page.tsx:7:38
+Parsing ecmascript source code failed
+   5 |   return (
+   6 |     <div className={styles.wrapper}>
+>  7 |       <div className={stylescontainer'}>
+     |                                      ^^^
+   8 |         <main className={'main'}>
+   9 |           <nav className={'main__nav'}>
+  10 |             <div className={'nav__logo'}>
+
+Unterminated string constant
+[08:27:03.465] Browser ERROR   ./src/app/page.tsx:7:39
+Parsing ecmascript source code failed
+   5 |   return (
+   6 |     <div className={styles.wrapper}>
+>  7 |       <div className={styles.container'}>
+     |                                       ^^^
+   8 |         <main className={'main'}>
+   9 |           <nav className={'main__nav'}>
+  10 |             <div className={'nav__logo'}>
+
+Unterminated string constant
+[08:27:04.939] Server  LOG      ✓ Compiled in 67ms
+[08:27:05.050] Server  ERROR    ⨯ ReferenceError: Image is not defined
+[08:27:06.472] Browser ERROR   uncaughtError: ReferenceError: Image is not defined
+[08:27:10.470] Browser ERROR   ./src/app/page.tsx:8:36
+Parsing ecmascript source code failed
+   6 |     <div className={styles.wrapper}>
+   7 |       <div className={styles.container}>
+>  8 |         <main className={stylesmain'}>
+     |                                    ^^^
+   9 |           <nav className={'main__nav'}>
+  10 |             <div className={'nav__logo'}>
+  11 |               {/*TODO: img –> Image*/}
+
+Unterminated string constant
+[08:27:11.479] Browser ERROR   ./src/app/page.tsx:8:37
+Parsing ecmascript source code failed
+   6 |     <div className={styles.wrapper}>
+   7 |       <div className={styles.container}>
+>  8 |         <main className={styles.main'}>
+     |                                     ^^^
+   9 |           <nav className={'main__nav'}>
+  10 |             <div className={'nav__logo'}>
+  11 |               {/*TODO: img –> Image*/}
+
+Unterminated string constant
+[08:27:13.182] Server  LOG      ✓ Compiled in 202ms
+[08:27:13.289] Server  ERROR    ⨯ ReferenceError: Image is not defined
+[08:27:14.477] Browser ERROR   uncaughtError: ReferenceError: Image is not defined
+[08:27:17.472] Browser ERROR   ./src/app/page.tsx:9:43
+Parsing ecmascript source code failed
+   7 |       <div className={styles.container}>
+   8 |         <main className={styles.main}>
+>  9 |           <nav className={styles.main__nav'}>
+     |                                           ^^^
+  10 |             <div className={'nav__logo'}>
+  11 |               {/*TODO: img –> Image*/}
+  12 |               <Image
+
+Unterminated string constant
+[08:27:19.922] Server  LOG      ✓ Compiled in 130ms
+[08:27:20.022] Server  ERROR    ⨯ ReferenceError: Image is not defined
+[08:27:20.476] Browser ERROR   uncaughtError: ReferenceError: Image is not defined
+[08:27:25.472] Browser ERROR   ./src/app/page.tsx:10:45
+Parsing ecmascript source code failed
+   8 |         <main className={styles.main}>
+   9 |           <nav className={styles.main__nav}>
+> 10 |             <div className={styles.nav__logo'}>
+     |                                             ^^^
+  11 |               {/*TODO: img –> Image*/}
+  12 |               <Image
+  13 |                 width={250}
+
+Unterminated string constant
+[08:27:28.360] Server  LOG      ✓ Compiled in 1320ms
+[08:27:28.479] Server  ERROR    ⨯ ReferenceError: Image is not defined
+[08:27:30.479] Browser ERROR   uncaughtError: ReferenceError: Image is not defined
+[08:27:39.590] Server  ERROR    ⨯ ReferenceError: Image is not defined
+[08:27:40.076] Browser ERROR   uncaughtError: ReferenceError: Image is not defined
+[08:27:40.259] Server  ERROR    ⨯ ReferenceError: Image is not defined
+[08:27:41.481] Browser ERROR   uncaughtError: ReferenceError: Image is not defined
+[08:27:59.468] Browser ERROR   ./src/app/page.tsx:19:47
+Parsing ecmascript source code failed
+  17 |               />
+  18 |             </div>
+> 19 |             <div className={styles.nav__burger'}>
+     |                                               ^^^
+  20 |               <span className={'burger__line'}></span>
+  21 |               <span className={'burger__line'}></span>
+  22 |               <span className={'burger__line'}></span>
+
+Unterminated string constant
+[08:28:01.637] Server  LOG      ✓ Compiled in 27ms
+[08:28:01.739] Server  ERROR    ⨯ ReferenceError: Image is not defined
+[08:28:02.473] Browser ERROR   uncaughtError: ReferenceError: Image is not defined
+[08:28:08.469] Browser ERROR   ./src/app/page.tsx:20:51
+Parsing ecmascript source code failed
+  18 |             </div>
+  19 |             <div className={styles.nav__burger}>
+> 20 |               <span className={styles.burger__line'}></span>
+     |                                                   ^^^^^^^^^^
+  21 |               <span className={'burger__line'}></span>
+  22 |               <span className={'burger__line'}></span>
+  23 |             </div>
+
+Unterminated string constant
+[08:28:10.575] Server  ERROR    ⨯ ReferenceError: Image is not defined
+[08:28:11.474] Browser ERROR   uncaughtError: ReferenceError: Image is not defined
+[08:28:22.076] Server  ERROR    ⨯ ReferenceError: Image is not defined
+[08:28:23.475] Browser ERROR   uncaughtError: ReferenceError: Image is not defined
+[08:28:25.134] Server  ERROR    ⨯ ReferenceError: Image is not defined
+[08:28:26.466] Browser ERROR   uncaughtError: ReferenceError: Image is not defined
+[08:28:34.471] Browser ERROR   ./src/app/page.tsx:24:45
+Parsing ecmascript source code failed
+  22 |               <span className={styles.burger__line}></span>
+  23 |             </div>
+> 24 |             <div className={styles.nav__menu'}>
+     |                                             ^^^
+  25 |               <ul className={'menu__list'}>
+  26 |                 <li className={'menu__item'}>
+  27 |                   {/*TODO: a -> Link*/}
+
+Unterminated string constant
+[08:28:35.675] Server  ERROR    ⨯ ReferenceError: Image is not defined
+[08:28:36.474] Browser ERROR   uncaughtError: ReferenceError: Image is not defined
+[08:28:41.471] Browser ERROR   ./src/app/page.tsx:25:47
+Parsing ecmascript source code failed
+  23 |             </div>
+  24 |             <div className={styles.nav__menu}>
+> 25 |               <ul className={styles.menu__list'}>
+     |                                               ^^^
+  26 |                 <li className={'menu__item'}>
+  27 |                   {/*TODO: a -> Link*/}
+  28 |                   <a href="#" className={'menu__link'}>
+
+Unterminated string constant
+[08:28:43.252] Server  LOG      ✓ Compiled in 21ms
+[08:28:43.350] Server  ERROR    ⨯ ReferenceError: Image is not defined
+[08:28:44.474] Browser ERROR   uncaughtError: ReferenceError: Image is not defined
+[08:28:47.470] Browser ERROR   ./src/app/page.tsx:26:49
+Parsing ecmascript source code failed
+  24 |             <div className={styles.nav__menu}>
+  25 |               <ul className={styles.menu__list}>
+> 26 |                 <li className={styles.menu__item'}>
+     |                                                 ^^^
+  27 |                   {/*TODO: a -> Link*/}
+  28 |                   <a href="#" className={'menu__link'}>
+  29 |                     Главное
+
+Unterminated string constant
+[08:28:49.514] Server  LOG      ✓ Compiled in 20ms
+[08:28:49.659] Server  ERROR    ⨯ ReferenceError: Image is not defined
+[08:28:50.473] Browser ERROR   uncaughtError: ReferenceError: Image is not defined
+[08:29:16.474] Browser ERROR   ./src/app/page.tsx:28:59
+Parsing ecmascript source code failed
+  26 |                 <li className={styles.menu__item}>
+  27 |                   {/*TODO: a -> Link*/}
+> 28 |                   <a href="#" className={styles.menu__link'}>
+     |                                                           ^^^
+  29 |                     Главное
+  30 |                   </a>
+  31 |                 </li>
+
+Unterminated string constant
+[08:29:17.866] Server  ERROR    ⨯ ReferenceError: Image is not defined
+[08:29:18.474] Browser ERROR   uncaughtError: ReferenceError: Image is not defined
+[08:30:38.466] Browser ERROR   ./src/app/page.tsx:30:23
+Parsing ecmascript source code failed
+  28 |                   <Link href="#" className={styles.menu__link}>
+  29 |                     Главное
+> 30 |                   </a>
+     |                       ^
+> 31 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  32 |                 <li className={'menu__item'}>
+  33 |                   <a href="#" className={'menu__link'}>
+  34 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:30:40.481] Browser ERROR   ./src/app/page.tsx:30:23
+Parsing ecmascript source code failed
+  28 |                   <Link href="#" className={styles.menu__link}>
+  29 |                     Главное
+> 30 |                   </a>
+     |                       ^
+> 31 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  32 |                 <li className={'menu__item'}>
+  33 |                   <Link href="#" className={'menu__link'}>
+  34 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:30:41.468] Browser ERROR   ./src/app/page.tsx:30:23
+Parsing ecmascript source code failed
+  28 |                   <Link href="#" className={styles.menu__link}>
+  29 |                     Главное
+> 30 |                   </a>
+     |                       ^
+> 31 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  32 |                 <li className={'menu__item'}>
+  33 |                   <Link href="#" className={'menu__link'}>
+  34 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:30:42.473] Browser ERROR   ./src/app/page.tsx:30:23
+Parsing ecmascript source code failed
+  28 |                   <Link href="#" className={styles.menu__link}>
+  29 |                     Главное
+> 30 |                   </a>
+     |                       ^
+> 31 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  32 |                 <li className={'menu__item'}>
+  33 |                   <Link href="#" className={'menu__link'}>
+  34 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:30:43.466] Browser ERROR   ./src/app/page.tsx:30:23
+Parsing ecmascript source code failed
+  28 |                   <Link href="#" className={styles.menu__link}>
+  29 |                     Главное
+> 30 |                   </a>
+     |                       ^
+> 31 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  32 |                 <li className={'menu__item'}>
+  33 |                   <Link href="#" className={'menu__link'}>
+  34 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:30:43.466] Browser ERROR   ./src/app/page.tsx:30:23
+Parsing ecmascript source code failed
+  28 |                   <Link href="#" className={styles.menu__link}>
+  29 |                     Главное
+> 30 |                   </a>
+     |                       ^
+> 31 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  32 |                 <li className={'menu__item'}>
+  33 |                   <Link href="#" className={'menu__link'}>
+  34 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:30:43.466] Browser ERROR   ./src/app/page.tsx:30:23
+Parsing ecmascript source code failed
+  28 |                   <Link href="#" className={styles.menu__link}>
+  29 |                     Главное
+> 30 |                   </a>
+     |                       ^
+> 31 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  32 |                 <li className={'menu__item'}>
+  33 |                   <Link href="#" className={'menu__link'}>
+  34 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:30:44.468] Browser ERROR   ./src/app/page.tsx:30:23
+Parsing ecmascript source code failed
+  28 |                   <Link href="#" className={styles.menu__link}>
+  29 |                     Главное
+> 30 |                   </a>
+     |                       ^
+> 31 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  32 |                 <li className={'menu__item'}>
+  33 |                   <Link href="#" className={'menu__link'}>
+  34 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:30:44.468] Browser ERROR   ./src/app/page.tsx:30:23
+Parsing ecmascript source code failed
+  28 |                   <Link href="#" className={styles.menu__link}>
+  29 |                     Главное
+> 30 |                   </a>
+     |                       ^
+> 31 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  32 |                 <li className={'menu__item'}>
+  33 |                   <Link href="#" className={'menu__link'}>
+  34 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:30:46.466] Browser ERROR   ./src/app/page.tsx:30:23
+Parsing ecmascript source code failed
+  28 |                   <Link href="#" className={styles.menu__link}>
+  29 |                     Главное
+> 30 |                   </a>
+     |                       ^
+> 31 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  32 |                 <li className={'menu__item'}>
+  33 |                   <Link href="#" className={'menu__link'}>
+  34 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:30:46.466] Browser ERROR   ./src/app/page.tsx:30:23
+Parsing ecmascript source code failed
+  28 |                   <Link href="#" className={styles.menu__link}>
+  29 |                     Главное
+> 30 |                   </a>
+     |                       ^
+> 31 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  32 |                 <li className={'menu__item'}>
+  33 |                   <Link href="#" className={'menu__link'}>
+  34 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:30:47.475] Browser ERROR   ./src/app/page.tsx:30:23
+Parsing ecmascript source code failed
+  28 |                   <Link href="#" className={styles.menu__link}>
+  29 |                     Главное
+> 30 |                   </a>
+     |                       ^
+> 31 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  32 |                 <li className={'menu__item'}>
+  33 |                   <Link href="#" className={'menu__link'}>
+  34 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:30:47.475] Browser ERROR   ./src/app/page.tsx:30:23
+Parsing ecmascript source code failed
+  28 |                   <Link href="#" className={styles.menu__link}>
+  29 |                     Главное
+> 30 |                   </a>
+     |                       ^
+> 31 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  32 |                 <li className={'menu__item'}>
+  33 |                   <Link href="#" className={'menu__link'}>
+  34 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:30:48.465] Browser ERROR   ./src/app/page.tsx:30:23
+Parsing ecmascript source code failed
+  28 |                   <Link href="#" className={styles.menu__link}>
+  29 |                     Главное
+> 30 |                   </a>
+     |                       ^
+> 31 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  32 |                 <li className={'menu__item'}>
+  33 |                   <Link href="#" className={'menu__link'}>
+  34 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:30:48.465] Browser ERROR   ./src/app/page.tsx:30:23
+Parsing ecmascript source code failed
+  28 |                   <Link href="#" className={styles.menu__link}>
+  29 |                     Главное
+> 30 |                   </a>
+     |                       ^
+> 31 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  32 |                 <li className={'menu__item'}>
+  33 |                   <Link href="#" className={'menu__link'}>
+  34 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:30:49.467] Browser ERROR   ./src/app/page.tsx:30:23
+Parsing ecmascript source code failed
+  28 |                   <Link href="#" className={styles.menu__link}>
+  29 |                     Главное
+> 30 |                   </a>
+     |                       ^
+> 31 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  32 |                 <li className={'menu__item'}>
+  33 |                   <Link href="#" className={'menu__link'}>
+  34 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:30:49.467] Browser ERROR   ./src/app/page.tsx:30:23
+Parsing ecmascript source code failed
+  28 |                   <Link href="#" className={styles.menu__link}>
+  29 |                     Главное
+> 30 |                   </a>
+     |                       ^
+> 31 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  32 |                 <li className={'menu__item'}>
+  33 |                   <Link href="#" className={'menu__link'}>
+  34 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:30:49.467] Browser ERROR   ./src/app/page.tsx:30:23
+Parsing ecmascript source code failed
+  28 |                   <Link href="#" className={styles.menu__link}>
+  29 |                     Главное
+> 30 |                   </a>
+     |                       ^
+> 31 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  32 |                 <li className={'menu__item'}>
+  33 |                   <Link href="#" className={'menu__link'}>
+  34 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:30:50.474] Browser ERROR   ./src/app/page.tsx:30:23
+Parsing ecmascript source code failed
+  28 |                   <Link href="#" className={styles.menu__link}>
+  29 |                     Главное
+> 30 |                   </a>
+     |                       ^
+> 31 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  32 |                 <li className={'menu__item'}>
+  33 |                   <Link href="#" className={'menu__link'}>
+  34 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:30:50.474] Browser ERROR   ./src/app/page.tsx:30:23
+Parsing ecmascript source code failed
+  28 |                   <Link href="#" className={styles.menu__link}>
+  29 |                     Главное
+> 30 |                   </a>
+     |                       ^
+> 31 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  32 |                 <li className={'menu__item'}>
+  33 |                   <Link href="#" className={'menu__link'}>
+  34 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:30:51.468] Browser ERROR   ./src/app/page.tsx:30:23
+Parsing ecmascript source code failed
+  28 |                   <Link href="#" className={styles.menu__link}>
+  29 |                     Главное
+> 30 |                   </a>
+     |                       ^
+> 31 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  32 |                 <li className={'menu__item'}>
+  33 |                   <Link href="#" className={'menu__link'}>
+  34 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:30:51.468] Browser ERROR   ./src/app/page.tsx:30:23
+Parsing ecmascript source code failed
+  28 |                   <Link href="#" className={styles.menu__link}>
+  29 |                     Главное
+> 30 |                   </a>
+     |                       ^
+> 31 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  32 |                 <li className={'menu__item'}>
+  33 |                   <Link href="#" className={'menu__link'}>
+  34 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:30:52.471] Browser ERROR   ./src/app/page.tsx:30:23
+Parsing ecmascript source code failed
+  28 |                   <Link href="#" className={styles.menu__link}>
+  29 |                     Главное
+> 30 |                   </a>
+     |                       ^
+> 31 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  32 |                 <li className={'menu__item'}>
+  33 |                   <Link href="#" className={'menu__link'}>
+  34 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:31:09.473] Browser ERROR   ./src/app/page.tsx:30:23
+Parsing ecmascript source code failed
+  28 |                   <Link href="#" className={styles.menu__link}>
+  29 |                     Главное
+> 30 |                   </a>
+     |                       ^
+> 31 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  32 |                 <li className={'menu__item'}>
+  33 |                   <Link href="#" className={'menu__link'}>
+  34 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:31:11.464] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                                     <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:31:12.475] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                                     <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:31:13.469] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                                     <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:31:21.470] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                     <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:31:24.477] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:32:23.467] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:32:23.467] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:32:23.467] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:32:23.467] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:32:23.467] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:32:23.467] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:32:25.476] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:32:25.476] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:32:25.476] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:32:25.476] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:32:25.476] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:32:25.476] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:32:25.476] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:32:25.476] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:32:26.465] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:32:26.465] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:32:26.465] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:32:26.465] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:32:27.469] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:32:27.469] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:32:27.469] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:32:27.469] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:32:28.478] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:32:28.478] Browser ERROR   ./src/app/page.tsx:192:32
+Parsing ecmascript source code failed
+  190 |                       <Link className={'track__authorLink'} href="">
+  191 |                         Стоункат, Psychopath
+> 192 |                       </Link>nk>
+      |                                ^
+  193 |                     </div>
+  194 |                     <div className={'track__album'}>
+  195 |                       <Link className={'track__albumLink'} href="">
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[08:32:51.478] Browser ERROR   ./src/app/page.tsx:192:32
+Parsing ecmascript source code failed
+  190 |                       <Link className={'track__authorLink'} href="">
+  191 |                         Стоункат, Psychopath
+> 192 |                       </Link>nk>
+      |                                ^
+  193 |                     </div>
+  194 |                     <div className={'track__album'}>
+  195 |                       <Link className={'track__albumLink'} href="">
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[08:32:53.480] Browser ERROR   ./src/app/page.tsx:192:32
+Parsing ecmascript source code failed
+  190 |                       <Link className={'track__authorLink'} href="">
+  191 |                         Стоункат, Psychopath
+> 192 |                       </Link>nk>
+      |                                ^
+  193 |                     </div>
+  194 |                     <div className={'track__album'}>
+  195 |                       <Link className={'track__albumLink'} href="">
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[08:32:59.475] Browser ERROR   ./src/app/page.tsx:32:25
+Parsing ecmascript source code failed
+  30 |                 </li>
+  31 |                 <li className={'menu__item'}>
+> 32 |                   < href="#" className={'menu__link'}>
+     |                         ^
+  33 |                     Мой плейлист
+  34 |                   </>
+  35 |                 </li>
+
+Expected '</', got '='
+[08:33:01.469] Browser ERROR   ./src/app/page.tsx:192:32
+Parsing ecmascript source code failed
+  190 |                       <Link className={'track__authorLink'} href="">
+  191 |                         Стоункат, Psychopath
+> 192 |                       </Link>nk>
+      |                                ^
+  193 |                     </div>
+  194 |                     <div className={'track__album'}>
+  195 |                       <Link className={'track__albumLink'} href="">
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[08:33:03.472] Browser ERROR   ./src/app/page.tsx:192:32
+Parsing ecmascript source code failed
+  190 |                       <Link className={'track__authorLink'} href="">
+  191 |                         Стоункат, Psychopath
+> 192 |                       </Link>nk>
+      |                                ^
+  193 |                     </div>
+  194 |                     <div className={'track__album'}>
+  195 |                       <Link className={'track__albumLink'} href="">
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[08:33:19.465] Browser ERROR   ./src/app/page.tsx:192:32
+Parsing ecmascript source code failed
+  190 |                       <Link className={'track__authorLink'} href="">
+  191 |                         Стоункат, Psychopath
+> 192 |                       </Link>nk>
+      |                                ^
+  193 |                     </div>
+  194 |                     <div className={'track__album'}>
+  195 |                       <Link className={'track__albumLink'} href="">
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[08:33:19.465] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                                     <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:33:25.473] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:34:22.480] Browser ERROR   ./src/app/page.tsx:29:20
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   />
+     |                    ^
+  30 |                 </li>
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[08:34:36.475] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:34:56.475] Browser ERROR   ./src/app/page.tsx:29:23
+Parsing ecmascript source code failed
+  27 |                   <Link href="#" className={styles.menu__link}>
+  28 |                     Главное
+> 29 |                   </a>
+     |                       ^
+> 30 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  31 |                 <li className={'menu__item'}>
+  32 |                   <Link href="#" className={'menu__link'}>
+  33 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:35:39.472] Browser ERROR   ./src/app/page.tsx:31:23
+Parsing ecmascript source code failed
+  29 |                   <Link href="#" className={styles.menu__link}>
+  30 |                     Главное
+> 31 |                   </a>
+     |                       ^
+> 32 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  33 |                 <li className={'menu__item'}>
+  34 |                   <Link href="#" className={'menu__link'}>
+  35 |                     Мой плейлист
+
+Expected '</', got 'jsx text (
+                )'
+[08:35:44.539] Browser ERROR   ./src/app/page.tsx:36:23
+Parsing ecmascript source code failed
+  34 |                   <Link href="#" className={'menu__link'}>
+  35 |                     Мой плейлист
+> 36 |                   </a>
+     |                       ^
+> 37 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  38 |                 <li className={'menu__item'}>
+  39 |                   <Link href="../signin.html" className={'menu__link'}>
+  40 |                     Войти
+
+Expected '</', got 'jsx text (
+                )'
+[08:35:46.473] Browser ERROR   ./src/app/page.tsx:41:23
+Parsing ecmascript source code failed
+  39 |                   <Link href="../signin.html" className={'menu__link'}>
+  40 |                     Войти
+> 41 |                   </a>
+     |                       ^
+> 42 |                 </li>
+     | ^^^^^^^^^^^^^^^^^
+  43 |               </ul>
+  44 |             </div>
+  45 |           </nav>
+
+Expected '</', got 'jsx text (
+                )'
+[08:35:47.475] Browser ERROR   ./src/app/page.tsx:88:29
+Parsing ecmascript source code failed
+  86 |                         <Link className={'track__titleLink'} href="">
+  87 |                           Guilt <span className={'track__titleSpan'}></span>
+> 88 |                         </a>
+     |                             ^
+> 89 |                       </div>
+     | ^^^^^^^^^^^^^^^^^^^^^^^
+  90 |                     </div>
+  91 |                     <div className={'track__author'}>
+  92 |                       <Link className={'track__authorLink'} href="">
+
+Expected '</', got 'jsx text (
+                      )'
+[08:35:48.476] Browser ERROR   ./src/app/page.tsx:94:27
+Parsing ecmascript source code failed
+  92 |                       <Link className={'track__authorLink'} href="">
+  93 |                         Nero
+> 94 |                       </a>
+     |                           ^
+> 95 |                     </div>
+     | ^^^^^^^^^^^^^^^^^^^^^
+  96 |                     <div className={'track__album'}>
+  97 |                       <Link className={'track__albumLink'} href="">
+  98 |                         Welcome Reality
+
+Expected '</', got 'jsx text (
+                    )'
+[08:35:49.478] Browser ERROR   ./src/app/page.tsx:99:27
+Parsing ecmascript source code failed
+   97 |                       <Link className={'track__albumLink'} href="">
+   98 |                         Welcome Reality
+>  99 |                       </a>
+      |                           ^
+> 100 |                     </div>
+      | ^^^^^^^^^^^^^^^^^^^^^
+  101 |                     <div className="track__time">
+  102 |                       <svg className={'track__timeSvg'}>
+  103 |                         <use xlinkHref="/img/icon/sprite.svg#icon-like"></use>
+
+Expected '</', got 'jsx text (
+                    )'
+[08:35:50.474] Browser ERROR   ./src/app/page.tsx:121:29
+Parsing ecmascript source code failed
+  119 |                         <Link className={'track__titleLink'} href="">
+  120 |                           Elektro <span className={'track__titleSpan'}></span>
+> 121 |                         </a>
+      |                             ^
+> 122 |                       </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^
+  123 |                     </div>
+  124 |                     <div className={'track__author'}>
+  125 |                       <Link className={'track__authorLink'} href="">
+
+Expected '</', got 'jsx text (
+                      )'
+[08:35:51.470] Browser ERROR   ./src/app/page.tsx:127:27
+Parsing ecmascript source code failed
+  125 |                       <Link className={'track__authorLink'} href="">
+  126 |                         Dynoro, Outwork, Mr. Gee
+> 127 |                       </a>
+      |                           ^
+> 128 |                     </div>
+      | ^^^^^^^^^^^^^^^^^^^^^
+  129 |                     <div className={'track__album'}>
+  130 |                       <Link className={'track__albumLink'} href="">
+  131 |                         Elektro
+
+Expected '</', got 'jsx text (
+                    )'
+[08:35:52.485] Browser ERROR   ./src/app/page.tsx:132:27
+Parsing ecmascript source code failed
+  130 |                       <Link className={'track__albumLink'} href="">
+  131 |                         Elektro
+> 132 |                       </a>
+      |                           ^
+> 133 |                     </div>
+      | ^^^^^^^^^^^^^^^^^^^^^
+  134 |                     <div className="track__time">
+  135 |                       <svg className={'track__timeSvg'}>
+  136 |                         <use xlinkHref="/img/icon/sprite.svg#icon-like"></use>
+
+Expected '</', got 'jsx text (
+                    )'
+[08:35:54.477] Browser ERROR   ./src/app/page.tsx:154:29
+Parsing ecmascript source code failed
+  152 |                         <Link className={'track__titleLink'} href="">
+  153 |                           I’m Fire <span className={'track__titleSpan'}></span>
+> 154 |                         </a>
+      |                             ^
+> 155 |                       </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^
+  156 |                     </div>
+  157 |                     <div className={'track__author'}>
+  158 |                       <Link className={'track__authorLink'} href="">
+
+Expected '</', got 'jsx text (
+                      )'
+[08:35:55.472] Browser ERROR   ./src/app/page.tsx:160:27
+Parsing ecmascript source code failed
+  158 |                       <Link className={'track__authorLink'} href="">
+  159 |                         Ali Bakgor
+> 160 |                       </a>
+      |                           ^
+> 161 |                     </div>
+      | ^^^^^^^^^^^^^^^^^^^^^
+  162 |                     <div className={'track__album'}>
+  163 |                       <Link className={'track__albumLink'} href="">
+  164 |                         I’m Fire
+
+Expected '</', got 'jsx text (
+                    )'
+[08:35:56.470] Browser ERROR   ./src/app/page.tsx:165:27
+Parsing ecmascript source code failed
+  163 |                       <Link className={'track__albumLink'} href="">
+  164 |                         I’m Fire
+> 165 |                       </a>
+      |                           ^
+> 166 |                     </div>
+      | ^^^^^^^^^^^^^^^^^^^^^
+  167 |                     <div className="track__time">
+  168 |                       <svg className={'track__timeSvg'}>
+  169 |                         <use xlinkHref="/img/icon/sprite.svg#icon-like"></use>
+
+Expected '</', got 'jsx text (
+                    )'
+[08:35:57.473] Browser ERROR   ./src/app/page.tsx:188:29
+Parsing ecmascript source code failed
+  186 |                           Non Stop
+  187 |                           <span className={'track__titleSpan'}>(Remix)</span>
+> 188 |                         </a>
+      |                             ^
+> 189 |                       </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^
+  190 |                     </div>
+  191 |                     <div className={'track__author'}>
+  192 |                       <Link className={'track__authorLink'} href="">
+
+Expected '</', got 'jsx text (
+                      )'
+[08:35:58.492] Browser ERROR   ./src/app/page.tsx:194:27
+Parsing ecmascript source code failed
+  192 |                       <Link className={'track__authorLink'} href="">
+  193 |                         Стоункат, Psychopath
+> 194 |                       </a>
+      |                           ^
+> 195 |                     </div>
+      | ^^^^^^^^^^^^^^^^^^^^^
+  196 |                     <div className={'track__album'}>
+  197 |                       <Link className={'track__albumLink'} href="">
+  198 |                         Non Stop
+
+Expected '</', got 'jsx text (
+                    )'
+[08:35:59.472] Browser ERROR   ./src/app/page.tsx:199:27
+Parsing ecmascript source code failed
+  197 |                       <Link className={'track__albumLink'} href="">
+  198 |                         Non Stop
+> 199 |                       </a>
+      |                           ^
+> 200 |                     </div>
+      | ^^^^^^^^^^^^^^^^^^^^^
+  201 |                     <div className="track__time">
+  202 |                       <svg className={'track__timeSvg'}>
+  203 |                         <use xlinkHref="/img/icon/sprite.svg#icon-like"></use>
+
+Expected '</', got 'jsx text (
+                    )'
+[08:36:01.474] Browser ERROR   ./src/app/page.tsx:224:29
+Parsing ecmascript source code failed
+  222 |                             (feat. AR/CO)
+  223 |                           </span>
+> 224 |                         </a>
+      |                             ^
+> 225 |                       </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^
+  226 |                     </div>
+  227 |                     <div className={'track__author'}>
+  228 |                       <Link className={'track__authorLink'} href="">
+
+Expected '</', got 'jsx text (
+                      )'
+[08:36:02.478] Browser ERROR   ./src/app/page.tsx:230:27
+Parsing ecmascript source code failed
+  228 |                       <Link className={'track__authorLink'} href="">
+  229 |                         Jaded, Will Clarke, AR/CO
+> 230 |                       </a>
+      |                           ^
+> 231 |                     </div>
+      | ^^^^^^^^^^^^^^^^^^^^^
+  232 |                     <div className={'track__album'}>
+  233 |                       <Link className={'track__albumLink'} href="">
+  234 |                         Run Run
+
+Expected '</', got 'jsx text (
+                    )'
+[08:36:04.471] Browser ERROR   ./src/app/page.tsx:235:27
+Parsing ecmascript source code failed
+  233 |                       <Link className={'track__albumLink'} href="">
+  234 |                         Run Run
+> 235 |                       </a>
+      |                           ^
+> 236 |                     </div>
+      | ^^^^^^^^^^^^^^^^^^^^^
+  237 |                     <div className="track__time">
+  238 |                       <svg className={'track__timeSvg'}>
+  239 |                         <use xlinkHref="/img/icon/sprite.svg#icon-like"></use>
+
+Expected '</', got 'jsx text (
+                    )'
+[08:36:05.477] Browser ERROR   ./src/app/page.tsx:268:23
+Parsing ecmascript source code failed
+  266 |                       height={170}
+  267 |                     />
+> 268 |                   </a>
+      |                       ^
+> 269 |                 </div>
+      | ^^^^^^^^^^^^^^^^^
+  270 |                 <div className={'sidebar__item'}>
+  271 |                   <Link className={'sidebar__link'} href="#">
+  272 |                     <Image
+
+Expected '</', got 'jsx text (
+                )'
+[08:36:06.483] Browser ERROR   ./src/app/page.tsx:279:23
+Parsing ecmascript source code failed
+  277 |                       height={170}
+  278 |                     />
+> 279 |                   </a>
+      |                       ^
+> 280 |                 </div>
+      | ^^^^^^^^^^^^^^^^^
+  281 |                 <div className={'sidebar__item'}>
+  282 |                   <Link className={'sidebar__link'} href="#">
+  283 |                     <Image
+
+Expected '</', got 'jsx text (
+                )'
+[08:36:07.468] Browser ERROR   ./src/app/page.tsx:290:23
+Parsing ecmascript source code failed
+  288 |                       height={170}
+  289 |                     />
+> 290 |                   </a>
+      |                       ^
+> 291 |                 </div>
+      | ^^^^^^^^^^^^^^^^^
+  292 |               </div>
+  293 |             </div>
+  294 |           </div>
+
+Expected '</', got 'jsx text (
+                )'
+[08:36:08.469] Browser ERROR   ./src/app/page.tsx:339:27
+Parsing ecmascript source code failed
+  337 |                       <Link className={'trackPlay__authorLink'} href="">
+  338 |                         Ты та...
+> 339 |                       </a>
+      |                           ^
+> 340 |                     </div>
+      | ^^^^^^^^^^^^^^^^^^^^^
+  341 |                     <div className={'trackPlay__album'}>
+  342 |                       <Link className={'trackPlay__albumLink'} href="">
+  343 |                         Баста
+
+Expected '</', got 'jsx text (
+                    )'
+[08:36:10.469] Browser ERROR   ./src/app/page.tsx:344:27
+Parsing ecmascript source code failed
+  342 |                       <Link className={'trackPlay__albumLink'} href="">
+  343 |                         Баста
+> 344 |                       </a>
+      |                           ^
+> 345 |                     </div>
+      | ^^^^^^^^^^^^^^^^^^^^^
+  346 |                   </div>
+  347 |
+  348 |                   <div className={'trackPlay__dislike'}>
+
+Expected '</', got 'jsx text (
+                    )'
+[08:36:12.329] Server  LOG      ✓ Compiled in 1300ms
+[08:38:09.467] Browser ERROR   ./src/app/page.tsx:33:49
+Parsing ecmascript source code failed
+  31 |                   </Link>
+  32 |                 </li>
+> 33 |                 <li className={styles.menu__item'}>
+     |                                                 ^^^
+  34 |                   <Link href="#" className={'menu__link'}>
+  35 |                     Мой плейлист
+  36 |                   </Link>
+
+Unterminated string constant
+[08:38:19.473] Browser ERROR   ./src/app/page.tsx:34:62
+Parsing ecmascript source code failed
+  32 |                 </li>
+  33 |                 <li className={styles.menu__item}>
+> 34 |                   <Link href="#" className={styles.menu__link'}>
+     |                                                              ^^^
+  35 |                     Мой плейлист
+  36 |                   </Link>
+  37 |                 </li>
+
+Unterminated string constant
+[08:38:21.804] Server  LOG      ✓ Compiled in 38ms
+[08:38:30.475] Browser ERROR   ./src/app/page.tsx:38:49
+Parsing ecmascript source code failed
+  36 |                   </Link>
+  37 |                 </li>
+> 38 |                 <li className={styles.menu__item'}>
+     |                                                 ^^^
+  39 |                   <Link href="/signin" className={'menu__link'}>
+  40 |                     Войти
+  41 |                   </Link>
+
+Unterminated string constant
+[08:38:31.756] Server  LOG      ✓ Compiled in 145ms
+[08:38:36.464] Browser ERROR   ./src/app/page.tsx:39:68
+Parsing ecmascript source code failed
+  37 |                 </li>
+  38 |                 <li className={styles.menu__item}>
+> 39 |                   <Link href="/signin" className={styles.menu__link'}>
+     |                                                                    ^^^
+  40 |                     Войти
+  41 |                   </Link>
+  42 |                 </li>
+
+Unterminated string constant
+[08:38:45.467] Browser ERROR   ./src/app/page.tsx:46:45
+Parsing ecmascript source code failed
+  44 |             </div>
+  45 |           </nav>
+> 46 |           <div className={styles.centerblock'}>
+     |                                             ^^^
+  47 |             <div className={'centerblock__search'}>
+  48 |               <svg className={'search__svg'}>
+  49 |                 <use xlinkHref="/img/icon/sprite.svg#icon-search"></use>
+
+Unterminated string constant
+[08:38:46.808] Server  LOG      ✓ Compiled in 25ms
+[08:38:50.482] Browser ERROR   ./src/app/page.tsx:47:55
+Parsing ecmascript source code failed
+  45 |           </nav>
+  46 |           <div className={styles.centerblock}>
+> 47 |             <div className={styles.centerblock__search'}>
+     |                                                       ^^^
+  48 |               <svg className={'search__svg'}>
+  49 |                 <use xlinkHref="/img/icon/sprite.svg#icon-search"></use>
+  50 |               </svg>
+
+Unterminated string constant
+[08:38:52.537] Server  LOG      ✓ Compiled in 21ms
+[08:38:58.467] Browser ERROR   ./src/app/page.tsx:48:49
+Parsing ecmascript source code failed
+  46 |           <div className={styles.centerblock}>
+  47 |             <div className={styles.centerblock__search}>
+> 48 |               <svg className={styles.search__svg'}>
+     |                                                 ^^^
+  49 |                 <use xlinkHref="/img/icon/sprite.svg#icon-search"></use>
+  50 |               </svg>
+  51 |               <input
+
+Unterminated string constant
+[08:39:15.475] Browser ERROR   ./src/app/page.tsx:52:47
+Parsing ecmascript source code failed
+  50 |               </svg>
+  51 |               <input
+> 52 |                 className={styles.search__text'}
+     |                                               ^^
+  53 |                 type="search"
+  54 |                 placeholder="Поиск"
+  55 |                 name="search"
+
+Unterminated string constant
+[08:39:17.548] Server  LOG      ✓ Compiled in 34ms
+[08:39:29.479] Browser ERROR   ./src/app/page.tsx:58:50
+Parsing ecmascript source code failed
+  56 |               />
+  57 |             </div>
+> 58 |             <h2 className={styles.centerblock__h2'}>Треки</h2>
+     |                                                  ^^^^^^^^^^^^^^^^^^
+  59 |             <div className={'centerblock__filter'}>
+  60 |               <div className={'filter__title'}>Искать по:</div>
+  61 |               <div className={'filter__button'}>исполнителю</div>
+
+Unterminated string constant
+[08:39:36.477] Browser ERROR   ./src/app/page.tsx:59:55
+Parsing ecmascript source code failed
+  57 |             </div>
+  58 |             <h2 className={styles.centerblock__h2}>Треки</h2>
+> 59 |             <div className={styles.centerblock__filter'}>
+     |                                                       ^^^
+  60 |               <div className={'filter__title'}>Искать по:</div>
+  61 |               <div className={'filter__button'}>исполнителю</div>
+  62 |               <div className={'filter__button'}>году выпуска</div>
+
+Unterminated string constant
+[08:39:41.468] Browser ERROR   ./src/app/page.tsx:60:51
+Parsing ecmascript source code failed
+  58 |             <h2 className={styles.centerblock__h2}>Треки</h2>
+  59 |             <div className={styles.centerblock__filter}>
+> 60 |               <div className={styles.filter__title'}>Искать по:</div>
+     |                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  61 |               <div className={'filter__button'}>исполнителю</div>
+  62 |               <div className={'filter__button'}>году выпуска</div>
+  63 |               <div className={'filter__button'}>жанру</div>
+
+Unterminated string constant
+[08:39:46.476] Browser ERROR   ./src/app/page.tsx:61:52
+Parsing ecmascript source code failed
+  59 |             <div className={styles.centerblock__filter}>
+  60 |               <div className={styles.filter__title}>Искать по:</div>
+> 61 |               <div className={styles.filter__button'}>исполнителю</div>
+     |                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  62 |               <div className={'filter__button'}>году выпуска</div>
+  63 |               <div className={'filter__button'}>жанру</div>
+  64 |             </div>
+
+Unterminated string constant
+[08:39:47.711] Server  LOG      ✓ Compiled in 91ms
+[08:39:50.473] Browser ERROR   ./src/app/page.tsx:62:52
+Parsing ecmascript source code failed
+  60 |               <div className={styles.filter__title}>Искать по:</div>
+  61 |               <div className={styles.filter__button}>исполнителю</div>
+> 62 |               <div className={styles.filter__button'}>году выпуска</div>
+     |                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  63 |               <div className={'filter__button'}>жанру</div>
+  64 |             </div>
+  65 |             <div className={'centerblock__content'}>
+
+Unterminated string constant
+[08:39:51.908] Server  LOG      ✓ Compiled in 23ms
+[08:39:54.470] Browser ERROR   ./src/app/page.tsx:63:52
+Parsing ecmascript source code failed
+  61 |               <div className={styles.filter__button}>исполнителю</div>
+  62 |               <div className={styles.filter__button}>году выпуска</div>
+> 63 |               <div className={styles.filter__button'}>жанру</div>
+     |                                                    ^^^^^^^^^^^^^^^^^^^
+  64 |             </div>
+  65 |             <div className={'centerblock__content'}>
+  66 |               <div className={'content__title'}>
+
+Unterminated string constant
+[08:39:59.476] Browser ERROR   ./src/app/page.tsx:65:56
+Parsing ecmascript source code failed
+  63 |               <div className={styles.filter__button}>жанру</div>
+  64 |             </div>
+> 65 |             <div className={styles.centerblock__content'}>
+     |                                                        ^^^
+  66 |               <div className={'content__title'}>
+  67 |                 <div className={'playlistTitle__col col01'}>Трек</div>
+  68 |                 <div className={'playlistTitle__col col02'}>Исполнитель</div>
+
+Unterminated string constant
+[08:40:01.249] Server  LOG      ✓ Compiled in 27ms
+[08:40:04.475] Browser ERROR   ./src/app/page.tsx:66:52
+Parsing ecmascript source code failed
+  64 |             </div>
+  65 |             <div className={styles.centerblock__content}>
+> 66 |               <div className={styles.content__title'}>
+     |                                                    ^^^
+  67 |                 <div className={'playlistTitle__col col01'}>Трек</div>
+  68 |                 <div className={'playlistTitle__col col02'}>Исполнитель</div>
+  69 |                 <div className={'playlistTitle__col col03'}>Альбом</div>
+
+Unterminated string constant
+[08:40:06.425] Server  LOG      ✓ Compiled in 173ms
+[08:40:10.465] Browser ERROR   ./src/app/page.tsx:67:59
+Parsing ecmascript source code failed
+  65 |             <div className={styles.centerblock__content}>
+  66 |               <div className={styles.content__title}>
+> 67 |                 <div className={styles.playlistTitle__col col01'}>Трек</div>
+     |                                                           ^^^^^
+  68 |                 <div className={'playlistTitle__col col02'}>Исполнитель</div>
+  69 |                 <div className={'playlistTitle__col col03'}>Альбом</div>
+  70 |                 <div className={'playlistTitle__col col04'}>
+
+Expected '</', got 'col01'
+[08:40:12.471] Browser ERROR   ./src/app/page.tsx:67:59
+Parsing ecmascript source code failed
+  65 |             <div className={styles.centerblock__content}>
+  66 |               <div className={styles.content__title}>
+> 67 |                 <div className={styles.playlistTitle__col col01}>Трек</div>
+     |                                                           ^^^^^
+  68 |                 <div className={'playlistTitle__col col02'}>Исполнитель</div>
+  69 |                 <div className={'playlistTitle__col col03'}>Альбом</div>
+  70 |                 <div className={'playlistTitle__col col04'}>
+
+Expected '</', got 'col01'
+[08:40:18.473] Browser ERROR   ./src/app/page.tsx:67:59
+Parsing ecmascript source code failed
+  65 |             <div className={styles.centerblock__content}>
+  66 |               <div className={styles.content__title}>
+> 67 |                 <div className={styles.playlistTitle__col col01'}>Трек</div>
+     |                                                           ^^^^^
+  68 |                 <div className={'playlistTitle__col col02'}>Исполнитель</div>
+  69 |                 <div className={'playlistTitle__col col03'}>Альбом</div>
+  70 |                 <div className={'playlistTitle__col col04'}>
+
+Expected '</', got 'col01'
+[08:40:19.475] Browser ERROR   ./src/app/page.tsx:67:52
+Parsing ecmascript source code failed
+  65 |             <div className={styles.centerblock__content}>
+  66 |               <div className={styles.content__title}>
+> 67 |                 <div className={playlistTitle__col col01'}>Трек</div>
+     |                                                    ^^^^^
+  68 |                 <div className={'playlistTitle__col col02'}>Исполнитель</div>
+  69 |                 <div className={'playlistTitle__col col03'}>Альбом</div>
+  70 |                 <div className={'playlistTitle__col col04'}>
+
+Expected '</', got 'col01'
+[08:40:26.473] Browser ERROR   ./src/app/page.tsx:67:59
+Parsing ecmascript source code failed
+  65 |             <div className={styles.centerblock__content}>
+  66 |               <div className={styles.content__title}>
+> 67 |                 <div className={styles.playlistTitle__col col01'}>Трек</div>
+     |                                                           ^^^^^
+  68 |                 <div className={'playlistTitle__col col02'}>Исполнитель</div>
+  69 |                 <div className={'playlistTitle__col col03'}>Альбом</div>
+  70 |                 <div className={'playlistTitle__col col04'}>
+
+Expected '</', got 'col01'
+[08:40:28.480] Browser ERROR   ./src/app/page.tsx:67:59
+Parsing ecmascript source code failed
+  65 |             <div className={styles.centerblock__content}>
+  66 |               <div className={styles.content__title}>
+> 67 |                 <div className={styles.playlistTitle__col col01}>Трек</div>
+     |                                                           ^^^^^
+  68 |                 <div className={'playlistTitle__col col02'}>Исполнитель</div>
+  69 |                 <div className={'playlistTitle__col col03'}>Альбом</div>
+  70 |                 <div className={'playlistTitle__col col04'}>
+
+Expected '</', got 'col01'
+[08:40:42.476] Browser ERROR   ./src/app/page.tsx:67:52
+Parsing ecmascript source code failed
+  65 |             <div className={styles.centerblock__content}>
+  66 |               <div className={styles.content__title}>
+> 67 |                 <div className={playlistTitle__col col01'}>Трек</div>
+     |                                                    ^^^^^
+  68 |                 <div className={'playlistTitle__col col02'}>Исполнитель</div>
+  69 |                 <div className={'playlistTitle__col col03'}>Альбом</div>
+  70 |                 <div className={'playlistTitle__col col04'}>
+
+Expected '</', got 'col01'
+[08:40:54.480] Browser ERROR   ./src/app/page.tsx:67:59
+Parsing ecmascript source code failed
+  65 |             <div className={styles.centerblock__content}>
+  66 |               <div className={styles.content__title}>
+> 67 |                 <div className={styles.playlistTitle__col col01'}>Трек</div>
+     |                                                           ^^^^^
+  68 |                 <div className={'playlistTitle__col col02'}>Исполнитель</div>
+  69 |                 <div className={'playlistTitle__col col03'}>Альбом</div>
+  70 |                 <div className={'playlistTitle__col col04'}>
+
+Expected '</', got 'col01'
+[08:40:57.468] Browser ERROR   ./src/app/page.tsx:67:59
+Parsing ecmascript source code failed
+  65 |             <div className={styles.centerblock__content}>
+  66 |               <div className={styles.content__title}>
+> 67 |                 <div className={styles.playlistTitle__col styles.col01'}>Трек</div>
+     |                                                           ^^^^^^
+  68 |                 <div className={'playlistTitle__col col02'}>Исполнитель</div>
+  69 |                 <div className={'playlistTitle__col col03'}>Альбом</div>
+  70 |                 <div className={'playlistTitle__col col04'}>
+
+Expected '</', got 'styles'
+[08:40:59.475] Browser ERROR   ./src/app/page.tsx:67:59
+Parsing ecmascript source code failed
+  65 |             <div className={styles.centerblock__content}>
+  66 |               <div className={styles.content__title}>
+> 67 |                 <div className={styles.playlistTitle__col styles.col01}>Трек</div>
+     |                                                           ^^^^^^
+  68 |                 <div className={'playlistTitle__col col02'}>Исполнитель</div>
+  69 |                 <div className={'playlistTitle__col col03'}>Альбом</div>
+  70 |                 <div className={'playlistTitle__col col04'}>
+
+Expected '</', got 'styles'
+[08:41:06.472] Browser ERROR   ./src/app/page.tsx:67:40
+Parsing ecmascript source code failed
+  65 |             <div className={styles.centerblock__content}>
+  66 |               <div className={styles.content__title}>
+> 67 |                 <div className={styles.'playlistTitle__col col01'}>Трек</div>
+     |                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  68 |                 <div className={'playlistTitle__col col02'}>Исполнитель</div>
+  69 |                 <div className={'playlistTitle__col col03'}>Альбом</div>
+  70 |                 <div className={'playlistTitle__col col04'}>
+
+Expected '</', got 'string literal (playlistTitle__col col01, 'playlistTitle__col col01')'
+[08:41:06.781] Server  LOG      ✓ Compiled in 19ms
+[08:41:25.368] Server  LOG      ✓ Compiled in 19ms
+[08:43:36.484] Server  LOG      ✓ Compiled in 103ms
+[08:43:57.053] Server  LOG      ✓ Compiled in 72ms
+[08:44:24.624] Server  LOG      ✓ Compiled in 117ms
+[08:44:30.494] Browser WARN    Image with src "/img/playlist01.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[08:44:47.383] Server  LOG      ✓ Compiled in 78ms
+[08:44:56.988] Server  LOG      ✓ Compiled in 89ms
+[09:04:56.793] Browser WARN    Image with src "/img/playlist01.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[09:04:56.793] Browser WARN    Image with src "/img/playlist02.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[09:04:56.793] Browser WARN    Image with src "/img/playlist03.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[09:06:15.478] Browser ERROR   ./src/app/page.tsx:91:64
+Parsing ecmascript source code failed
+  89 |                         </svg>
+  90 |                       </div>
+> 91 |                       <div className={stylesюtrack__title-text']}>
+     |                                                                ^^^^
+  92 |                         <Link className={styles.track__titleLink} href="">
+  93 |                           Guilt{' '}
+  94 |                           <span className={styles.track__titleSpan}></span>
+
+Unterminated string constant
+[09:06:19.469] Browser ERROR   ./src/app/page.tsx:91:63
+Parsing ecmascript source code failed
+  89 |                         </svg>
+  90 |                       </div>
+> 91 |                       <div className={styles.track__title-text']}>
+     |                                                               ^^^^
+  92 |                         <Link className={styles.track__titleLink} href="">
+  93 |                           Guilt{' '}
+  94 |                           <span className={styles.track__titleSpan}></span>
+
+Unterminated string constant
+[09:06:25.570] Server  ERROR    ⨯ ReferenceError: text is not defined
+[09:06:26.474] Browser ERROR   uncaughtError: ReferenceError: text is not defined
+[09:06:33.992] Server  ERROR    ⨯ ReferenceError: text is not defined
+[09:06:34.358] Browser ERROR   uncaughtError: ReferenceError: text is not defined
+[09:11:22.216] Browser WARN    Image with src "/img/playlist01.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[09:11:22.216] Browser WARN    Image with src "/img/playlist02.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[09:11:22.216] Browser WARN    Image with src "/img/playlist03.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[09:11:22.318] Browser WARN    Image with src "/img/playlist01.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[09:16:09.324] Server  LOG      ✓ Compiled in 70ms
+[09:16:12.196] Server  LOG      ✓ Compiled in 87ms
+[09:27:09.223] Server  LOG      ✓ Compiled in 439ms
+[09:34:03.327] Server  LOG      ✓ Compiled in 11ms
+[09:35:38.606] Browser ERROR   ./src/app/page.tsx:307:11
+Parsing ecmascript source code failed
+  305 |           </div>
+  306 |         </main>
+> 307 |         </>
+      |           ^
+  308 |         <footer className={styles.footer}></footer>
+  309 |       </div>
+  310 |     </div>
+
+Expression expected
+[09:35:38.606] Browser ERROR   ./src/app/page.tsx:309:8
+Parsing ecmascript source code failed
+  307 |         </>
+  308 |         <footer className={styles.footer}></footer>
+> 309 |       </div>
+      |        ^^^^^
+  310 |     </div>
+  311 |   );
+  312 | }
+
+Unterminated regexp literal
+[09:35:40.313] Server  LOG      ✓ Compiled in 33ms
+[09:35:40.460] Server  ERROR    ⨯ ReferenceError: Bar is not defined
+[09:35:41.473] Browser ERROR   uncaughtError: ReferenceError: Bar is not defined
+[09:35:49.228] Server  ERROR    ⨯ ReferenceError: Bar is not defined
+[09:35:51.476] Browser ERROR   uncaughtError: ReferenceError: Bar is not defined
+[09:35:54.472] Browser ERROR   ./src/app/page.tsx:7:1
+Parsing ecmascript source code failed
+   5 | import
+   6 |
+>  7 | export default function Home() {
+     | ^^^^^^
+   8 |   return (
+   9 |     <div className={styles.wrapper}>
+  10 |       <div className={styles.container}>
+
+Expected 'from', got 'export'
+[09:35:56.770] Server  LOG      ✓ Compiled in 213ms
+[09:35:57.122] Server  ERROR    ⨯ ReferenceError: Bar is not defined
+[09:35:58.478] Browser ERROR   uncaughtError: ReferenceError: Bar is not defined
+[09:36:03.456] Server  ERROR    ⨯ TypeError: Cannot set properties of undefined (setting 'id')
+[09:36:05.471] Browser ERROR   uncaughtError: TypeError: Cannot set properties of undefined (setting 'id')
+[09:36:05.471] Browser ERROR   ./src/app/page.tsx:5:8
+Parsing ecmascript source code failed
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import <Bar></Bar> from "module";
+    |        ^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+Expected 'from', got '<'
+[09:36:07.466] Browser ERROR   ./src/app/page.tsx:5:11
+Parsing ecmascript source code failed
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar></Bar> from "module";
+    |           ^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+Expected ',', got '>'
+[09:36:11.720] Server  LOG      ✓ Compiled in 586ms
+[09:36:11.808] Server  ERROR    ⨯ TypeError: Cannot set properties of undefined (setting 'id')
+[09:36:12.735] Browser ERROR   uncaughtError: TypeError: Cannot set properties of undefined (setting 'id')
+[09:36:14.987] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve ''
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "";
+    | ^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:15.117] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve ''
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "";
+    | ^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:15.199] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve ''
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "";
+    | ^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:15.204] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve ''
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "";
+    | ^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:15.210] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve ''
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "";
+    | ^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:15.220] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve ''
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "";
+    | ^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:15.224] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve ''
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "";
+    | ^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:15.229] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve ''
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "";
+    | ^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:15.233] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve ''
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "";
+    | ^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:15.237] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve ''
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "";
+    | ^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:15.241] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve ''
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "";
+    | ^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:15.246] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve ''
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "";
+    | ^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:15.250] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve ''
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "";
+    | ^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:15.259] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve ''
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "";
+    | ^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:15.469] Browser ERROR   ./src/app/page.tsx:5:1
+Module not found: Can't resolve ''
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "";
+    | ^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[09:36:15.640] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve './'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "./";
+    | ^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:15.646] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve './'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "./";
+    | ^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:15.652] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve './'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "./";
+    | ^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:15.657] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve './'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "./";
+    | ^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:15.662] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve './'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "./";
+    | ^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:15.666] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve './'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "./";
+    | ^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:15.671] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve './'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "./";
+    | ^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:15.677] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve './'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "./";
+    | ^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:15.682] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve './'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "./";
+    | ^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:15.685] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve './'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "./";
+    | ^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:15.689] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve './'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "./";
+    | ^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:15.693] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve './'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "./";
+    | ^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:15.697] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve './'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "./";
+    | ^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:15.702] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve './'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "./";
+    | ^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:16.473] Browser ERROR   ./src/app/page.tsx:5:1
+Module not found: Can't resolve './'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "./";
+    | ^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[09:36:20.263] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "../";
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:20.266] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "../";
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:20.269] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "../";
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:20.272] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "../";
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:20.275] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "../";
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:20.278] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "../";
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:20.281] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "../";
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:20.284] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "../";
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:20.289] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "../";
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:20.291] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "../";
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:20.295] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "../";
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:20.297] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "../";
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:20.300] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "../";
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:20.303] Server  ERROR    ⨯ ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "../";
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[09:36:20.466] Browser ERROR   ./src/app/page.tsx:5:1
+Module not found: Can't resolve '../'
+  3 | import Link from 'next/link';
+  4 | import cn from 'classnames';
+> 5 | import Bar from "../";
+    | ^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Home() {
+  8 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[09:37:03.970] Server  ERROR    ⨯ ReferenceError: Bar is not defined
+[09:37:04.641] Browser ERROR   uncaughtError: ReferenceError: Bar is not defined
+[09:37:09.478] Browser ERROR   ./src/app/page.tsx:7:1
+Parsing ecmascript source code failed
+   5 | import
+   6 |
+>  7 | export default function Home() {
+     | ^^^^^^
+   8 |   return (
+   9 |     <div className={styles.wrapper}>
+  10 |       <div className={styles.container}>
+
+Expected 'from', got 'export'
+[09:37:11.472] Browser ERROR   ./src/app/page.tsx:7:1
+Parsing ecmascript source code failed
+   5 | import 
+   6 |
+>  7 | export default function Home() {
+     | ^^^^^^
+   8 |   return (
+   9 |     <div className={styles.wrapper}>
+  10 |       <div className={styles.container}>
+
+Expected 'from', got 'export'
+[09:37:14.465] Browser ERROR   ./src/components/Bar/Bar.tsx:5:29
+Parsing ecmascript source code failed
+  3 | import cn from 'classnames';
+  4 |
+> 5 | export default function Bar {
+    |                             ^
+  6 |     return (
+  7 |         <div className={styles.bar}>
+  8 |           <div className={styles.bar__content}>
+
+Expected '(', got '{'
+
+Import trace:
+  Server Component:
+    ./src/components/Bar/Bar.tsx
+    ./src/app/page.tsx
+[09:39:08.310] Browser WARN    Image with src "/img/playlist01.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[09:39:08.310] Browser WARN    Image with src "/img/playlist02.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[09:39:08.310] Browser WARN    Image with src "/img/playlist03.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[09:39:08.310] Browser WARN    Image with src "/img/playlist01.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[09:39:11.872] Browser WARN    Image with src "/img/playlist01.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[09:39:11.872] Browser WARN    Image with src "/img/playlist02.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[09:39:11.872] Browser WARN    Image with src "/img/playlist03.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[09:42:09.408] Server  LOG      ✓ Compiled in 229ms
+[09:46:52.476] Browser ERROR   ./src/app/page.tsx:227:17
+Parsing ecmascript source code failed
+  225 |               </div>
+  226 |             </div>
+> 227 |           </div>
+      |                 ^
+> 228 |           <div className={styles.main__sidebar}>
+      | ^^^^^^^^^^^
+  229 |             <div className={styles.sidebar__personal}>
+  230 |               <p className={styles.sidebar__personalName}>Sergey.Ivanov</p>
+  231 |               <div className={styles.sidebar__icon}>
+
+Expected '</', got 'jsx text (
+          )'
+[09:47:08.474] Browser ERROR   ./src/app/page.tsx:191:19
+Parsing ecmascript source code failed
+  189 |                 </div>
+  190 |               </div>
+> 191 |             </div>
+      |                   ^
+> 192 |           </div>
+      | ^^^^^^^^^^^
+  193 |           <div className={styles.main__sidebar}>
+  194 |             <div className={styles.sidebar__personal}>
+  195 |               <p className={styles.sidebar__personalName}>Sergey.Ivanov</p>
+
+Expected '</', got 'jsx text (
+          )'
+[09:47:17.478] Browser ERROR   ./src/app/page.tsx:189:21
+Parsing ecmascript source code failed
+  187 |                   </div>
+  188 |                 </div>
+> 189 |               </div>
+      |                     ^
+> 190 |             </div>
+      | ^^^^^^^^^^^^^
+  191 |           </div>
+  192 |           <div className={styles.main__sidebar}>
+  193 |             <div className={styles.sidebar__personal}>
+
+Expected '</', got 'jsx text (
+            )'
+[09:47:26.925] Server  LOG      ✓ Compiled in 948ms
+[09:47:27.477] Browser ERROR   ./src/app/page.tsx:189:21
+Parsing ecmascript source code failed
+  187 |                   </div>
+  188 |                 </div>
+> 189 |               </div>
+      |                     ^
+> 190 |             </div>
+      | ^^^^^^^^^^^^^
+  191 |           </div>
+  192 |           <div className={styles.main__sidebar}>
+  193 |             <div className={styles.sidebar__personal}>
+
+Expected '</', got 'jsx text (
+            )'
+[09:47:39.479] Browser ERROR   ./src/app/page.tsx:48:23
+Parsing ecmascript source code failed
+  46 |                     </div>
+  47 |                   </div>
+> 48 |                 </div>
+     |                       ^
+> 49 |
+     | ^
+> 50 |                 <div className={styles.playlist__item}>
+     | ^^^^^^^^^^^^^^^^^
+  51 |                   <div className={styles.playlist__track}>
+  52 |                     <div className={styles.track__title}>
+  53 |                       <div className={styles.track__titleImage}>
+
+Expected '</', got 'jsx text (
+
+                )'
+[09:47:47.476] Browser ERROR   ./src/app/page.tsx:48:23
+Parsing ecmascript source code failed
+  46 |                     </div>
+  47 |                   </div>
+> 48 |                 </div>
+     |                       ^
+> 49 |
+     | ^
+> 50 |                 <div className={styles.playlist__item}>
+     | ^^^^^^^^^^^^^^^^^
+  51 |                   <div className={styles.playlist__track}>
+  52 |                     <div className={styles.track__title}>
+  53 |                       <div className={styles.track__titleImage}>
+
+Expected '</', got 'jsx text (
+
+                )'
+[09:47:52.467] Browser ERROR   ./src/app/page.tsx:72:26
+Parsing ecmascript source code failed
+  70 |
+  71 |                           <span className={styles.track__titleSpan}></span>
+> 72 |                         </Link>
+     |                          ^^^^^^
+  73 |                       </div>
+  74 |                     </div>
+  75 |                     <div className={styles.track__author}>
+
+Unterminated regexp literal
+[09:48:02.464] Browser ERROR   ./src/app/page.tsx:70:25
+Parsing ecmascript source code failed
+  68 |   );
+  69 | }
+> 70 |                         </Link>
+     |                         ^
+  71 |                       </div>
+  72 |                     </div>
+  73 |                     <div className={styles.track__author}>
+
+Expression expected
+[09:48:02.464] Browser ERROR   ./src/app/page.tsx:70:26
+Parsing ecmascript source code failed
+  68 |   );
+  69 | }
+> 70 |                         </Link>
+     |                          ^^^^^^
+  71 |                       </div>
+  72 |                     </div>
+  73 |                     <div className={styles.track__author}>
+
+Unterminated regexp literal
+[09:48:09.472] Browser ERROR   ./src/app/page.tsx:70:23
+Parsing ecmascript source code failed
+  68 |   );
+  69 | }
+> 70 |                       </div>
+     |                       ^
+  71 |                     </div>
+  72 |                     <div className={styles.track__author}>
+  73 |                       <Link className={styles.track__authorLink} href="">
+
+Expression expected
+[09:48:09.472] Browser ERROR   ./src/app/page.tsx:70:24
+Parsing ecmascript source code failed
+  68 |   );
+  69 | }
+> 70 |                       </div>
+     |                        ^^^^^
+  71 |                     </div>
+  72 |                     <div className={styles.track__author}>
+  73 |                       <Link className={styles.track__authorLink} href="">
+
+Unterminated regexp literal
+[09:48:24.835] Server  LOG      ✓ Compiled in 578ms
+[09:49:28.467] Browser WARN    Image with src "/img/playlist01.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[09:49:28.467] Browser WARN    Image with src "/img/playlist02.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[09:49:28.467] Browser WARN    Image with src "/img/playlist03.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[09:49:28.467] Browser WARN    Image with src "/img/playlist01.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[09:49:32.011] Browser WARN    Image with src "/img/playlist01.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[09:49:32.011] Browser WARN    Image with src "/img/playlist02.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[09:49:32.011] Browser WARN    Image with src "/img/playlist03.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[09:51:21.536] Server  ERROR    ⨯ ReferenceError: Link is not defined
+[09:51:22.480] Browser ERROR   uncaughtError: ReferenceError: Link is not defined
+[09:51:26.261] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[09:52:32.268] Browser WARN    Image with src "/img/playlist01.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[09:52:32.268] Browser WARN    Image with src "/img/playlist02.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[09:52:32.268] Browser WARN    Image with src "/img/playlist03.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[09:52:32.360] Browser WARN    Image with src "/img/playlist01.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[09:52:34.385] Browser WARN    Image with src "/img/playlist01.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[09:52:34.385] Browser WARN    Image with src "/img/playlist02.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[09:52:34.386] Browser WARN    Image with src "/img/playlist03.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[09:54:43.025] Browser WARN    Image with src "/img/playlist01.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[09:54:43.025] Browser WARN    Image with src "/img/playlist02.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[09:54:43.025] Browser WARN    Image with src "/img/playlist03.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[10:00:59.906] Server  LOG      ✓ Compiled in 155ms
+[10:03:43.446] Server  LOG      ✓ Compiled in 56ms

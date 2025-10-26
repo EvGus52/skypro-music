@@ -142,6 +142,7 @@
 
 .centerblock__h2 {
   letter-spacing: -.8px;
+  color: #fff;
   margin-bottom: 45px;
   font-size: 64px;
   font-style: normal;
@@ -162,6 +163,7 @@
 }
 
 .filter__title {
+  color: #fff;
   margin-right: 15px;
   font-size: 16px;
   font-style: normal;
@@ -170,6 +172,7 @@
 }
 
 .filter__button {
+  color: #fff;
   border: 1px solid #fff;
   border-radius: 60px;
   padding: 6px 20px;

@@ -64,6 +64,7 @@
 
 /* [project]/src/app/globals.css [app-client] (css) */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -78,6 +79,14 @@ h1, h2, h3, h4, h5, h6, p {
 
 a, input, button {
   font-family: var(--font-montserrat), Arial;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=%5Broot-of-the-server%5D__79f78277._.css.map*/
