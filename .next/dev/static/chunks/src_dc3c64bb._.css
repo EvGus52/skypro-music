@@ -84,7 +84,7 @@
 }
 
 .page-module___8aEwW__centerblock__h2 {
-  letter-spacing: -.8px;
+  letter-spacing: -0.8px;
   color: #fff;
   margin-bottom: 45px;
   font-size: 64px;
@@ -385,7 +385,11 @@
   display: flex;
 }
 
-.bar-module__AGniEW__player__btnPrev, .bar-module__AGniEW__player__btnPlay, .bar-module__AGniEW__player__btnNext, .bar-module__AGniEW__player__btnRepeat, .bar-module__AGniEW__player__btnShuffle {
+.bar-module__AGniEW__player__btnPrev,
+.bar-module__AGniEW__player__btnPlay,
+.bar-module__AGniEW__player__btnNext,
+.bar-module__AGniEW__player__btnRepeat,
+.bar-module__AGniEW__player__btnShuffle {
   align-items: center;
   padding: 5px;
   display: flex;
@@ -455,8 +459,9 @@
   display: -ms-grid;
   -ms-grid-columns: auto 1fr;
   grid-template-columns: auto 1fr;
-  grid-template-areas: "image author"
-                       "image album";
+  grid-template-areas:
+    'image author'
+    'image album';
   align-items: center;
   display: grid;
 }
@@ -514,7 +519,8 @@
   display: flex;
 }
 
-.bar-module__AGniEW__trackPlay__like, .bar-module__AGniEW__trackPlay__dislike {
+.bar-module__AGniEW__trackPlay__like,
+.bar-module__AGniEW__trackPlay__dislike {
   padding: 5px;
 }
 
@@ -600,7 +606,8 @@
   cursor: pointer;
 }
 
-.bar-module__AGniEW__btnIcon:active .bar-module__AGniEW__trackPlay__likeSvg, .bar-module__AGniEW__btnIcon:active .bar-module__AGniEW__trackPlay__dislikeSvg {
+.bar-module__AGniEW__btnIcon:active .bar-module__AGniEW__trackPlay__likeSvg,
+.bar-module__AGniEW__btnIcon:active .bar-module__AGniEW__trackPlay__dislikeSvg {
   fill: #696969;
   stroke: #fff;
   cursor: pointer;

@@ -141,7 +141,7 @@
 }
 
 .centerblock__h2 {
-  letter-spacing: -.8px;
+  letter-spacing: -0.8px;
   color: #fff;
   margin-bottom: 45px;
   font-size: 64px;
@@ -441,7 +441,11 @@
   display: flex;
 }
 
-.player__btnPrev, .player__btnPlay, .player__btnNext, .player__btnRepeat, .player__btnShuffle {
+.player__btnPrev,
+.player__btnPlay,
+.player__btnNext,
+.player__btnRepeat,
+.player__btnShuffle {
   align-items: center;
   padding: 5px;
   display: flex;
@@ -511,8 +515,9 @@
   display: -ms-grid;
   -ms-grid-columns: auto 1fr;
   grid-template-columns: auto 1fr;
-  grid-template-areas: "image author"
-                       "image album";
+  grid-template-areas:
+    'image author'
+    'image album';
   align-items: center;
   display: grid;
 }
@@ -570,7 +575,8 @@
   display: flex;
 }
 
-.trackPlay__like, .trackPlay__dislike {
+.trackPlay__like,
+.trackPlay__dislike {
   padding: 5px;
 }
 
@@ -660,7 +666,8 @@
   cursor: pointer;
 }
 
-.btnIcon:active .trackPlay__likeSvg, .btnIcon:active .trackPlay__dislikeSvg {
+.btnIcon:active .trackPlay__likeSvg,
+.btnIcon:active .trackPlay__dislikeSvg {
   fill: #696969;
   stroke: #fff;
   cursor: pointer;

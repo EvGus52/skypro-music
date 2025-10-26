@@ -183,7 +183,7 @@ export default function Centerblock() {
                     <use xlinkHref="/img/icon/sprite.svg#icon-note"></use>
                   </svg>
                 </div>
-                <div>
+                <div className={styles['track__title-text']}>
                   <Link className={styles.track__titleLink} href="">
                     Run Run
                     <span className={styles.track__titleSpan}>
