@@ -1,1 +1,450 @@
-[00:00:02.388] Server  LOG      ✓ Ready in 1632ms
+[00:00:02.273] Server  LOG      ✓ Ready in 1406ms
+[07:44:25.930] Server  LOG      ✓ Compiled in 1061ms
+[07:44:37.726] Server  LOG      ✓ Compiled in 693ms
+[07:44:52.518] Server  ERROR    ⨯ ReferenceError: Geist_Mono is not defined
+[07:44:52.768] Server  ERROR    ⨯ ReferenceError: Geist_Mono is not defined
+[07:44:55.286] Browser ERROR   uncaughtError: ReferenceError: Geist_Mono is not defined
+[07:45:18.466] Browser ERROR   ./src/app/layout.tsx:5:7
+Ecmascript file had an error
+  3 | import './globals.css';
+  4 |
+> 5 | const Montserrat = Montserrat ({
+    |       ^^^^^^^^^^
+  6 |   variable: '--font-geist-sans',
+  7 |   subsets: ['latin'],
+  8 | });
+
+the name `Montserrat` is defined multiple times
+[07:45:20.400] Server  LOG      ✓ Compiled in 92ms
+[07:45:20.820] Server  ERROR    ⨯ ReferenceError: Geist_Mono is not defined
+[07:45:21.042] Server  ERROR    ⨯ ReferenceError: Geist_Mono is not defined
+[07:45:21.318] Browser ERROR   uncaughtError: ReferenceError: Geist_Mono is not defined
+[07:45:22.467] Browser ERROR   ./src/app/layout.tsx:5:7
+Parsing ecmascript source code failed
+  3 | import './globals.css';
+  4 |
+> 5 | const <main></main>ontserrat = Montserrat ({
+    |       ^
+  6 |   variable: '--font-geist-sans',
+  7 |   subsets: ['latin'],
+  8 | });
+
+Unexpected token `<`. Expected yield, an identifier, [ or {
+[07:45:22.897] Server  ERROR    ⨯ ReferenceError: Geist_Mono is not defined
+[07:45:23.111] Server  ERROR    ⨯ ReferenceError: Geist_Mono is not defined
+[07:45:23.263] Browser ERROR   uncaughtError: ReferenceError: Geist_Mono is not defined
+[07:45:30.720] Server  LOG      ✓ Compiled in 12ms
+[07:46:23.266] Server  LOG      ✓ Compiled in 127ms
+[07:46:39.969] Server  LOG      ✓ Compiled in 9ms
+[07:46:50.346] Server  LOG      ✓ Compiled in 2ms
+[07:47:28.467] Browser ERROR   ./src/app/globals.css:1:1
+Parsing CSS source code failed
+> 1 | {
+    | ^
+  2 |   
+  3 | }
+
+Invalid empty selector
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[07:47:42.398] Server  LOG      ✓ Compiled in 12ms
+[07:47:43.465] Browser ERROR   ./src/app/globals.css:3:1
+Parsing CSS source code failed
+  1 | * {
+  2 |   mar
+> 3 | }
+    | ^
+  4 |
+
+Unexpected end of input
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[07:47:48.211] Server  LOG      ✓ Compiled in 10ms
+[07:47:48.472] Browser ERROR   ./src/app/globals.css:4:1
+Parsing CSS source code failed
+  2 |   margin: 0;
+  3 |   pad
+> 4 | }
+    | ^
+  5 |
+
+Unexpected end of input
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[07:48:50.606] Server  LOG      ✓ Compiled in 4ms
+[07:48:51.476] Browser ERROR   ./src/app/globals.css:6:6
+Parsing CSS source code failed
+  4 | }
+  5 |
+> 6 | body 
+    |      ^
+
+Unexpected end of input
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[07:48:55.900] Server  LOG      ✓ Compiled in 4ms
+[07:48:56.474] Browser ERROR   ./src/app/globals.css:8:1
+Parsing CSS source code failed
+  6 | body {
+  7 |   ff
+> 8 | }
+    | ^
+
+Unexpected end of input
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[07:49:00.209] Server  LOG      ✓ Compiled in 4ms
+[07:49:01.929] Server  LOG      ✓ Compiled in 17ms
+[07:49:02.472] Browser ERROR   ./src/app/globals.css:7:20
+Parsing CSS source code failed
+  5 |
+  6 | body {
+> 7 |   font-family: var();
+    |                    ^
+  8 | }
+
+Unexpected end of input
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[07:49:20.480] Browser ERROR   ./src/app/globals.css:7:20
+Parsing CSS source code failed
+  5 |
+  6 | body {
+> 7 |   font-family: var('--font-montserrat');
+    |                    ^
+  8 | }
+
+Unexpected token String("--font-montserrat")
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[07:51:11.771] Server  LOG      ✓ Compiled in 4ms
+[07:51:15.791] Server  LOG      ✓ Compiled in 5ms
+[07:52:13.902] Server  LOG      ✓ Compiled in 5ms
+[07:52:16.134] Server  LOG      ✓ Compiled in 2ms
+[07:52:17.373] Server  LOG      ✓ Compiled in 4ms
+[07:52:39.081] Server  LOG      ✓ Compiled in 4ms
+[07:52:39.469] Browser ERROR   ./src/app/globals.css:9:4
+Parsing CSS source code failed
+  7 |   font-family: var(--font-montserrat), Arial;
+  8 | }
+> 9 | a, 
+    |    ^
+
+Unexpected end of input
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[07:52:42.474] Browser ERROR   ./src/app/globals.css:9:9
+Parsing CSS source code failed
+  7 |   font-family: var(--font-montserrat), Arial;
+  8 | }
+> 9 | a, input
+    |         ^
+
+Unexpected end of input
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[07:52:43.466] Browser ERROR   ./src/app/globals.css:9:11
+Parsing CSS source code failed
+  7 |   font-family: var(--font-montserrat), Arial;
+  8 | }
+> 9 | a, input, 
+    |           ^
+
+Unexpected end of input
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[07:52:47.479] Browser ERROR   ./src/app/globals.css:9:18
+Parsing CSS source code failed
+  7 |   font-family: var(--font-montserrat), Arial;
+  8 | }
+> 9 | a, input, button 
+    |                  ^
+
+Unexpected end of input
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[07:52:55.909] Server  LOG      ✓ Compiled in 3ms
+[07:52:57.580] Server  LOG      ✓ Compiled in 6ms
+[07:53:11.222] Server  LOG      ✓ Compiled in 4ms
+[07:53:11.470] Browser ERROR   ./src/app/globals.css:9:8
+Parsing CSS source code failed
+   7 |   font-family: var(--font-montserrat), Arial;
+   8 | }
+>  9 | h1, h2. h3
+     |        ^
+  10 | a, input, button {
+  11 |   font-family: var(--font-montserrat), Arial;
+  12 | }
+
+Expected identifier in class selector, got WhiteSpace(" ")
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[07:53:13.473] Browser ERROR   ./src/app/globals.css:9:8
+Parsing CSS source code failed
+   7 |   font-family: var(--font-montserrat), Arial;
+   8 | }
+>  9 | h1, h2. h3, 
+     |        ^
+  10 | a, input, button {
+  11 |   font-family: var(--font-montserrat), Arial;
+  12 | }
+
+Expected identifier in class selector, got WhiteSpace(" ")
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[07:53:14.466] Browser ERROR   ./src/app/globals.css:9:8
+Parsing CSS source code failed
+   7 |   font-family: var(--font-montserrat), Arial;
+   8 | }
+>  9 | h1, h2. h3, h4
+     |        ^
+  10 | a, input, button {
+  11 |   font-family: var(--font-montserrat), Arial;
+  12 | }
+
+Expected identifier in class selector, got WhiteSpace(" ")
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[07:53:19.466] Browser ERROR   ./src/app/globals.css:9:8
+Parsing CSS source code failed
+   7 |   font-family: var(--font-montserrat), Arial;
+   8 | }
+>  9 | h1, h2. h3, h4, h5, h6
+     |        ^
+  10 | a, input, button {
+  11 |   font-family: var(--font-montserrat), Arial;
+  12 | }
+
+Expected identifier in class selector, got WhiteSpace(" ")
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[07:53:21.472] Browser ERROR   ./src/app/globals.css:9:8
+Parsing CSS source code failed
+   7 |   font-family: var(--font-montserrat), Arial;
+   8 | }
+>  9 | h1, h2. h3, h4, h5, h6, 
+     |        ^
+  10 | a, input, button {
+  11 |   font-family: var(--font-montserrat), Arial;
+  12 | }
+
+Expected identifier in class selector, got WhiteSpace(" ")
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[07:53:22.467] Browser ERROR   ./src/app/globals.css:9:8
+Parsing CSS source code failed
+   7 |   font-family: var(--font-montserrat), Arial;
+   8 | }
+>  9 | h1, h2. h3, h4, h5, h6, p
+     |        ^
+  10 | a, input, button {
+  11 |   font-family: var(--font-montserrat), Arial;
+  12 | }
+
+Expected identifier in class selector, got WhiteSpace(" ")
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[07:53:27.475] Browser ERROR   ./src/app/globals.css:9:8
+Parsing CSS source code failed
+   7 |   font-family: var(--font-montserrat), Arial;
+   8 | }
+>  9 | h1, h2. h3, h4, h5, h6, p {
+     |        ^
+  10 |   
+  11 | }
+  12 | a, input, button {
+
+Expected identifier in class selector, got WhiteSpace(" ")
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[07:53:37.473] Browser ERROR   ./src/app/globals.css:9:8
+Parsing CSS source code failed
+   7 |   font-family: var(--font-montserrat), Arial;
+   8 | }
+>  9 | h1, h2. h3, h4, h5, h6, p {
+     |        ^
+  10 |   mar
+  11 | }
+  12 | a, input, button {
+
+Expected identifier in class selector, got WhiteSpace(" ")
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[07:53:39.478] Browser ERROR   ./src/app/globals.css:9:8
+Parsing CSS source code failed
+   7 |   font-family: var(--font-montserrat), Arial;
+   8 | }
+>  9 | h1, h2. h3, h4, h5, h6, p {
+     |        ^
+  10 |   margin: 0;
+  11 | }
+  12 | a, input, button {
+
+Expected identifier in class selector, got WhiteSpace(" ")
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[07:53:40.467] Browser ERROR   ./src/app/globals.css:9:8
+Parsing CSS source code failed
+   7 |   font-family: var(--font-montserrat), Arial;
+   8 | }
+>  9 | h1, h2. h3, h4, h5, h6, p {
+     |        ^
+  10 |   margin: 0;
+  11 | }
+  12 |
+
+Expected identifier in class selector, got WhiteSpace(" ")
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+[07:55:21.949] Server  ERROR    ⨯ ./src/app/page.tsx:1:1
+Module not found: Can't resolve './page.css'
+> 1 | import './page.css';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[07:55:21.958] Server  ERROR    ⨯ ./src/app/page.tsx:1:1
+Module not found: Can't resolve './page.css'
+> 1 | import './page.css';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[07:55:21.964] Server  ERROR    ⨯ ./src/app/page.tsx:1:1
+Module not found: Can't resolve './page.css'
+> 1 | import './page.css';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[07:55:21.968] Server  ERROR    ⨯ ./src/app/page.tsx:1:1
+Module not found: Can't resolve './page.css'
+> 1 | import './page.css';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[07:55:21.972] Server  ERROR    ⨯ ./src/app/page.tsx:1:1
+Module not found: Can't resolve './page.css'
+> 1 | import './page.css';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[07:55:21.977] Server  ERROR    ⨯ ./src/app/page.tsx:1:1
+Module not found: Can't resolve './page.css'
+> 1 | import './page.css';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[07:55:21.992] Server  LOG      ✓ Compiled in 71ms
+[07:55:22.471] Browser ERROR   ./src/app/page.tsx:1:1
+Module not found: Can't resolve './page.css'
+> 1 | import './page.css';
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default function Home() {
+  4 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[07:57:01.290] Server  LOG      ✓ Compiled in 67ms
