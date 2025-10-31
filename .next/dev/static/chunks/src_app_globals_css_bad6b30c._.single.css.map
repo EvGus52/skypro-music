@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/app/globals.css"],"sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  font-family: var(--font-montserrat), Arial;\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np {\n  margin: 0;\n}\n\na,\ninput,\nbutton {\n  font-family: var(--font-montserrat), Arial;\n}\n\na {\n  text-decoration: none;\n}\n\n.btn {\n  cursor: pointer;\n}\n"],"names":[],"mappings":"AAAA;;;;;;AAMA;;;;AAGA;;;;AAUA;;;;AAMA;;;;AAIA"}}]
+}

@@ -1,0 +1,28 @@
+[00:00:07.200] Server  LOG      ✓ Ready in 5.9s
+[00:00:10.405] Server  LOG      ○ Compiling / ...
+[00:02:55.916] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:05:16.960] Server  LOG      ✓ Compiled in 2ms
+[00:05:16.968] Server  LOG      ✓ Compiled in 26ms
+[00:05:17.179] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:05:30.976] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:05:31.680] Server  LOG      ✓ Compiled in 73ms
+[00:05:32.244] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[00:12:14.920] Browser WARN    Image with src "/img/playlist01.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:27:51.383] Server  ERROR    ⨯ Error: The default export is not a React Component in "/signup/not-found"
+[00:27:51.707] Server  ERROR    ⨯ Error: The default export is not a React Component in "/signup/not-found"
+[00:27:54.717] Server  LOG      ○ Compiling /_error ...
+[00:28:01.582] Server  ERROR    ⨯ Error: The default export is not a React Component in "/signup/not-found"
+[00:28:01.823] Server  ERROR    ⨯ Error: The default export is not a React Component in "/signup/not-found"
+[00:28:02.075] Server  ERROR    ⨯ Error: The default export is not a React Component in "/signup/not-found"
+[00:28:02.324] Server  ERROR    ⨯ Error: The default export is not a React Component in "/signup/not-found"
+[00:28:02.837] Server  ERROR    ⨯ Error: The default export is not a React Component in "/signup/not-found"
+[00:28:03.064] Server  ERROR    ⨯ Error: The default export is not a React Component in "/signup/not-found"
+[00:28:03.610] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/signup/not-found"
+[00:32:53.959] Server  LOG      ✓ Compiled in 212ms
+[00:32:57.896] Server  LOG      ✓ Compiled in 74ms
+[00:42:03.987] Server  LOG      ✓ Compiled in 1117ms
+[00:42:57.853] Server  LOG      ✓ Compiled in 194ms
+[00:42:59.716] Server  LOG      ✓ Compiled in 114ms
+[00:48:58.038] Server  LOG      ✓ Compiled in 148ms
+[00:49:13.310] Server  LOG      ✓ Compiled in 49ms

@@ -1,0 +1,62 @@
+.errorBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 200px);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.errorBlock__title {
+  font-size: 160px;
+  font-weight: 900;
+  line-height: 168px;
+  color: #ffffff;
+  margin: 0 0 40px 0;
+}
+
+.errorBlock__message {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.errorBlock__text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.errorBlock__hint {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #4e4e4e;
+  margin: 0 0 32px 0;
+  max-width: 400px;
+}
+
+.errorBlock__button {
+  display: inline-block;
+  padding: 12px 32px;
+  background-color: #580ea2;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.errorBlock__button:hover {
+  background-color: #3f007d;
+}
+
+.errorBlock__button:active {
+  background-color: #271a58;
+}
