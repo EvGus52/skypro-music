@@ -1,0 +1,110 @@
+.filter__buttonContainer {
+  position: relative;
+}
+
+.filter__button {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid #ffffff;
+  border-radius: 60px;
+  padding: 6px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.filter__button:hover {
+  opacity: 0.6;
+}
+
+.filter__button.active {
+  border-color: #b672ff;
+  color: #b672ff;
+}
+
+.filter__button.active:hover {
+  opacity: 0.8;
+}
+
+.filter__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  background-color: #b672ff;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+.filter__dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  background-color: #313131;
+  border-radius: 12px;
+  padding: 10px;
+  min-width: 200px;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.filter__list {
+  color: white;
+  display: flex;
+  gap: 28px;
+  height: max-content;
+  max-height: 237px;
+  overflow-y: auto;
+  flex-direction: column;
+  width: max-content;
+  max-width: 248px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter__list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.filter__list::-webkit-scrollbar-track {
+  background-color: rgba(75, 73, 73, 1);
+}
+
+.filter__list::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+
+.filter__item {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.filter__item:hover {
+  background-color: #565656;
+}
+
+.filter__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  display: block;
+}
+
+.filter__link.active {
+  color: #b672ff;
+  text-decoration: underline;
+}

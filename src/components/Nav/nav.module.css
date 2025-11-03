@@ -26,9 +26,16 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .nav__menu {
+  display: none;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.nav__menu_open {
   display: block;
   visibility: visible;
 }
@@ -48,6 +55,7 @@
 
 .menu__list {
   padding: 18px 0 10px 0;
+  list-style: none;
 }
 
 .menu__item {

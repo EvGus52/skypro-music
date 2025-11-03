@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/Filter/filter.module.css"],"sourcesContent":[".centerblock__filter {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -ms-flex-direction: row;\n  flex-direction: row;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  margin-bottom: 51px;\n}\n\n.filter__title {\n  font-style: normal;\n  font-weight: 400;\n  font-size: 16px;\n  line-height: 24px;\n  margin-right: 15px;\n  color: #ffffff;\n}\n\n.filter__wrapper {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -ms-flex-direction: row;\n  flex-direction: row;\n  position: relative;\n}\n\n.filter__wrapper > div:not(:last-child) {\n  margin-right: 10px;\n}\n"],"names":[],"mappings":"AAAA;;;;;;;AAcA;;;;;;;;;AASA;;;;;;AAWA"}}]
+}

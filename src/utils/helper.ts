@@ -9,10 +9,10 @@ export function getUniqueValuesByKey(
   // Проходим по каждому объекту в массиве
   arr.forEach((item) => {
     const value = item[key];
-    // Если значени - массив строк
+    // Если значение - массив строк
     if (Array.isArray(value)) {
       value.forEach((v) => {
-        if (v) {
+        if (typeof v === 'string') {
           uniqueValues.add(v);
         }
       });

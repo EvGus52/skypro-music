@@ -1,0 +1,28 @@
+/* [project]/src/components/Filter/filter.module.css [app-client] (css) */
+.filter-module__hDNwKW__centerblock__filter {
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 51px;
+  display: flex;
+}
+
+.filter-module__hDNwKW__filter__title {
+  color: #fff;
+  margin-right: 15px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.filter-module__hDNwKW__filter__wrapper {
+  flex-direction: row;
+  display: flex;
+  position: relative;
+}
+
+.filter-module__hDNwKW__filter__wrapper > div:not(:last-child) {
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=src_components_Filter_filter_module_css_bad6b30c._.single.css.map*/
