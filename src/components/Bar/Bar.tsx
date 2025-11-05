@@ -1,10 +1,31 @@
+'use client';
 import styles from './bar.module.css';
 import Link from 'next/link';
 import cn from 'classnames';
+import { useAppSelector } from '@/store/store';
+import { useRef } from 'react';
 
 export default function Bar() {
+  const currentTrack = useAppSelector((state) => state.tracks.currentTrack);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  if (!currentTrack) return <></>;
+
+  const playTrack = () => {
+    if (audioRef.current) {
+      audioRef.current.play();
+    }
+  };
+
+  const pauseTrack = () => {
+    if (audioRef.current) {
+      audioRef.current.pause();
+    }
+  };
+
   return (
     <div className={styles.bar}>
+      <audio ref={audioRef} controls src={currentTrack?.track_file}></audio>
       <div className={styles.bar__content}>
         <div className={styles.bar__playerProgress}></div>
         <div className={styles.bar__playerBlock}>
@@ -15,7 +36,10 @@ export default function Bar() {
                   <use xlinkHref="/img/icon/sprite.svg#icon-prev"></use>
                 </svg>
               </div>
-              <div className={cn(styles.player__btnPlay, styles.btn)}>
+              <div
+                className={cn(styles.player__btnPlay, styles.btn)}
+                onClick={playTrack}
+              >
                 <svg className={styles.player__btnPlaySvg}>
                   <use xlinkHref="/img/icon/sprite.svg#icon-play"></use>
                 </svg>

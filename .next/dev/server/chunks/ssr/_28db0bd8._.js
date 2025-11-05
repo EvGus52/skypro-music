@@ -60,339 +60,351 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/components/Bar/bar.module.css [app-rsc] (css module)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.react-server.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$classnames$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/classnames/index.js [app-rsc] (ecmascript)");
+'use ';
 ;
 ;
 ;
 ;
 function Bar() {
+    const currentTrack = useAppSelector((state)=>state.tracks.currentTrack);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].bar,
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].bar__content,
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].bar__playerProgress
-                }, void 0, false, {
-                    fileName: "[project]/src/components/Bar/Bar.tsx",
-                    lineNumber: 9,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].bar__playerBlock,
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].bar__player,
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].player__controls,
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].player__btnPrev,
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].player__btnPrevSvg,
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("use", {
-                                                    xlinkHref: "/img/icon/sprite.svg#icon-prev"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Bar/Bar.tsx",
-                                                    lineNumber: 15,
-                                                    columnNumber: 19
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/Bar/Bar.tsx",
-                                                lineNumber: 14,
-                                                columnNumber: 17
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/Bar/Bar.tsx",
-                                            lineNumber: 13,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$classnames$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].player__btnPlay, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].btn),
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].player__btnPlaySvg,
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("use", {
-                                                    xlinkHref: "/img/icon/sprite.svg#icon-play"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Bar/Bar.tsx",
-                                                    lineNumber: 20,
-                                                    columnNumber: 19
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/Bar/Bar.tsx",
-                                                lineNumber: 19,
-                                                columnNumber: 17
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/Bar/Bar.tsx",
-                                            lineNumber: 18,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].player__btnNext,
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].player__btnNextSvg,
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("use", {
-                                                    xlinkHref: "/img/icon/sprite.svg#icon-next"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Bar/Bar.tsx",
-                                                    lineNumber: 25,
-                                                    columnNumber: 19
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/Bar/Bar.tsx",
-                                                lineNumber: 24,
-                                                columnNumber: 17
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/Bar/Bar.tsx",
-                                            lineNumber: 23,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$classnames$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].player__btnRepeat, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].btnIcon),
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].player__btnRepeatSvg,
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("use", {
-                                                    xlinkHref: "/img/icon/sprite.svg#icon-repeat"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Bar/Bar.tsx",
-                                                    lineNumber: 30,
-                                                    columnNumber: 19
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/Bar/Bar.tsx",
-                                                lineNumber: 29,
-                                                columnNumber: 17
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/Bar/Bar.tsx",
-                                            lineNumber: 28,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$classnames$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].player__btnShuffle, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].btnIcon),
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].player__btnShuffleSvg,
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("use", {
-                                                    xlinkHref: "/img/icon/sprite.svg#icon-shuffle"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Bar/Bar.tsx",
-                                                    lineNumber: 35,
-                                                    columnNumber: 19
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/Bar/Bar.tsx",
-                                                lineNumber: 34,
-                                                columnNumber: 17
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/Bar/Bar.tsx",
-                                            lineNumber: 33,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/Bar/Bar.tsx",
-                                    lineNumber: 12,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].player__trackPlay,
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].trackPlay__contain,
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].trackPlay__image,
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].trackPlay__svg,
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("use", {
-                                                            xlinkHref: "/img/icon/sprite.svg#icon-note"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/Bar/Bar.tsx",
-                                                            lineNumber: 44,
-                                                            columnNumber: 21
-                                                        }, this)
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/Bar/Bar.tsx",
-                                                        lineNumber: 43,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Bar/Bar.tsx",
-                                                    lineNumber: 42,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].trackPlay__author,
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].trackPlay__authorLink,
-                                                        href: "",
-                                                        children: "Ты та..."
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/Bar/Bar.tsx",
-                                                        lineNumber: 48,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Bar/Bar.tsx",
-                                                    lineNumber: 47,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].trackPlay__album,
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].trackPlay__albumLink,
-                                                        href: "",
-                                                        children: "Баста"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/Bar/Bar.tsx",
-                                                        lineNumber: 53,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Bar/Bar.tsx",
-                                                    lineNumber: 52,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/Bar/Bar.tsx",
-                                            lineNumber: 41,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].trackPlay__dislike,
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$classnames$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].player__btnShuffle, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].btnIcon),
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].trackPlay__likeSvg,
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("use", {
-                                                            xlinkHref: "/img/icon/sprite.svg#icon-like"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/Bar/Bar.tsx",
-                                                            lineNumber: 62,
-                                                            columnNumber: 21
-                                                        }, this)
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/Bar/Bar.tsx",
-                                                        lineNumber: 61,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Bar/Bar.tsx",
-                                                    lineNumber: 60,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$classnames$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].trackPlay__dislike, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].btnIcon),
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].trackPlay__dislikeSvg,
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("use", {
-                                                            xlinkHref: "/img/icon/sprite.svg#icon-dislike"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/Bar/Bar.tsx",
-                                                            lineNumber: 67,
-                                                            columnNumber: 21
-                                                        }, this)
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/Bar/Bar.tsx",
-                                                        lineNumber: 66,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Bar/Bar.tsx",
-                                                    lineNumber: 65,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/Bar/Bar.tsx",
-                                            lineNumber: 59,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/Bar/Bar.tsx",
-                                    lineNumber: 40,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/Bar/Bar.tsx",
-                            lineNumber: 11,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].bar__volumeBlock,
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].volume__content,
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("audio", {
+                controls: true,
+                src: ""
+            }, void 0, false, {
+                fileName: "[project]/src/components/Bar/Bar.tsx",
+                lineNumber: 10,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].bar__content,
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].bar__playerProgress
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/Bar/Bar.tsx",
+                        lineNumber: 12,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].bar__playerBlock,
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].bar__player,
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].volume__image,
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].volume__svg,
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("use", {
-                                                xlinkHref: "/img/icon/sprite.svg#icon-volume"
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].player__controls,
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].player__btnPrev,
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].player__btnPrevSvg,
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("use", {
+                                                        xlinkHref: "/img/icon/sprite.svg#icon-prev"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                        lineNumber: 18,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                    lineNumber: 17,
+                                                    columnNumber: 17
+                                                }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Bar/Bar.tsx",
-                                                lineNumber: 77,
-                                                columnNumber: 19
+                                                lineNumber: 16,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$classnames$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].player__btnPlay, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].btn),
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].player__btnPlaySvg,
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("use", {
+                                                        xlinkHref: "/img/icon/sprite.svg#icon-play"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                        lineNumber: 23,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                    lineNumber: 22,
+                                                    columnNumber: 17
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                lineNumber: 21,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].player__btnNext,
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].player__btnNextSvg,
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("use", {
+                                                        xlinkHref: "/img/icon/sprite.svg#icon-next"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                        lineNumber: 28,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                    lineNumber: 27,
+                                                    columnNumber: 17
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                lineNumber: 26,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$classnames$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].player__btnRepeat, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].btnIcon),
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].player__btnRepeatSvg,
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("use", {
+                                                        xlinkHref: "/img/icon/sprite.svg#icon-repeat"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                        lineNumber: 33,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                    lineNumber: 32,
+                                                    columnNumber: 17
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                lineNumber: 31,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$classnames$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].player__btnShuffle, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].btnIcon),
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].player__btnShuffleSvg,
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("use", {
+                                                        xlinkHref: "/img/icon/sprite.svg#icon-shuffle"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                        lineNumber: 38,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                    lineNumber: 37,
+                                                    columnNumber: 17
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                lineNumber: 36,
+                                                columnNumber: 15
                                             }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/Bar/Bar.tsx",
-                                            lineNumber: 76,
-                                            columnNumber: 17
-                                        }, this)
-                                    }, void 0, false, {
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/src/components/Bar/Bar.tsx",
-                                        lineNumber: 75,
-                                        columnNumber: 15
+                                        lineNumber: 15,
+                                        columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$classnames$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].volume__progress, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].btn),
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$classnames$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].volume__progressLine, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].btn),
-                                            type: "range",
-                                            name: "range"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/Bar/Bar.tsx",
-                                            lineNumber: 81,
-                                            columnNumber: 17
-                                        }, this)
-                                    }, void 0, false, {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].player__trackPlay,
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].trackPlay__contain,
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].trackPlay__image,
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].trackPlay__svg,
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("use", {
+                                                                xlinkHref: "/img/icon/sprite.svg#icon-note"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                                lineNumber: 47,
+                                                                columnNumber: 21
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                            lineNumber: 46,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                        lineNumber: 45,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].trackPlay__author,
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].trackPlay__authorLink,
+                                                            href: "",
+                                                            children: "Ты та..."
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                            lineNumber: 51,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                        lineNumber: 50,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].trackPlay__album,
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].trackPlay__albumLink,
+                                                            href: "",
+                                                            children: "Баста"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                            lineNumber: 56,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                        lineNumber: 55,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                lineNumber: 44,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].trackPlay__dislike,
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$classnames$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].player__btnShuffle, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].btnIcon),
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].trackPlay__likeSvg,
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("use", {
+                                                                xlinkHref: "/img/icon/sprite.svg#icon-like"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                                lineNumber: 65,
+                                                                columnNumber: 21
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                            lineNumber: 64,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                        lineNumber: 63,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$classnames$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].trackPlay__dislike, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].btnIcon),
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].trackPlay__dislikeSvg,
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("use", {
+                                                                xlinkHref: "/img/icon/sprite.svg#icon-dislike"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                                lineNumber: 70,
+                                                                columnNumber: 21
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                            lineNumber: 69,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                        lineNumber: 68,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                lineNumber: 62,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/src/components/Bar/Bar.tsx",
-                                        lineNumber: 80,
-                                        columnNumber: 15
+                                        lineNumber: 43,
+                                        columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Bar/Bar.tsx",
-                                lineNumber: 74,
-                                columnNumber: 13
+                                lineNumber: 14,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].bar__volumeBlock,
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].volume__content,
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].volume__image,
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].volume__svg,
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("use", {
+                                                    xlinkHref: "/img/icon/sprite.svg#icon-volume"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                    lineNumber: 80,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                lineNumber: 79,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/Bar/Bar.tsx",
+                                            lineNumber: 78,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$classnames$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].volume__progress, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].btn),
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$classnames$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].volume__progressLine, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Bar$2f$bar$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].btn),
+                                                type: "range",
+                                                name: "range"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/Bar/Bar.tsx",
+                                                lineNumber: 84,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/Bar/Bar.tsx",
+                                            lineNumber: 83,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/Bar/Bar.tsx",
+                                    lineNumber: 77,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/Bar/Bar.tsx",
+                                lineNumber: 76,
+                                columnNumber: 11
                             }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/Bar/Bar.tsx",
-                            lineNumber: 73,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/components/Bar/Bar.tsx",
-                    lineNumber: 10,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/components/Bar/Bar.tsx",
-            lineNumber: 8,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/Bar/Bar.tsx",
+                        lineNumber: 13,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/Bar/Bar.tsx",
+                lineNumber: 11,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
         fileName: "[project]/src/components/Bar/Bar.tsx",
-        lineNumber: 7,
+        lineNumber: 9,
         columnNumber: 5
     }, this);
 }
