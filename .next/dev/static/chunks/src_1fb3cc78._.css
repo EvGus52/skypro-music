@@ -633,6 +633,7 @@
 }
 
 .track-module__lumbXa__playlist__item {
+  cursor: pointer;
   width: 100%;
   margin-bottom: 12px;
   display: block;

@@ -1,14 +1,24 @@
+'use client';
+
 import styles from './track.module.css';
 import Link from 'next/link';
 import cn from 'classnames';
 import { formatTime } from '@/utils/helper';
 import { TrackType } from '@/sharedTypes/sharedTypes';
+import { useAppDispatch } from '@/store/store';
+import { setCurrentTrack } from '@/store/features/trackSlice';
 
 type TrackProps = {
   tracks: TrackType[];
 };
 
 export default function Track({ tracks }: TrackProps) {
+  const dispatch = useAppDispatch();
+
+  const onClickTrack = (track: TrackType) => {
+    dispatch(setCurrentTrack(track));
+  };
+
   return (
     <div className={styles.centerblock__content}>
       <div className={styles.content__title}>
@@ -27,7 +37,11 @@ export default function Track({ tracks }: TrackProps) {
       </div>
       <div className={styles.content__playlist}>
         {tracks.map((track) => (
-          <div key={track._id} className={styles.playlist__item}>
+          <div
+            key={track._id}
+            className={styles.playlist__item}
+            onClick={() => onClickTrack(track)}
+          >
             <div className={styles.playlist__track}>
               <div className={styles.track__title}>
                 <div className={styles.track__titleImage}>
