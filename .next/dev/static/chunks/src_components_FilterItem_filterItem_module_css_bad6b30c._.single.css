@@ -1,0 +1,113 @@
+/* [project]/src/components/FilterItem/filterItem.module.css [app-client] (css) */
+.filterItem-module__psuDAW__filter__buttonContainer {
+  position: relative;
+}
+
+.filterItem-module__psuDAW__filter__button {
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 60px;
+  padding: 6px 20px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  transition: all .2s;
+  position: relative;
+}
+
+.filterItem-module__psuDAW__filter__button:hover {
+  opacity: .6;
+}
+
+.filterItem-module__psuDAW__filter__button.filterItem-module__psuDAW__active {
+  color: #b672ff;
+  border-color: #b672ff;
+}
+
+.filterItem-module__psuDAW__filter__button.filterItem-module__psuDAW__active:hover {
+  opacity: .8;
+}
+
+.filterItem-module__psuDAW__filter__badge {
+  color: #fff;
+  background-color: #b672ff;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  min-width: 18px;
+  height: 18px;
+  margin-left: 6px;
+  padding: 0 5px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-flex;
+}
+
+.filterItem-module__psuDAW__filter__dropdown {
+  z-index: 10;
+  background-color: #313131;
+  border-radius: 12px;
+  min-width: 200px;
+  max-height: 300px;
+  padding: 10px;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  overflow-y: auto;
+}
+
+.filterItem-module__psuDAW__filter__list {
+  color: #fff;
+  flex-direction: column;
+  gap: 28px;
+  width: max-content;
+  max-width: 248px;
+  height: max-content;
+  max-height: 237px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  overflow-y: auto;
+}
+
+.filterItem-module__psuDAW__filter__list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.filterItem-module__psuDAW__filter__list::-webkit-scrollbar-track {
+  background-color: #4b4949;
+}
+
+.filterItem-module__psuDAW__filter__list::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}
+
+.filterItem-module__psuDAW__filter__item {
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 8px 12px;
+  transition: background-color .2s;
+}
+
+.filterItem-module__psuDAW__filter__item:hover {
+  background-color: #565656;
+}
+
+.filterItem-module__psuDAW__filter__link {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  display: block;
+}
+
+.filterItem-module__psuDAW__filter__link.filterItem-module__psuDAW__active {
+  color: #b672ff;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=src_components_FilterItem_filterItem_module_css_bad6b30c._.single.css.map*/

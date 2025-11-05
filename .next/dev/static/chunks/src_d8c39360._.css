@@ -315,6 +315,7 @@
 }
 
 .nav-module__VFJyha__nav__burger {
+  cursor: pointer;
   flex-direction: column;
   justify-content: space-between;
   width: 20px;
@@ -324,6 +325,12 @@
 }
 
 .nav-module__VFJyha__nav__menu {
+  visibility: hidden;
+  transition: all .3s;
+  display: none;
+}
+
+.nav-module__VFJyha__nav__menu_open {
   visibility: visible;
   display: block;
 }
@@ -343,6 +350,7 @@
 
 .nav-module__VFJyha__menu__list {
   padding: 18px 0 10px;
+  list-style: none;
 }
 
 .nav-module__VFJyha__menu__item {

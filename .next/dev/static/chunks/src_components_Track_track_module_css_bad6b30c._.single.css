@@ -1,0 +1,167 @@
+/* [project]/src/components/Track/track.module.css [app-client] (css) */
+.track-module__lumbXa__centerblock__content {
+  flex-direction: column;
+  display: flex;
+}
+
+.track-module__lumbXa__content__title {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  display: flex;
+}
+
+.track-module__lumbXa__content__playlist {
+  flex-direction: column;
+  display: flex;
+  overflow-y: auto;
+}
+
+.track-module__lumbXa__playlistTitle__col {
+  letter-spacing: 2px;
+  color: #696969;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.track-module__lumbXa__playlistTitle__svg {
+  fill: #0000;
+  stroke: #696969;
+  width: 12px;
+  height: 12px;
+}
+
+.track-module__lumbXa__col01 {
+  width: 447px;
+}
+
+.track-module__lumbXa__col02 {
+  width: 321px;
+}
+
+.track-module__lumbXa__col03 {
+  width: 245px;
+}
+
+.track-module__lumbXa__col04 {
+  text-align: end;
+  width: 60px;
+}
+
+.track-module__lumbXa__playlist__item {
+  width: 100%;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.track-module__lumbXa__playlist__track {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.track-module__lumbXa__track__title {
+  flex-direction: row;
+  align-items: center;
+  width: 447px;
+  display: flex;
+}
+
+.track-module__lumbXa__track__titleImage {
+  background: #313131;
+  justify-content: center;
+  align-items: center;
+  width: 51px;
+  height: 51px;
+  margin-right: 17px;
+  padding: 16px;
+  display: flex;
+}
+
+.track-module__lumbXa__track__titleSvg {
+  fill: #0000;
+  stroke: #4e4e4e;
+  width: 18px;
+  height: 17px;
+}
+
+.track-module__lumbXa__track__titleLink {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.track-module__lumbXa__track__titleSpan {
+  color: #4e4e4e;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.track-module__lumbXa__track__author {
+  justify-content: flex-start;
+  width: 321px;
+  display: flex;
+}
+
+.track-module__lumbXa__track__authorLink {
+  color: #fff;
+  text-align: left;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.track-module__lumbXa__track__album {
+  width: 245px;
+}
+
+.track-module__lumbXa__track__albumLink {
+  color: #696969;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.track-module__lumbXa__track__timeSvg {
+  fill: #0000;
+  stroke: #696969;
+  width: 14px;
+  height: 12px;
+  margin-right: 17px;
+}
+
+.track-module__lumbXa__track__timeText {
+  text-align: right;
+  color: #696969;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.track-module__lumbXa__track__time {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.track-module__lumbXa__track__title-text {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/*# sourceMappingURL=src_components_Track_track_module_css_bad6b30c._.single.css.map*/

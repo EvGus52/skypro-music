@@ -1,0 +1,58 @@
+/* [project]/src/components/Search/search.module.css [app-client] (css) */
+.search-module__5j-gYa__centerblock__search {
+  border-bottom: 1px solid #4e4e4e;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 51px;
+  display: flex;
+}
+
+.search-module__5j-gYa__search__svg {
+  stroke: #fff;
+  fill: #0000;
+  width: 17px;
+  height: 17px;
+  margin-right: 5px;
+}
+
+.search-module__5j-gYa__search__text {
+  color: #fff;
+  background-color: #0000;
+  border: none;
+  flex-grow: 100;
+  padding: 13px 10px 14px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.search-module__5j-gYa__search__text::-webkit-input-placeholder {
+  color: #fff;
+  background-color: #0000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.search-module__5j-gYa__search__text:-ms-placeholder-shown {
+  color: #fff;
+  background-color: #0000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.search-module__5j-gYa__search__text::placeholder {
+  color: #fff;
+  background-color: #0000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/*# sourceMappingURL=src_components_Search_search_module_css_bad6b30c._.single.css.map*/
