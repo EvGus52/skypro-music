@@ -131,6 +131,29 @@
   stroke: #4e4e4e;
 }
 
+.track__currentDot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #b672ff;
+}
+
+.track__currentDotPulsing {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.2);
+  }
+}
+
 .track__titleLink {
   font-style: normal;
   font-weight: 400;

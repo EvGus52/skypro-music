@@ -5,8 +5,8 @@ import Link from 'next/link';
 import cn from 'classnames';
 import { formatTime } from '@/utils/helper';
 import { TrackType } from '@/sharedTypes/sharedTypes';
-import { useAppDispatch } from '@/store/store';
-import { setCurrentTrack } from '@/store/features/trackSlice';
+import { useAppDispatch, useAppSelector } from '@/store/store';
+import { setCurrentTrack, setIsPlay } from '@/store/features/trackSlice';
 
 type TrackProps = {
   tracks: TrackType[];
@@ -14,9 +14,12 @@ type TrackProps = {
 
 export default function Track({ tracks }: TrackProps) {
   const dispatch = useAppDispatch();
+  const isPlay = useAppSelector((state) => state.tracks.isPlay);
+  const currentTrack = useAppSelector((state) => state.tracks.currentTrack);
 
   const onClickTrack = (track: TrackType) => {
     dispatch(setCurrentTrack(track));
+    dispatch(setIsPlay(true));
   };
 
   return (
@@ -45,9 +48,18 @@ export default function Track({ tracks }: TrackProps) {
             <div className={styles.playlist__track}>
               <div className={styles.track__title}>
                 <div className={styles.track__titleImage}>
-                  <svg className={styles.track__titleSvg}>
-                    <use xlinkHref="/img/icon/sprite.svg#icon-note"></use>
-                  </svg>
+                  {currentTrack?._id === track._id ? (
+                    <div
+                      className={cn(
+                        styles.track__currentDot,
+                        isPlay ? styles.track__currentDotPulsing : '',
+                      )}
+                    ></div>
+                  ) : (
+                    <svg className={styles.track__titleSvg}>
+                      <use xlinkHref="/img/icon/sprite.svg#icon-note"></use>
+                    </svg>
+                  )}
                 </div>
                 <div className={styles['track__title-text']}>
                   <Link className={styles.track__titleLink} href="">
