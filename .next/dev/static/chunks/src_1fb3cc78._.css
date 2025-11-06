@@ -486,7 +486,9 @@
 }
 
 .filterItem-module__psuDAW__filter__button:hover {
-  opacity: .6;
+  color: #b672ff;
+  opacity: .9;
+  border-color: #b672ff;
 }
 
 .filterItem-module__psuDAW__filter__button.filterItem-module__psuDAW__active {
