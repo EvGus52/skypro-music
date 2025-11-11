@@ -7,6 +7,7 @@ import { formatTime } from '@/utils/helper';
 import { TrackType } from '@/sharedTypes/sharedTypes';
 import { useAppDispatch, useAppSelector } from '@/store/store';
 import { setCurrentTrack, setIsPlay } from '@/store/features/trackSlice';
+import { useState } from 'react';
 
 type TrackProps = {
   tracks: TrackType[];

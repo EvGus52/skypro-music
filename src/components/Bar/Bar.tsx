@@ -3,13 +3,16 @@ import styles from './bar.module.css';
 import Link from 'next/link';
 import cn from 'classnames';
 import { useAppSelector, useAppDispatch } from '@/store/store';
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { setIsPlay } from '@/store/features/trackSlice';
-
+import ProgressBar from '@/components/ProgressBar/ProgressBar';
 export default function Bar() {
   const currentTrack = useAppSelector((state) => state.tracks.currentTrack);
   const isPlay = useAppSelector((state) => state.tracks.isPlay);
   const dispatch = useAppDispatch();
+  const [isLoop, setIsLoop] = useState(false);
+  const [isLoadedTrack, setIsLoadedTrack] = useState(false);
+  const [volume, setVolume] = useState(0.5);
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
@@ -18,6 +21,10 @@ export default function Bar() {
       audioRef.current.play();
     }
   }, [currentTrack, isPlay]);
+
+  useEffect(() => {
+    setIsLoadedTrack(false);
+  }, [currentTrack]);
 
   if (!currentTrack) return <></>;
 
@@ -43,22 +50,59 @@ export default function Bar() {
     }
   };
 
-  const handleNotImplemented = () => {
-    alert('Еще не реализовано');
+  const onToggleLoop = () => {
+    setIsLoop(!isLoop);
   };
 
+  const onTimeUpdate = () => {
+    if (audioRef.current) {
+    }
+  };
+
+  const onLoadedMetadata = () => {
+    console.log(`start`);
+    if (audioRef.current) {
+      audioRef.current.play();
+      dispatch(setIsPlay(true));
+      setIsLoadedTrack(true);
+    }
+  };
+
+  const onChangeTime = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setVolume(Number(e.target.value));
+    if (audioRef.current) {
+      audioRef.current.volume = Number(e.target.value) / 100;
+    }
+  };
+
+  const onChangeProgress = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (audioRef.current) {
+      const inputTime = Number(e.target.value);
+      audioRef.current.currentTime = inputTime;
+    }
+  };
   return (
     <div className={styles.bar}>
-      <audio ref={audioRef} src={currentTrack?.track_file}></audio>
+      <audio
+        ref={audioRef}
+        src={currentTrack?.track_file}
+        loop={isLoop}
+        onTimeUpdate={onTimeUpdate}
+        onLoadedMetadata={onLoadedMetadata}
+        onEnded={() => console.log(`Next track`)}
+      ></audio>
       <div className={styles.bar__content}>
-        <div className={styles.bar__playerProgress}></div>
+        <ProgressBar
+          max={audioRef.current?.duration || 0}
+          value={5}
+          step={0.1}
+          onChange={onChangeProgress}
+          readOnly={!isLoadedTrack}
+        />
         <div className={styles.bar__playerBlock}>
           <div className={styles.bar__player}>
             <div className={styles.player__controls}>
-              <div
-                className={cn(styles.player__btnPrev, styles.btn)}
-                onClick={handleNotImplemented}
-              >
+              <div className={cn(styles.player__btnPrev, styles.btn)}>
                 <svg className={styles.player__btnPrevSvg}>
                   <use xlinkHref="/img/icon/sprite.svg#icon-prev"></use>
                 </svg>
@@ -73,26 +117,24 @@ export default function Bar() {
                   ></use>
                 </svg>
               </div>
-              <div
-                className={cn(styles.player__btnNext, styles.btn)}
-                onClick={handleNotImplemented}
-              >
+              <div className={cn(styles.player__btnNext, styles.btn)}>
                 <svg className={styles.player__btnNextSvg}>
                   <use xlinkHref="/img/icon/sprite.svg#icon-next"></use>
                 </svg>
               </div>
               <div
+                onClick={onToggleLoop}
                 className={cn(styles.player__btnRepeat, styles.btnIcon)}
-                onClick={handleNotImplemented}
               >
-                <svg className={styles.player__btnRepeatSvg}>
+                <svg
+                  className={cn(styles.player__btnRepeatSvg, {
+                    [styles.player__btnRepeatSvgActive]: isLoop,
+                  })}
+                >
                   <use xlinkHref="/img/icon/sprite.svg#icon-repeat"></use>
                 </svg>
               </div>
-              <div
-                className={cn(styles.player__btnShuffle, styles.btnIcon)}
-                onClick={handleNotImplemented}
-              >
+              <div className={cn(styles.player__btnShuffle, styles.btnIcon)}>
                 <svg className={styles.player__btnShuffleSvg}>
                   <use xlinkHref="/img/icon/sprite.svg#icon-shuffle"></use>
                 </svg>
@@ -144,6 +186,7 @@ export default function Bar() {
                   className={cn(styles.volume__progressLine, styles.btn)}
                   type="range"
                   name="range"
+                  onChange={onChangeTime}
                 />
               </div>
             </div>
