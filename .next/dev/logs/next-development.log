@@ -1,77 +1,1213 @@
-[00:00:04.697] Server  LOG      ✓ Ready in 3.5s
-[01:03:22.370] Server  ERROR    ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\.next\dev\server\app\page\build-manifest.json'
-[01:03:23.235] Server  ERROR    ⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
-Require stack:
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\.next\dev\server\pages\_document.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\require.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\load-components.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\build\utils.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\build\swc\options.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\build\swc\index.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\build\next-config-ts\transpile-config.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\config.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\next.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\lib\start-server.js
-[01:03:24.228] Browser ERROR   uncaughtError: Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
-Require stack:
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\.next\dev\server\pages\_document.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\require.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\load-components.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\build\utils.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\build\swc\options.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\build\swc\index.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\build\next-config-ts\transpile-config.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\config.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\next.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\lib\start-server.js
-[01:03:26.856] Server  ERROR    ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\.next\dev\server\app\page\build-manifest.json'
-[01:03:26.886] Server  ERROR    ⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
-Require stack:
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\.next\dev\server\pages\_document.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\require.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\load-components.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\build\utils.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\build\swc\options.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\build\swc\index.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\build\next-config-ts\transpile-config.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\config.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\next.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\lib\start-server.js
-[01:03:27.311] Browser ERROR   uncaughtError: Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
-Require stack:
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\.next\dev\server\pages\_document.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\require.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\load-components.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\build\utils.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\build\swc\options.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\build\swc\index.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\build\next-config-ts\transpile-config.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\config.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\next.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\lib\start-server.js
-[01:05:10.552] Server  ERROR    ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\.next\dev\server\app\page\build-manifest.json'
-[01:05:10.586] Server  ERROR    ⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
-Require stack:
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\.next\dev\server\pages\_document.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\require.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\load-components.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\build\utils.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\build\swc\options.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\build\swc\index.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\build\next-config-ts\transpile-config.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\config.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\next.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\lib\start-server.js
-[01:05:11.082] Browser ERROR   uncaughtError: Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
-Require stack:
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\.next\dev\server\pages\_document.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\require.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\load-components.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\build\utils.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\build\swc\options.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\build\swc\index.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\build\next-config-ts\transpile-config.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\config.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\next.js
-- C:\Users\Ярослав\Documents\ВЕБ-разработчик\Работы\skypro-music\node_modules\next\dist\server\lib\start-server.js
-[00:02:25.365] Server  LOG      ○ Compiling / ...
+[00:00:08.773] Server  LOG      ✓ Ready in 7.6s
+[00:00:11.807] Server  LOG      ○ Compiling / ...
+[00:00:41.391] Server  LOG      ✓ Compiled in 38ms
+[00:03:13.527] Server  LOG      ✓ Compiled in 10ms
+[00:03:14.046] Server  ERROR    ⨯ ReferenceError: set is not defined
+[00:03:14.419] Server  ERROR    ⨯ ReferenceError: set is not defined
+[00:03:15.120] Browser ERROR   uncaughtError: ReferenceError: set is not defined
+[00:03:16.053] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:03:16.053] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./src/store/features/trackSlice.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:03:16.054] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:03:16.522] Server  ERROR    ⨯ ReferenceError: setIs is not defined
+[00:03:16.563] Server  LOG      ✓ Compiled in 7ms
+[00:03:16.975] Server  ERROR    ⨯ ReferenceError: setIs is not defined
+[00:03:18.100] Browser ERROR   uncaughtError: ReferenceError: setIs is not defined
+[00:03:18.410] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:03:18.412] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./src/store/features/trackSlice.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:03:18.413] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:03:18.776] Server  ERROR    ⨯ ReferenceError: setIsPlay is not defined
+[00:03:18.788] Server  LOG      ✓ Compiled in 7ms
+[00:03:19.145] Server  ERROR    ⨯ ReferenceError: setIsPlay is not defined
+[00:03:20.095] Browser ERROR   uncaughtError: ReferenceError: setIsPlay is not defined
+[00:03:21.064] Server  LOG      ✓ Compiled in 19ms
+[00:03:22.105] Browser ERROR   ./src/store/features/trackSlice.ts:22:3
+Parsing ecmascript source code failed
+  20 |     },
+  21 |     setIsPlay:
+> 22 |   },
+     |   ^
+  23 | });
+  24 |
+  25 | export const { setCurrentTrack } = trackSlice.actions;
+
+Expression expected
+
+Import traces:
+  #1 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/components/Track/Track.tsx [Client Component Browser]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #2 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/store/store.ts [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/components/Track/Track.tsx [Client Component SSR]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #4 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/store/store.ts [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[00:03:23.098] Browser ERROR   ./src/store/features/trackSlice.ts:22:3
+Parsing ecmascript source code failed
+  20 |     },
+  21 |     setIsPlay: 
+> 22 |   },
+     |   ^
+  23 | });
+  24 |
+  25 | export const { setCurrentTrack } = trackSlice.actions;
+
+Expression expected
+
+Import traces:
+  #1 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/components/Track/Track.tsx [Client Component Browser]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #2 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/store/store.ts [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/components/Track/Track.tsx [Client Component SSR]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #4 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/store/store.ts [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[00:03:24.092] Browser ERROR   ./src/store/features/trackSlice.ts:21:16
+Parsing ecmascript source code failed
+  19 |       state.currentTrack = action.payload;
+  20 |     },
+> 21 |     setIsPlay: ()
+     |                ^^
+  22 |   },
+  23 | });
+  24 |
+
+Parenthesized expression cannot be empty
+
+Import traces:
+  #1 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/components/Track/Track.tsx [Client Component Browser]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #2 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/store/store.ts [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/components/Track/Track.tsx [Client Component SSR]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #4 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/store/store.ts [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[00:03:25.997] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:03:25.997] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./src/store/features/trackSlice.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:03:25.998] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:03:26.373] Server  ERROR    ⨯ ReferenceError: state is not defined
+[00:03:26.700] Server  ERROR    ⨯ ReferenceError: state is not defined
+[00:03:27.104] Browser ERROR   uncaughtError: ReferenceError: state is not defined
+[00:03:27.211] Server  LOG      ✓ Compiled in 20ms
+[00:03:28.105] Browser ERROR   ./src/store/features/trackSlice.ts:21:28
+Parsing ecmascript source code failed
+  19 |       state.currentTrack = action.payload;
+  20 |     },
+> 21 |     setIsPlay: (this.state.)
+     |                            ^
+  22 |   },
+  23 | });
+  24 |
+
+Expected ident
+
+Import traces:
+  #1 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/components/Track/Track.tsx [Client Component Browser]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #2 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/store/store.ts [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/components/Track/Track.tsx [Client Component SSR]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #4 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/store/store.ts [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[00:03:32.328] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:03:32.328] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./src/store/features/trackSlice.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:03:32.329] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:03:32.582] Server  ERROR    ⨯ ReferenceError: state is not defined
+[00:03:32.857] Server  ERROR    ⨯ ReferenceError: state is not defined
+[00:03:34.096] Browser ERROR   uncaughtError: ReferenceError: state is not defined
+[00:03:37.755] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:03:37.755] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./src/store/features/trackSlice.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:03:37.756] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:03:38.090] Server  ERROR    ⨯ ReferenceError: state is not defined
+[00:03:38.104] Server  LOG      ✓ Compiled in 5ms
+[00:03:38.362] Server  ERROR    ⨯ ReferenceError: state is not defined
+[00:03:39.101] Browser ERROR   uncaughtError: ReferenceError: state is not defined
+[00:03:46.133] Server  LOG      ✓ Compiled in 49ms
+[00:03:47.107] Browser ERROR   ./src/store/features/trackSlice.ts:23:2
+Parsing ecmascript source code failed
+  21 |     setIsPlay: (state, action: PayloadAction<boolean>) => {
+  22 |   },
+> 23 | });
+     |  ^
+  24 |
+  25 | export const { setCurrentTrack } = trackSlice.actions;
+  26 | export const trackSliceReducer = trackSlice.reducer;
+
+Expected ',', got ')'
+
+Import traces:
+  #1 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/components/Track/Track.tsx [Client Component Browser]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #2 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/store/store.ts [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/components/Track/Track.tsx [Client Component SSR]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #4 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/store/store.ts [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[00:03:53.103] Browser ERROR   ./src/store/features/trackSlice.ts:24:2
+Parsing ecmascript source code failed
+  22 |       
+  23 |   },
+> 24 | });
+     |  ^
+  25 |
+  26 | export const { setCurrentTrack } = trackSlice.actions;
+  27 | export const trackSliceReducer = trackSlice.reducer;
+
+Expected ',', got ')'
+
+Import traces:
+  #1 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/components/Track/Track.tsx [Client Component Browser]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #2 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/store/store.ts [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/components/Track/Track.tsx [Client Component SSR]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #4 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/store/store.ts [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[00:03:54.094] Browser ERROR   ./src/store/features/trackSlice.ts:24:2
+Parsing ecmascript source code failed
+  22 |       se
+  23 |   },
+> 24 | });
+     |  ^
+  25 |
+  26 | export const { setCurrentTrack } = trackSlice.actions;
+  27 | export const trackSliceReducer = trackSlice.reducer;
+
+Expected ',', got ')'
+
+Import traces:
+  #1 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/components/Track/Track.tsx [Client Component Browser]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #2 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/store/store.ts [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/components/Track/Track.tsx [Client Component SSR]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #4 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/store/store.ts [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[00:03:58.093] Browser ERROR   ./src/store/features/trackSlice.ts:23:2
+Parsing ecmascript source code failed
+  21 |     setIsPlay: (state, action: PayloadAction<boolean>) => {
+  22 |   },
+> 23 | });
+     |  ^
+  24 |
+  25 | export const { setCurrentTrack } = trackSlice.actions;
+  26 | export const trackSliceReducer = trackSlice.reducer;
+
+Expected ',', got ')'
+
+Import traces:
+  #1 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/components/Track/Track.tsx [Client Component Browser]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #2 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/store/store.ts [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/components/Track/Track.tsx [Client Component SSR]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #4 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/store/store.ts [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[00:04:02.104] Browser ERROR   ./src/store/features/trackSlice.ts:23:2
+Parsing ecmascript source code failed
+  21 |     setIsPlay: (state, action: PayloadAction<boolean>) => {action
+  22 |   },
+> 23 | });
+     |  ^
+  24 |
+  25 | export const { setCurrentTrack } = trackSlice.actions;
+  26 | export const trackSliceReducer = trackSlice.reducer;
+
+Expected ',', got ')'
+
+Import traces:
+  #1 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/components/Track/Track.tsx [Client Component Browser]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #2 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/store/store.ts [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/components/Track/Track.tsx [Client Component SSR]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #4 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/store/store.ts [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[00:04:05.098] Browser ERROR   ./src/store/features/trackSlice.ts:24:2
+Parsing ecmascript source code failed
+  22 |       
+  23 |   },
+> 24 | });
+     |  ^
+  25 |
+  26 | export const { setCurrentTrack } = trackSlice.actions;
+  27 | export const trackSliceReducer = trackSlice.reducer;
+
+Expected ',', got ')'
+
+Import traces:
+  #1 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/components/Track/Track.tsx [Client Component Browser]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #2 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/store/store.ts [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/components/Track/Track.tsx [Client Component SSR]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #4 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/store/store.ts [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[00:04:24.092] Browser ERROR   ./src/store/features/trackSlice.ts:24:2
+Parsing ecmascript source code failed
+  22 |       stat
+  23 |   },
+> 24 | });
+     |  ^
+  25 |
+  26 | export const { setCurrentTrack } = trackSlice.actions;
+  27 | export const trackSliceReducer = trackSlice.reducer;
+
+Expected ',', got ')'
+
+Import traces:
+  #1 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/components/Track/Track.tsx [Client Component Browser]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #2 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/store/store.ts [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/components/Track/Track.tsx [Client Component SSR]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #4 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/store/store.ts [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[00:04:26.098] Browser ERROR   ./src/store/features/trackSlice.ts:24:2
+Parsing ecmascript source code failed
+  22 |       state
+  23 |   },
+> 24 | });
+     |  ^
+  25 |
+  26 | export const { setCurrentTrack } = trackSlice.actions;
+  27 | export const trackSliceReducer = trackSlice.reducer;
+
+Expected ',', got ')'
+
+Import traces:
+  #1 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/components/Track/Track.tsx [Client Component Browser]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #2 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/store/store.ts [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/components/Track/Track.tsx [Client Component SSR]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #4 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/store/store.ts [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[00:04:28.122] Browser ERROR   ./src/store/features/trackSlice.ts:23:3
+Parsing ecmascript source code failed
+  21 |     setIsPlay: (state, action: PayloadAction<boolean>) => {
+  22 |       state.
+> 23 |   },
+     |   ^
+  24 | });
+  25 |
+  26 | export const { setCurrentTrack } = trackSlice.actions;
+
+Expected ident
+
+Import traces:
+  #1 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/components/Track/Track.tsx [Client Component Browser]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #2 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/store/store.ts [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/components/Track/Track.tsx [Client Component SSR]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #4 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/store/store.ts [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[00:04:31.097] Browser ERROR   ./src/store/features/trackSlice.ts:24:2
+Parsing ecmascript source code failed
+  22 |       state.isPlay
+  23 |   },
+> 24 | });
+     |  ^
+  25 |
+  26 | export const { setCurrentTrack } = trackSlice.actions;
+  27 | export const trackSliceReducer = trackSlice.reducer;
+
+Expected ',', got ')'
+
+Import traces:
+  #1 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/components/Track/Track.tsx [Client Component Browser]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #2 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/store/store.ts [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/components/Track/Track.tsx [Client Component SSR]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #4 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/store/store.ts [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[00:04:33.094] Browser ERROR   ./src/store/features/trackSlice.ts:23:3
+Parsing ecmascript source code failed
+  21 |     setIsPlay: (state, action: PayloadAction<boolean>) => {
+  22 |       state.isPlay = 
+> 23 |   },
+     |   ^
+  24 | });
+  25 |
+  26 | export const { setCurrentTrack } = trackSlice.actions;
+
+Expression expected
+
+Import traces:
+  #1 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/components/Track/Track.tsx [Client Component Browser]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #2 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/store/store.ts [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/components/Track/Track.tsx [Client Component SSR]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #4 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/store/store.ts [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[00:04:34.096] Browser ERROR   ./src/store/features/trackSlice.ts:24:2
+Parsing ecmascript source code failed
+  22 |       state.isPlay = a
+  23 |   },
+> 24 | });
+     |  ^
+  25 |
+  26 | export const { setCurrentTrack } = trackSlice.actions;
+  27 | export const trackSliceReducer = trackSlice.reducer;
+
+Expected ',', got ')'
+
+Import traces:
+  #1 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/components/Track/Track.tsx [Client Component Browser]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #2 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/store/store.ts [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/components/Track/Track.tsx [Client Component SSR]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #4 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/store/store.ts [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[00:04:36.097] Browser ERROR   ./src/store/features/trackSlice.ts:24:2
+Parsing ecmascript source code failed
+  22 |       state.isPlay = action
+  23 |   },
+> 24 | });
+     |  ^
+  25 |
+  26 | export const { setCurrentTrack } = trackSlice.actions;
+  27 | export const trackSliceReducer = trackSlice.reducer;
+
+Expected ',', got ')'
+
+Import traces:
+  #1 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/components/Track/Track.tsx [Client Component Browser]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #2 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/store/store.ts [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/components/Track/Track.tsx [Client Component SSR]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #4 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/store/store.ts [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[00:04:38.107] Browser ERROR   ./src/store/features/trackSlice.ts:24:2
+Parsing ecmascript source code failed
+  22 |       state.isPlay = action.payload
+  23 |   },
+> 24 | });
+     |  ^
+  25 |
+  26 | export const { setCurrentTrack } = trackSlice.actions;
+  27 | export const trackSliceReducer = trackSlice.reducer;
+
+Expected ',', got ')'
+
+Import traces:
+  #1 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/components/Track/Track.tsx [Client Component Browser]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #2 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/store/store.ts [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/components/Track/Track.tsx [Client Component SSR]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #4 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/store/store.ts [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[00:04:47.097] Browser ERROR   ./src/store/features/trackSlice.ts:24:2
+Parsing ecmascript source code failed
+  22 |       state.isPlay = action.payload
+  23 |   },
+> 24 | });
+     |  ^
+  25 |
+  26 | export const { setCurrentTrack } = trackSlice.actions;
+  27 | export const trackSliceReducer = trackSlice.reducer;
+
+Expected ',', got ')'
+
+Import traces:
+  #1 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/components/Track/Track.tsx [Client Component Browser]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #2 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/store/store.ts [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/components/Track/Track.tsx [Client Component SSR]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #4 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/store/store.ts [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[00:05:29.103] Browser ERROR   ./src/store/features/trackSlice.ts:25:2
+Parsing ecmascript source code failed
+  23 |   },
+  24 |   
+> 25 | });
+     |  ^
+  26 |
+  27 | export const { setCurrentTrack } = trackSlice.actions;
+  28 | export const trackSliceReducer = trackSlice.reducer;
+
+Expected ',', got ')'
+
+Import traces:
+  #1 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/components/Track/Track.tsx [Client Component Browser]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #2 [Client Component Browser]:
+    ./src/store/features/trackSlice.ts [Client Component Browser]
+    ./src/store/store.ts [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  #3 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/components/Track/Track.tsx [Client Component SSR]
+    ./src/components/Track/Track.tsx [Server Component]
+    ./src/components/Centerblock/Centerblock.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  #4 [Client Component SSR]:
+    ./src/store/features/trackSlice.ts [Client Component SSR]
+    ./src/store/store.ts [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[00:05:29.488] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:05:29.489] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./src/store/features/trackSlice.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:05:29.490] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:06:30.070] Server  LOG      ✓ Compiled in 18ms
+[00:06:33.592] Server  LOG      ✓ Compiled in 13ms
+[00:06:34.102] Browser ERROR   ./src/components/Bar/Bar.tsx:12:3
+Parsing ecmascript source code failed
+  10 | const
+  11 |
+> 12 |   const audioRef = useRef<HTMLAudioElement | null>(null);
+     |   ^^^^^
+  13 |
+  14 |   if (!currentTrack) return <></>;
+  15 |
+
+Expected ident
+
+Import traces:
+  #1 [Server Component]:
+    ./src/components/Bar/Bar.tsx
+    ./src/app/not-found.tsx
+
+  #2 [Server Component]:
+    ./src/components/Bar/Bar.tsx
+    ./src/app/page.tsx
+[00:06:35.107] Browser ERROR   ./src/components/Bar/Bar.tsx:12:3
+Parsing ecmascript source code failed
+  10 | const 
+  11 |
+> 12 |   const audioRef = useRef<HTMLAudioElement | null>(null);
+     |   ^^^^^
+  13 |
+  14 |   if (!currentTrack) return <></>;
+  15 |
+
+Expected ident
+
+Import traces:
+  #1 [Server Component]:
+    ./src/components/Bar/Bar.tsx
+    ./src/app/not-found.tsx
+
+  #2 [Server Component]:
+    ./src/components/Bar/Bar.tsx
+    ./src/app/page.tsx
+[00:06:46.098] Browser ERROR   ./src/components/Bar/Bar.tsx:10:7
+Parsing ecmascript source code failed
+   8 | export default function Bar() {
+   9 |   const currentTrack = useAppSelector((state) => state.tracks.currentTrack);
+> 10 | const di
+     |       ^^
+  11 |
+  12 |   const audioRef = useRef<HTMLAudioElement | null>(null);
+  13 |
+
+'const' declarations must be initialized
+
+Import traces:
+  #1 [Server Component]:
+    ./src/components/Bar/Bar.tsx
+    ./src/app/not-found.tsx
+
+  #2 [Server Component]:
+    ./src/components/Bar/Bar.tsx
+    ./src/app/page.tsx
+[00:06:48.093] Browser ERROR   ./src/components/Bar/Bar.tsx:10:7
+Parsing ecmascript source code failed
+   8 | export default function Bar() {
+   9 |   const currentTrack = useAppSelector((state) => state.tracks.currentTrack);
+> 10 | const dis
+     |       ^^^
+  11 |
+  12 |   const audioRef = useRef<HTMLAudioElement | null>(null);
+  13 |
+
+'const' declarations must be initialized
+
+Import traces:
+  #1 [Server Component]:
+    ./src/components/Bar/Bar.tsx
+    ./src/app/not-found.tsx
+
+  #2 [Server Component]:
+    ./src/components/Bar/Bar.tsx
+    ./src/app/page.tsx
+[00:06:50.155] Browser ERROR   ./src/components/Bar/Bar.tsx:10:7
+Parsing ecmascript source code failed
+   8 | export default function Bar() {
+   9 |   const currentTrack = useAppSelector((state) => state.tracks.currentTrack);
+> 10 | const dispa
+     |       ^^^^^
+  11 |
+  12 |   const audioRef = useRef<HTMLAudioElement | null>(null);
+  13 |
+
+'const' declarations must be initialized
+
+Import traces:
+  #1 [Server Component]:
+    ./src/components/Bar/Bar.tsx
+    ./src/app/not-found.tsx
+
+  #2 [Server Component]:
+    ./src/components/Bar/Bar.tsx
+    ./src/app/page.tsx
+[00:06:53.094] Browser ERROR   ./src/components/Bar/Bar.tsx:10:7
+Parsing ecmascript source code failed
+   8 | export default function Bar() {
+   9 |   const currentTrack = useAppSelector((state) => state.tracks.currentTrack);
+> 10 | const dispatch
+     |       ^^^^^^^^
+  11 |
+  12 |   const audioRef = useRef<HTMLAudioElement | null>(null);
+  13 |
+
+'const' declarations must be initialized
+
+Import traces:
+  #1 [Server Component]:
+    ./src/components/Bar/Bar.tsx
+    ./src/app/not-found.tsx
+
+  #2 [Server Component]:
+    ./src/components/Bar/Bar.tsx
+    ./src/app/page.tsx
+[00:07:03.103] Browser ERROR   ./src/components/Bar/Bar.tsx:12:3
+Parsing ecmascript source code failed
+  10 | const dispatch = 
+  11 |
+> 12 |   const audioRef = useRef<HTMLAudioElement | null>(null);
+     |   ^^^^^
+  13 |
+  14 |   if (!currentTrack) return <></>;
+  15 |
+
+Expression expected
+
+Import traces:
+  #1 [Server Component]:
+    ./src/components/Bar/Bar.tsx
+    ./src/app/not-found.tsx
+
+  #2 [Server Component]:
+    ./src/components/Bar/Bar.tsx
+    ./src/app/page.tsx
+[00:07:05.103] Browser ERROR   uncaughtError: ReferenceError: use is not defined
+[00:07:06.472] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:07:06.632] Server  ERROR    ⨯ ReferenceError: useApp is not defined
+[00:07:06.646] Server  LOG      ✓ Compiled in 27ms
+[00:07:08.102] Browser ERROR   uncaughtError: ReferenceError: useApp is not defined
+[00:07:09.232] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:07:09.448] Server  ERROR    ⨯ ReferenceError: useAppDispa is not defined
+[00:07:09.461] Server  LOG      ✓ Compiled in 13ms
+[00:07:10.755] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:07:10.755] Browser ERROR   uncaughtError: ReferenceError: useAppDispa is not defined
+[00:07:10.896] Server  ERROR    ⨯ ReferenceError: useAppDispatch is not defined
+[00:07:10.914] Server  LOG      ✓ Compiled in 10ms
+[00:07:12.107] Browser ERROR   uncaughtError: ReferenceError: useAppDispatch is not defined
+[00:07:12.153] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:07:12.373] Server  ERROR    ⨯ ReferenceError: useAppDispatch is not defined
+[00:07:12.411] Server  LOG      ✓ Compiled in 10ms
+[00:07:13.103] Browser ERROR   uncaughtError: ReferenceError: useAppDispatch is not defined
+[00:07:35.052] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:07:35.061] Server  LOG      ✓ Compiled in 28ms
+[00:08:25.155] Server  LOG      ✓ Compiled in 56ms
+[00:08:48.205] Server  LOG      ✓ Compiled in 125ms
+[00:08:49.769] Server  LOG      ✓ Compiled in 72ms
+[00:08:50.925] Server  LOG      ✓ Compiled in 17ms
+[00:09:02.455] Server  LOG      ✓ Compiled in 9ms
+[00:09:03.633] Server  LOG      ✓ Compiled in 128ms
+[00:10:13.368] Server  LOG      ✓ Compiled in 9ms
+[00:10:20.006] Server  LOG      ✓ Compiled in 8ms
+[00:10:23.357] Server  LOG      ✓ Compiled in 81ms
+[00:11:10.701] Server  LOG      ✓ Compiled in 111ms
+[00:14:50.691] Server  LOG      ✓ Compiled in 30ms
+[00:14:52.962] Server  LOG      ✓ Compiled in 8ms
+[00:14:53.102] Browser ERROR   ./src/components/Track/Track.tsx:19:3
+Parsing ecmascript source code failed
+  17 |   const
+  18 |
+> 19 |   const onClickTrack = (track: TrackType) => {
+     |   ^^^^^
+  20 |     dispatch(setCurrentTrack(track));
+  21 |   };
+  22 |
+
+Expected ident
+
+Import trace:
+  Server Component:
+    ./src/components/Track/Track.tsx
+    ./src/components/Centerblock/Centerblock.tsx
+    ./src/app/page.tsx
+[00:14:55.147] Browser ERROR   ./src/components/Track/Track.tsx:19:3
+Parsing ecmascript source code failed
+  17 |   const 
+  18 |
+> 19 |   const onClickTrack = (track: TrackType) => {
+     |   ^^^^^
+  20 |     dispatch(setCurrentTrack(track));
+  21 |   };
+  22 |
+
+Expected ident
+
+Import trace:
+  Server Component:
+    ./src/components/Track/Track.tsx
+    ./src/components/Centerblock/Centerblock.tsx
+    ./src/app/page.tsx
+[00:14:59.104] Browser ERROR   ./src/components/Track/Track.tsx:17:9
+Parsing ecmascript source code failed
+  15 | export default function Track({ tracks }: TrackProps) {
+  16 |   const dispatch = useAppDispatch();
+> 17 |   const isPlay
+     |         ^^^^^^
+  18 |
+  19 |   const onClickTrack = (track: TrackType) => {
+  20 |     dispatch(setCurrentTrack(track));
+
+'const' declarations must be initialized
+
+Import trace:
+  Server Component:
+    ./src/components/Track/Track.tsx
+    ./src/components/Centerblock/Centerblock.tsx
+    ./src/app/page.tsx
+[00:15:00.107] Browser ERROR   ./src/components/Track/Track.tsx:19:3
+Parsing ecmascript source code failed
+  17 |   const isPlay = 
+  18 |
+> 19 |   const onClickTrack = (track: TrackType) => {
+     |   ^^^^^
+  20 |     dispatch(setCurrentTrack(track));
+  21 |   };
+  22 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/components/Track/Track.tsx
+    ./src/components/Centerblock/Centerblock.tsx
+    ./src/app/page.tsx
+[00:15:11.100] Browser ERROR   uncaughtError: ReferenceError: useA is not defined
+[00:15:13.137] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:15:13.336] Server  ERROR    ⨯ ReferenceError: useAp is not defined
+[00:15:13.349] Server  LOG      ✓ Compiled in 10ms
+[00:15:14.096] Browser ERROR   uncaughtError: ReferenceError: useAp is not defined
+[00:15:15.840] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:15:15.986] Server  LOG      ✓ Compiled in 25ms
+[00:15:35.661] Server  LOG      ✓ Compiled in 23ms
+[00:15:36.106] Browser ERROR   uncaughtError: Error: You must pass a selector to useSelector
+[00:15:39.108] Server  LOG      ✓ Compiled in 17ms
+[00:15:40.102] Browser ERROR   ./src/components/Track/Track.tsx:17:33
+Parsing ecmascript source code failed
+  15 | export default function Track({ tracks }: TrackProps) {
+  16 |   const dispatch = useAppDispatch();
+> 17 |   const isPlay = useAppSelector(())
+     |                                 ^^
+  18 |
+  19 |   const onClickTrack = (track: TrackType) => {
+  20 |     dispatch(setCurrentTrack(track));
+
+Parenthesized expression cannot be empty
+
+Import trace:
+  Server Component:
+    ./src/components/Track/Track.tsx
+    ./src/components/Centerblock/Centerblock.tsx
+    ./src/app/page.tsx
+[00:15:42.337] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:15:42.518] Server  ERROR    ⨯ ReferenceError: state is not defined
+[00:15:43.106] Browser ERROR   uncaughtError: ReferenceError: state is not defined
+[00:15:45.456] Server  LOG      ✓ Compiled in 9ms
+[00:15:46.092] Browser ERROR   ./src/components/Track/Track.tsx:17:42
+Parsing ecmascript source code failed
+  15 | export default function Track({ tracks }: TrackProps) {
+  16 |   const dispatch = useAppDispatch();
+> 17 |   const isPlay = useAppSelector((state) =)
+     |                                          ^
+  18 |
+  19 |   const onClickTrack = (track: TrackType) => {
+  20 |     dispatch(setCurrentTrack(track));
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/components/Track/Track.tsx
+    ./src/components/Centerblock/Centerblock.tsx
+    ./src/app/page.tsx
+[00:15:49.141] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:15:49.324] Server  WARN    Selector unknown returned the root state when called. This can lead to unnecessary rerenders.
+Selectors that return the entire state are almost certainly a mistake, as they will cause a rerender whenever *anything* in state changes. {}
+[00:15:50.132] Browser WARN    Selector Track.useAppSelector[isPlay] returned the root state when called. This can lead to unnecessary rerenders.
+Selectors that return the entire state are almost certainly a mistake, as they will cause a rerender whenever *anything* in state changes. {"stack":"Error\n    at Track.useAppSelector[isPlay] (http://localhost:3000/_next/static/chunks/node_modules_5bf0f18d._.js:1326:39)\n    at memoizedSelector (http://localhost:3000/_next/static/chunks/node_modules_5bf0f18d._.js:262:36)\n    at http://localhost:3000/_next/static/chunks/node_modules_5bf0f18d._.js:282:28\n    at mountSyncExternalStore (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:4944:32)\n    at Object.useSyncExternalStore (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:14972:20)\n    at exports.useSyncExternalStore (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_a0e4c7b4._.js:1757:36)\n    at exports.useSyncExternalStoreWithSelector (http://localhost:3000/_next/static/chunks/node_modules_5bf0f18d._.js:291:21)\n    at useSelector2 (http://localhost:3000/_next/static/chunks/node_modules_5bf0f18d._.js:1343:239)\n    at Track (http://localhost:3000/_next/static/chunks/src_d08f6ef5._.js:1026:163)\n    at Object.react_stack_bottom_frame (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:14746:24)\n    at renderWithHooks (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:4636:24)\n    at updateFunctionComponent (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:6091:21)\n    at beginWork (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:6651:639)\n    at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:959:74)\n    at performUnitOfWork (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:9487:97)\n    at workLoopConcurrentByScheduler (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:9483:58)\n    at renderRootConcurrent (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:9466:71)\n    at performWorkOnRoot (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:8993:150)\n    at performWorkOnRootViaSchedulerTask (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:10155:9)\n    at MessagePort.performWorkUntilDeadline (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_a0e4c7b4._.js:2647:64)"}
+[00:15:51.129] Server  LOG      ✓ Compiled in 7ms
+[00:15:52.103] Browser ERROR   ./src/components/Track/Track.tsx:17:50
+Parsing ecmascript source code failed
+  15 | export default function Track({ tracks }: TrackProps) {
+  16 |   const dispatch = useAppDispatch();
+> 17 |   const isPlay = useAppSelector((state) => state.)
+     |                                                  ^
+  18 |
+  19 |   const onClickTrack = (track: TrackType) => {
+  20 |     dispatch(setCurrentTrack(track));
+
+Expected ident
+
+Import trace:
+  Server Component:
+    ./src/components/Track/Track.tsx
+    ./src/components/Centerblock/Centerblock.tsx
+    ./src/app/page.tsx
+[00:15:55.986] Server  LOG      ✓ Compiled in 6ms
+[00:16:09.734] Server  LOG      ✓ Compiled in 9ms
+[00:16:10.099] Browser ERROR   ./src/components/Track/Track.tsx:17:57
+Parsing ecmascript source code failed
+  15 | export default function Track({ tracks }: TrackProps) {
+  16 |   const dispatch = useAppDispatch();
+> 17 |   const isPlay = useAppSelector((state) => state.tracks.)
+     |                                                         ^
+  18 |
+  19 |   const onClickTrack = (track: TrackType) => {
+  20 |     dispatch(setCurrentTrack(track));
+
+Expected ident
+
+Import trace:
+  Server Component:
+    ./src/components/Track/Track.tsx
+    ./src/components/Centerblock/Centerblock.tsx
+    ./src/app/page.tsx
+[00:21:39.198] Server  LOG      ✓ Compiled in 88ms
+[00:21:46.521] Server  LOG      ✓ Compiled in 15ms
+[00:22:02.652] Server  LOG      ✓ Compiled in 20ms
+[00:25:33.360] Server  LOG      ✓ Compiled in 60ms
+[00:25:56.225] Server  LOG      ✓ Compiled in 18ms
+[00:25:59.756] Server  LOG      ✓ Compiled in 11ms
+[00:26:04.925] Server  LOG      ✓ Compiled in 14ms
+[00:28:30.413] Server  LOG      ✓ Compiled in 11ms
+[00:29:35.835] Browser WARN    Image with src "/img/playlist01.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:30:45.146] Server  LOG      ✓ Compiled in 26ms
+[00:30:47.634] Server  LOG      ✓ Compiled in 46ms
+[00:35:41.571] Server  LOG      ✓ Compiled in 30ms
+[00:35:43.135] Server  LOG      ✓ Compiled in 27ms
+[00:35:44.681] Server  LOG      ✓ Compiled in 19ms
+[00:35:46.831] Server  LOG      ✓ Compiled in 18ms
+[00:38:57.395] Server  LOG      ✓ Compiled in 25ms
+[00:42:45.663] Server  LOG      ✓ Compiled in 10ms
+[00:49:26.305] Server  LOG      ✓ Compiled in 14ms
+[00:49:31.102] Server  LOG      ✓ Compiled in 22ms
+[00:49:35.859] Server  LOG      ✓ Compiled in 22ms
+[00:52:39.144] Server  LOG      ✓ Compiled in 8ms
+[00:52:40.492] Server  LOG      ✓ Compiled in 12ms
+[00:54:25.470] Server  LOG      ✓ Compiled in 12ms
+[01:01:43.553] Server  LOG      ✓ Compiled in 7ms
+[01:01:49.866] Server  LOG      ✓ Compiled in 5ms
+[01:01:53.379] Server  LOG      ✓ Compiled in 3ms
+[01:02:59.647] Server  LOG      ✓ Compiled in 5ms
+[01:04:43.137] Server  LOG      ✓ Compiled in 5ms
+[01:05:12.431] Server  LOG      ✓ Compiled in 6ms
+[01:05:34.641] Server  LOG      ✓ Compiled in 8ms
+[01:05:41.263] Server  LOG      ✓ Compiled in 5ms
+[01:05:43.551] Server  LOG      ✓ Compiled in 11ms
+[01:05:49.288] Server  LOG      ✓ Compiled in 5ms
+[01:06:10.789] Server  LOG      ✓ Compiled in 6ms
+[01:06:30.777] Server  LOG      ✓ Compiled in 6ms

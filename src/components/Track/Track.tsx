@@ -1,14 +1,27 @@
+'use client';
+
 import styles from './track.module.css';
 import Link from 'next/link';
 import cn from 'classnames';
 import { formatTime } from '@/utils/helper';
 import { TrackType } from '@/sharedTypes/sharedTypes';
+import { useAppDispatch, useAppSelector } from '@/store/store';
+import { setCurrentTrack, setIsPlay } from '@/store/features/trackSlice';
 
 type TrackProps = {
   tracks: TrackType[];
 };
 
 export default function Track({ tracks }: TrackProps) {
+  const dispatch = useAppDispatch();
+  const isPlay = useAppSelector((state) => state.tracks.isPlay);
+  const currentTrack = useAppSelector((state) => state.tracks.currentTrack);
+
+  const onClickTrack = (track: TrackType) => {
+    dispatch(setCurrentTrack(track));
+    dispatch(setIsPlay(true));
+  };
+
   return (
     <div className={styles.centerblock__content}>
       <div className={styles.content__title}>
@@ -27,13 +40,26 @@ export default function Track({ tracks }: TrackProps) {
       </div>
       <div className={styles.content__playlist}>
         {tracks.map((track) => (
-          <div key={track._id} className={styles.playlist__item}>
+          <div
+            key={track._id}
+            className={styles.playlist__item}
+            onClick={() => onClickTrack(track)}
+          >
             <div className={styles.playlist__track}>
               <div className={styles.track__title}>
                 <div className={styles.track__titleImage}>
-                  <svg className={styles.track__titleSvg}>
-                    <use xlinkHref="/img/icon/sprite.svg#icon-note"></use>
-                  </svg>
+                  {currentTrack?._id === track._id ? (
+                    <div
+                      className={cn(
+                        styles.track__currentDot,
+                        isPlay ? styles.track__currentDotPulsing : '',
+                      )}
+                    ></div>
+                  ) : (
+                    <svg className={styles.track__titleSvg}>
+                      <use xlinkHref="/img/icon/sprite.svg#icon-note"></use>
+                    </svg>
+                  )}
                 </div>
                 <div className={styles['track__title-text']}>
                   <Link className={styles.track__titleLink} href="">

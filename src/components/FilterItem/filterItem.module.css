@@ -17,7 +17,9 @@
 }
 
 .filter__button:hover {
-  opacity: 0.6;
+   border-color: #b672ff;
+  color: #b672ff;
+  opacity: 0.9;
 }
 
 .filter__button.active {
