@@ -6,19 +6,26 @@ import cn from 'classnames';
 import { formatTime } from '@/utils/helper';
 import { TrackType } from '@/sharedTypes/sharedTypes';
 import { useAppDispatch, useAppSelector } from '@/store/store';
-import { setCurrentTrack, setIsPlay } from '@/store/features/trackSlice';
+import {
+  setCurrentPlaylist,
+  setCurrentTrack,
+  setIsPlay,
+} from '@/store/features/trackSlice';
+import { useState } from 'react';
 
 type TrackProps = {
   tracks: TrackType[];
+  playlist: TrackType[];
 };
 
-export default function Track({ tracks }: TrackProps) {
+export default function Track({ tracks, playlist }: TrackProps) {
   const dispatch = useAppDispatch();
   const isPlay = useAppSelector((state) => state.tracks.isPlay);
   const currentTrack = useAppSelector((state) => state.tracks.currentTrack);
 
   const onClickTrack = (track: TrackType) => {
     dispatch(setCurrentTrack(track));
+    dispatch(setCurrentPlaylist(playlist));
     dispatch(setIsPlay(true));
   };
 
