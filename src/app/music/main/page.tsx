@@ -1,48 +1,54 @@
 'use client';
 
-import styles from './page.module.css';
-import Bar from '@/components/Bar/Bar';
-import Nav from '@/components/Nav/Nav';
-import Centerblock from '@/components/Centerblock/Centerblock';
-import Sidebar from '@/components/Sidebar/Sidebar';
-import { TrackType } from '@/sharedTypes/sharedTypes';
+import Track from '@/components/Track/Track';
+import { useMusicLayout } from '@/context/MusicLayoutContext';
 import { useEffect, useState } from 'react';
 import { getTracks } from '@/services/tracks/tracksApi';
 import { AxiosError } from 'axios';
 
 export default function Home() {
-  const [tracks, setTracks] = useState<TrackType[]>([]);
+  const { setTracks, setTitle, tracks } = useMusicLayout();
   const [error, setError] = useState('');
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    setTitle('Треки');
+  }, [setTitle]);
+
+  useEffect(() => {
+    setIsLoading(true);
     getTracks()
       .then((res) => {
         setTracks(res);
-        alert('res');
+        setError('');
       })
       .catch((error) => {
         if (error instanceof AxiosError) {
           if (error.response) {
-            setError(error.response.data);
+            setError(
+              error.response.data?.message ||
+                error.response.data ||
+                'Ошибка при загрузке треков',
+            );
           } else if (error.request) {
             setError('Что-то с интернетом');
           } else {
             setError('Неизвестная ошибка');
           }
         }
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
-  }, []);
-  return (
-    <div className={styles.wrapper}>
-      <div className={styles.container}>
-        <main className={styles.main}>
-          {error}
-          <Nav />
-          <Centerblock />
-          <Sidebar />
-        </main>
-        <Bar />
-      </div>
-    </div>
-  );
+  }, [setTracks]);
+
+  if (error) {
+    return <div>{error}</div>;
+  }
+
+  if (isLoading) {
+    return <div style={{ color: 'white' }}>Загрузка треков...</div>;
+  }
+
+  return <Track tracks={tracks} playlist={tracks} />;
 }

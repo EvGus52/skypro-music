@@ -3,7 +3,7 @@
 
 type AppRoutes = "/auth/signin" | "/auth/signup" | "/music/category/[id]" | "/music/main"
 type PageRoutes = never
-type LayoutRoutes = "/" | "/auth" | "/music/category"
+type LayoutRoutes = "/" | "/auth" | "/music"
 type RedirectRoutes = "/"
 type RewriteRoutes = never
 type Routes = AppRoutes | PageRoutes | LayoutRoutes | RedirectRoutes | RewriteRoutes
@@ -14,7 +14,7 @@ interface ParamMap {
   "/auth": {}
   "/auth/signin": {}
   "/auth/signup": {}
-  "/music/category": {}
+  "/music": {}
   "/music/category/[id]": { "id": string; }
   "/music/main": {}
 }
@@ -25,7 +25,7 @@ export type ParamsOf<Route extends Routes> = ParamMap[Route]
 interface LayoutSlotMap {
   "/": never
   "/auth": never
-  "/music/category": never
+  "/music": never
 }
 
 
