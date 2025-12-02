@@ -24,9 +24,9 @@ export const getSelectionsAll = (): Promise<SelectionType[]> => {
 
 export const getSelectionById = (id: number): Promise<SelectionType> => {
   return axios
-    .get<ApiResponse<ApiResponse<SelectionType>>>(
-      BASE_URL + `/catalog/selection/${id}/`,
-    )
+    .get<
+      ApiResponse<ApiResponse<SelectionType>>
+    >(BASE_URL + `/catalog/selection/${id}/`)
     .then((res: AxiosResponse<ApiResponse<ApiResponse<SelectionType>>>) => {
       return res.data.data?.data || res.data.data;
     });
