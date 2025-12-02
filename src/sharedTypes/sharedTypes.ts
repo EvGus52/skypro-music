@@ -10,3 +10,14 @@ export type TrackType = {
   track_file: string;
   stared_user: number[];
 };
+
+export type SelectionType = {
+  _id: number;
+  name: string;
+  items: number[]; // Массив ID треков
+};
+
+export type ApiErrorResponse = {
+  message?: string;
+  [key: string]: unknown;
+};

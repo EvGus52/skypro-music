@@ -1,5 +1,5 @@
 import { BASE_URL } from '../constants';
-import axios from 'axios';
+import axios, { AxiosResponse } from 'axios';
 
 type authUserProps = {
   email: string;
@@ -12,8 +12,10 @@ type authUserReturn = {
   _id: number;
 };
 
-export const authUser = (data: authUserProps): Promise<authUserReturn> => {
-  return axios.post(BASE_URL + '/user/login/', data, {
+export const authUser = (
+  data: authUserProps,
+): Promise<AxiosResponse<authUserReturn>> => {
+  return axios.post<authUserReturn>(BASE_URL + '/user/login/', data, {
     headers: {
       'content-type': 'application/json',
     },

@@ -1,11 +1,33 @@
-import axios from 'axios';
+import axios, { AxiosResponse } from 'axios';
 import { BASE_URL } from '../constants';
-import { TrackType } from '@/sharedTypes/sharedTypes';
+import { TrackType, SelectionType } from '@/sharedTypes/sharedTypes';
 
-export const getTracks = (): Promise<TrackType[]> => {
-  return axios(BASE_URL + '/catalog/track/all/').then((res) => {
-    return res.data.data;
-  });
+type ApiResponse<T> = {
+  data: T;
 };
 
-// export const
+export const getTracks = (): Promise<TrackType[]> => {
+  return axios
+    .get<ApiResponse<TrackType[]>>(BASE_URL + '/catalog/track/all/')
+    .then((res: AxiosResponse<ApiResponse<TrackType[]>>) => {
+      return res.data.data;
+    });
+};
+
+export const getSelectionsAll = (): Promise<SelectionType[]> => {
+  return axios
+    .get<ApiResponse<SelectionType[]>>(BASE_URL + '/catalog/selection/all/')
+    .then((res: AxiosResponse<ApiResponse<SelectionType[]>>) => {
+      return res.data.data;
+    });
+};
+
+export const getSelectionById = (id: number): Promise<SelectionType> => {
+  return axios
+    .get<ApiResponse<ApiResponse<SelectionType>>>(
+      BASE_URL + `/catalog/selection/${id}/`,
+    )
+    .then((res: AxiosResponse<ApiResponse<ApiResponse<SelectionType>>>) => {
+      return res.data.data?.data || res.data.data;
+    });
+};

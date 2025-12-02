@@ -60,7 +60,7 @@ export default function Bar() {
             }
           });
       } else {
-        dispatch(setIsPlay(true));
+      dispatch(setIsPlay(true));
       }
     }
   };

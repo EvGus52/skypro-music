@@ -11,7 +11,6 @@ import {
   setCurrentTrack,
   setIsPlay,
 } from '@/store/features/trackSlice';
-import { useState } from 'react';
 
 type TrackProps = {
   tracks: TrackType[];
@@ -31,9 +30,9 @@ export default function Track({ tracks, playlist }: TrackProps) {
 
   return (
     <div className={styles.content__playlist}>
-      {tracks.map((track) => (
+      {tracks.map((track, index) => (
         <div
-          key={track._id}
+          key={track._id ? `track-${track._id}-${index}` : `track-${index}`}
           className={styles.playlist__item}
           onClick={() => onClickTrack(track)}
         >

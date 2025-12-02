@@ -1,25 +1,27 @@
 'use client';
 
 import Track from '@/components/Track/Track';
-import { useMusicLayout } from '@/context/MusicLayoutContext';
+import { useAppDispatch, useAppSelector } from '@/store/store';
+import { setTracks, setPageTitle } from '@/store/features/trackSlice';
 import { useEffect, useState } from 'react';
 import { getTracks } from '@/services/tracks/tracksApi';
 import { AxiosError } from 'axios';
 
 export default function Home() {
-  const { setTracks, setTitle, tracks } = useMusicLayout();
+  const dispatch = useAppDispatch();
+  const tracks = useAppSelector((state) => state.tracks.tracks);
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setTitle('Треки');
-  }, [setTitle]);
+    dispatch(setPageTitle('Треки'));
+  }, [dispatch]);
 
   useEffect(() => {
     setIsLoading(true);
     getTracks()
       .then((res) => {
-        setTracks(res);
+        dispatch(setTracks(res));
         setError('');
       })
       .catch((error) => {
@@ -40,7 +42,7 @@ export default function Home() {
       .finally(() => {
         setIsLoading(false);
       });
-  }, [setTracks]);
+  }, [dispatch]);
 
   if (error) {
     return <div>{error}</div>;

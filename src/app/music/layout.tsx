@@ -7,16 +7,13 @@ import Nav from '@/components/Nav/Nav';
 import Sidebar from '@/components/Sidebar/Sidebar';
 import Search from '@/components/Search/Search';
 import Filter from '@/components/Filter/Filter';
-import {
-  MusicLayoutProvider,
-  useMusicLayout,
-} from '@/context/MusicLayoutContext';
+import { useAppSelector } from '@/store/store';
 import centerblockStyles from '@/components/Centerblock/centerblock.module.css';
 import trackStyles from '@/components/Track/track.module.css';
 import classNames from 'classnames';
 
 function MusicLayoutContent({ children }: { children: ReactNode }) {
-  const { title, tracks } = useMusicLayout();
+  const { pageTitle, tracks } = useAppSelector((state) => state.tracks);
 
   return (
     <div className={styles.wrapper}>
@@ -25,7 +22,7 @@ function MusicLayoutContent({ children }: { children: ReactNode }) {
           <Nav />
           <div className={centerblockStyles.centerblock}>
             <Search />
-            <h2 className={centerblockStyles.centerblock__h2}>{title}</h2>
+            <h2 className={centerblockStyles.centerblock__h2}>{pageTitle}</h2>
             {tracks.length > 0 && <Filter tracks={tracks} />}
             <div className={trackStyles.centerblock__content}>
               <div className={trackStyles.content__title}>
@@ -80,9 +77,5 @@ interface MusicLayoutProps {
 }
 
 export default function MusicLayout({ children }: MusicLayoutProps) {
-  return (
-    <MusicLayoutProvider>
-      <MusicLayoutContent>{children}</MusicLayoutContent>
-    </MusicLayoutProvider>
-  );
+  return <MusicLayoutContent>{children}</MusicLayoutContent>;
 }
