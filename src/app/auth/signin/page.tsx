@@ -74,6 +74,7 @@ export default function Signin() {
         name="login"
         placeholder="Почта"
         onChange={onChangeEmail}
+
       />
       <input
         className={classNames(styles.modal__input)}

@@ -43,6 +43,10 @@ export default function Bar() {
     setIsLoadedTrack(false);
   }, [currentTrack]);
 
+  useEffect(() => {
+    setIsLoadedTrack(false);
+  }, [currentTrack]);
+
   if (!currentTrack) return <></>;
 
   const playTrack = () => {
@@ -176,6 +180,7 @@ export default function Bar() {
             step={0.1}
             onChange={onChangeProgress}
             disabled={!isLoadedTrack}
+
           />
         </div>
         <div className={styles.bar__playerBlock}>
