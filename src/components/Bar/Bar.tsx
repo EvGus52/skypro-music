@@ -26,10 +26,22 @@ export default function Bar() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    if (currentTrack && isPlay && audioRef.current) {
-      audioRef.current.play();
+    if (currentTrack && isPlay && audioRef.current && isLoadedTrack) {
+      const playPromise = audioRef.current.play();
+      if (playPromise !== undefined) {
+        playPromise.catch((error) => {
+          // Игнорируем AbortError - это нормально при переключении треков
+          if (error.name !== 'AbortError') {
+            console.error('Ошибка воспроизведения:', error);
+          }
+        });
+      }
     }
-  }, [currentTrack, isPlay]);
+  }, [currentTrack, isPlay, isLoadedTrack]);
+
+  useEffect(() => {
+    setIsLoadedTrack(false);
+  }, [currentTrack]);
 
   useEffect(() => {
     setIsLoadedTrack(false);
@@ -39,8 +51,21 @@ export default function Bar() {
 
   const playTrack = () => {
     if (audioRef.current) {
-      audioRef.current.play();
+      const playPromise = audioRef.current.play();
+      if (playPromise !== undefined) {
+        playPromise
+          .then(() => {
+            dispatch(setIsPlay(true));
+          })
+          .catch((error) => {
+            // Игнорируем AbortError - это нормально при переключении треков
+            if (error.name !== 'AbortError') {
+              console.error('Ошибка воспроизведения:', error);
+            }
+          });
+      } else {
       dispatch(setIsPlay(true));
+      }
     }
   };
 
@@ -92,9 +117,20 @@ export default function Bar() {
       if (panel) {
         setTimePanel(panel);
       }
-      audioRef.current.play();
-      dispatch(setIsPlay(true));
       setIsLoadedTrack(true);
+      
+      // Автоматически запускаем воспроизведение, если флаг воспроизведения активен
+      if (isPlay) {
+        const playPromise = audioRef.current.play();
+        if (playPromise !== undefined) {
+          playPromise.catch((error) => {
+            // Игнорируем AbortError - это нормально при переключении треков
+            if (error.name !== 'AbortError') {
+              console.error('Ошибка воспроизведения:', error);
+            }
+          });
+        }
+      }
     }
   };
 
@@ -143,7 +179,8 @@ export default function Bar() {
             value={audioRef.current?.currentTime || 0}
             step={0.1}
             onChange={onChangeProgress}
-            readOnly={!isLoadedTrack}
+            disabled={!isLoadedTrack}
+
           />
         </div>
         <div className={styles.bar__playerBlock}>

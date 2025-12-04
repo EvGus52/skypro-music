@@ -1,3 +1,5 @@
+'use client';
+
 import styles from './progressBar.module.css';
 import { ChangeEvent } from 'react';
 
@@ -6,7 +8,7 @@ type progressBarProp = {
   value: number;
   step: number;
   onChange: (e: ChangeEvent<HTMLInputElement>) => void;
-  readOnly: boolean;
+  disabled?: boolean;
 };
 
 export default function ProgressBar({
@@ -14,18 +16,18 @@ export default function ProgressBar({
   value,
   step,
   onChange,
-  readOnly,
+  disabled = false,
 }: progressBarProp) {
   return (
     <input
-      className={styles.styledProgressInput} // Применение стилей к ползунку
-      type="range" // Тип элемента - ползунок
-      min="0" // Минимальное значение ползунка
-      max={max} // Максимальное значение, зависит от длительности аудио
-      value={value} // Текущее значение ползунка
-      step={step} // Шаг изменения значения
-      onChange={onChange} // Обработчик события изменения
-      readOnly={readOnly}
+      className={styles.styledProgressInput}
+      type="range"
+      min="0"
+      max={max}
+      value={value}
+      step={step}
+      onChange={onChange}
+      disabled={disabled}
     />
   );
 }
