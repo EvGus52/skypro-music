@@ -7,8 +7,9 @@ type initialStateType = {
   playlist: TrackType[];
   shaffledPlaylist: TrackType[];
   isShaffle: boolean;
-  tracks: TrackType[];
-  pageTitle: string;
+  allTracks: TrackType[];
+  fetchError: null | string;
+  fetchIsLoading: boolean;
 };
 
 const initialState: initialStateType = {
@@ -17,8 +18,9 @@ const initialState: initialStateType = {
   isShaffle: false,
   playlist: [],
   shaffledPlaylist: [],
-  tracks: [],
-  pageTitle: 'Треки',
+  allTracks: [],
+  fetchError: null,
+  fetchIsLoading: true,
 };
 
 const trackSlice = createSlice({
@@ -69,11 +71,14 @@ const trackSlice = createSlice({
         : Math.max(0, curIndex - 1);
       state.currentTrack = list[prevIndexTrack];
     },
-    setTracks: (state, action: PayloadAction<TrackType[]>) => {
-      state.tracks = action.payload;
+    setAllTracks: (state, action: PayloadAction<TrackType[]>) => {
+      state.allTracks = action.payload;
     },
-    setPageTitle: (state, action: PayloadAction<string>) => {
-      state.pageTitle = action.payload;
+    setFetchError: (state, action: PayloadAction<string>) => {
+      state.fetchError = action.payload;
+    },
+    setFetchIsLoading: (state, action: PayloadAction<boolean>) => {
+      state.fetchIsLoading = action.payload;
     },
   },
 });
@@ -85,7 +90,8 @@ export const {
   setCurrentPlaylist,
   setNextTrack,
   setPrevTrack,
-  setTracks,
-  setPageTitle,
+  setAllTracks,
+  setFetchError,
+  setFetchIsLoading,
 } = trackSlice.actions;
 export const trackSliceReducer = trackSlice.reducer;

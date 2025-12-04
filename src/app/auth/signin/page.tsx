@@ -1,14 +1,21 @@
 'use client';
 
-import { authUser } from '@/services/auth/authApi';
+import { getTokens, loginUser } from '@/services/auth/authApi';
 import styles from './signin.module.css';
 import classNames from 'classnames';
 import Link from 'next/link';
 import { ChangeEvent, useState } from 'react';
 import { AxiosError } from 'axios';
 import { useRouter } from 'next/navigation';
+import { useAppDispatch } from '@/store/store';
+import {
+  setAccessToken,
+  setRefreshToken,
+  setUsername,
+} from '@/store/features/authSlice';
 
 export default function Signin() {
+  const dispatch = useAppDispatch();
   const router = useRouter();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -27,38 +34,36 @@ export default function Signin() {
     e.preventDefault();
     setErrorMessage('');
 
-  if (!email.trim() || !password.trim()) {
-    return setErrorMessage('Заполните все поля!');
-  }
-  setIsLoading(true);
+    if (!email.trim() || !password.trim()) {
+      return setErrorMessage('Заполните все поля!');
+    }
+    setIsLoading(true);
 
-  authUser({ email, password })
-    .then((res) => {
-      console.log(res);
-        router.push('/');
-    })
-    .catch((error) => {
-      if (error instanceof AxiosError) {
-        if (error.response) {
-          // Запрос был сделан и сервер ответил кодом состояния
-          console.log(error.response.data);
-          console.log(error.response.status);
-          console.log(error.response.headers);
-          setErrorMessage(error.response.data.message);
-        } else if (error.request) {
-          // Запрос был сделан, но ответ не получен
-          console.log(error.request);
-          setErrorMessage('Пропал интернет');
-        } else {
-          // Произошло что-то при настройке запроса, вызвавшее ошибку
-          console.log('Error', error.message);
-          setErrorMessage('Неизвестная ошибка, попробуйте позже');
+    loginUser({ email, password })
+      .then(() => {
+        dispatch(setUsername(email));
+        return getTokens({ email, password });
+      })
+      .then((res) => {
+        dispatch(setAccessToken(res.access));
+        dispatch(setRefreshToken(res.refresh));
+        router.push('/music/main');
+      })
+      .catch((error: AxiosError) => {
+        if (error instanceof AxiosError) {
+          if (error.response) {
+            const errorData = error.response.data as { message: string };
+            setErrorMessage(errorData.message);
+          } else if (error.request) {
+            setErrorMessage('Пропал интернет');
+          } else {
+            setErrorMessage('Неизвестная ошибка, попробуйте позже');
+          }
         }
-      }
       })
       .finally(() => {
-      setIsLoading(false);
-    });
+        setIsLoading(false);
+      });
   };
 
   return (
@@ -74,7 +79,6 @@ export default function Signin() {
         name="login"
         placeholder="Почта"
         onChange={onChangeEmail}
-
       />
       <input
         className={classNames(styles.modal__input)}

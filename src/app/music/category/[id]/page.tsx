@@ -1,96 +1,58 @@
 'use client';
 
+import Centerblock from '@/components/Centerblock/Centerblock';
+import { TrackType } from '@/sharedTypes/sharedTypes';
+import { useAppSelector } from '@/store/store';
+import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
-import {
-  getSelectionsAll,
-  getSelectionById,
-  getTracks,
-} from '@/services/tracks/tracksApi';
 import { AxiosError } from 'axios';
-import Track from '@/components/Track/Track';
-import { useAppDispatch, useAppSelector } from '@/store/store';
-import { setTracks, setPageTitle } from '@/store/features/trackSlice';
+import { getCategories } from '@/services/tracks/tracksApi';
 
-export default function CategoryPage() {
+export default function Category() {
   const params = useParams<{ id: string }>();
-  const dispatch = useAppDispatch();
-  const tracks = useAppSelector((state) => state.tracks.tracks);
-  const [error, setError] = useState('');
+  const { allTracks, fetchIsLoading, fetchError } = useAppSelector(
+    (state) => state.tracks,
+  );
   const [isLoading, setIsLoading] = useState(true);
+  const [errorRes, setErrorRes] = useState<string | null>(null);
+  const [tracks, setTracks] = useState<TrackType[]>([]);
+  const [title, setTitle] = useState<string>('');
+  const id = params.id;
 
   useEffect(() => {
-    const loadSelection = async () => {
-      if (!params.id) return;
-
-      setIsLoading(true);
-      setError('');
-      dispatch(setTracks([]));
-
-      try {
-        const allSelections = await getSelectionsAll();
-        const selectionId = Number(params.id) + 1;
-        const foundSelection = allSelections.find(
-          (sel) => sel._id === selectionId,
-        );
-
-        if (!foundSelection) {
-          setError('Подборка не найдена');
+    setIsLoading(true);
+    if (!fetchIsLoading && allTracks.length) {
+      getCategories(id)
+        .then((res) => {
+          setTitle(res.data.name);
+          const tracksIds = res.data.items;
+          const resultTracks = allTracks.filter((el) =>
+            tracksIds.includes(el._id),
+          );
+          setTracks(resultTracks);
+        })
+        .catch((error) => {
+          if (error instanceof AxiosError)
+            if (error.response) {
+              setErrorRes(error.response.data);
+            } else if (error.request) {
+              setErrorRes('Произошла ошибка');
+            }
+        })
+        .finally(() => {
           setIsLoading(false);
-          return;
-        }
+        });
+    }
+  }, [fetchIsLoading]);
 
-        const selectionData = await getSelectionById(foundSelection._id);
-        const allTracks = await getTracks();
-        const trackIds = selectionData?.items || [];
-        const selectionTracks = allTracks.filter((track) =>
-          trackIds.includes(track._id),
-        );
-
-        if (selectionTracks.length > 0) {
-          const pageTitle =
-            selectionData?.name || foundSelection?.name || 'Подборка';
-          dispatch(setPageTitle(pageTitle));
-          dispatch(setTracks(selectionTracks));
-        } else {
-          dispatch(setTracks([]));
-          setError('Не удалось загрузить треки подборки');
-        }
-      } catch (error) {
-        if (error instanceof AxiosError) {
-          if (error.response) {
-            setError(
-              error.response.data?.message ||
-                error.response.data ||
-                'Ошибка при загрузке подборки',
-            );
-          } else if (error.request) {
-            setError('Что-то с интернетом');
-          } else {
-            setError('Неизвестная ошибка');
-          }
-        } else {
-          setError('Неизвестная ошибка');
-        }
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    loadSelection();
-  }, [params.id, dispatch]);
-
-  if (error) {
-    return <div style={{ color: 'white' }}>{error}</div>;
-  }
-
-  if (isLoading) {
-    return <div style={{ color: 'white' }}>Загрузка подборки...</div>;
-  }
-
-  if (!tracks || tracks.length === 0) {
-    return <div style={{ color: 'white' }}>В подборке нет треков</div>;
-  }
-
-  return <Track tracks={tracks} playlist={tracks} />;
+  return (
+    <>
+      <Centerblock
+        errorRes={errorRes || fetchError}
+        tracks={tracks}
+        isLoading={isLoading}
+        title={title}
+      />
+    </>
+  );
 }

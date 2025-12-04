@@ -4,31 +4,6 @@
   padding: 20px 90px 20px 78px;
 }
 
-.sidebar-module__Hli8Ta__sidebar__personal {
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 12px 0 15px;
-  display: flex;
-}
-
-.sidebar-module__Hli8Ta__sidebar__personalName {
-  color: #fff;
-  margin-right: 16px;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.sidebar-module__Hli8Ta__sidebar__icon {
-  cursor: pointer;
-  background-color: #313131;
-  border-radius: 50%;
-  width: 43px;
-  height: 43px;
-}
-
 .sidebar-module__Hli8Ta__sidebar__block {
   flex-direction: column;
   justify-content: flex-start;

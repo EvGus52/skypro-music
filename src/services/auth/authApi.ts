@@ -1,23 +1,40 @@
 import { BASE_URL } from '../constants';
-import axios, { AxiosResponse } from 'axios';
+import axios from 'axios';
+import { createUserProp } from '@/sharedTypes/sharedTypes';
 
-type authUserProps = {
-  email: string;
-  password: string;
+export const createUser = ({ email, password }: createUserProp) => {
+  const data = {
+    email,
+    password,
+    username: email,
+  };
+  return axios.post(BASE_URL + '/user/signup/', data);
 };
 
-type authUserReturn = {
-  email: string;
-  password: string;
-  _id: number;
+export const loginUser = (data: createUserProp) => {
+  return axios.post(BASE_URL + '/user/login/', data);
 };
 
-export const authUser = (
-  data: authUserProps,
-): Promise<AxiosResponse<authUserReturn>> => {
-  return axios.post<authUserReturn>(BASE_URL + '/user/login/', data, {
-    headers: {
-      'content-type': 'application/json',
-    },
+type accessTokenType = {
+  access: string;
+};
+
+type refreshTokenType = {
+  refresh: string;
+};
+
+type tokensType = accessTokenType & refreshTokenType;
+
+export const getTokens = (data: createUserProp): Promise<tokensType> => {
+  return axios.post(BASE_URL + '/user/token/', data).then((res) => {
+    return res.data;
+  });
+};
+
+export const refreshToken = (
+  data: createUserProp,
+): Promise<accessTokenType> => {
+  return axios.post(BASE_URL + '/user/token/refresh/', data).then((res) => {
+    return res.data;
   });
 };
