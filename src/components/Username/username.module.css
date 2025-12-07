@@ -1,4 +1,4 @@
-﻿.sidebar__personal {
+.sidebar__personal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,6 +13,8 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 12px 0 15px;
+  gap: 10px;
+  min-width: 0;
 }
 
 .sidebar__personalName {
@@ -21,6 +23,11 @@
   font-size: 16px;
   line-height: 24px;
   color: #ffffff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+  min-width: 0;
 }
 
 .sidebar__icon {
@@ -38,11 +45,37 @@
   -ms-flex-pack: center;
   justify-content: center;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar__icon:hover {
+  background-color: #4a4a4a;
+}
+
+.sidebar__icon:active {
+  background-color: #5a5a5a;
 }
 
 .sidebar__icon svg {
-  width: 18px;
-  height: 18px;
+  width: 42px;
+  height: 42px;
   fill: transparent;
   stroke: #ffffff;
+  transition: stroke 0.3s ease;
+}
+
+.sidebar__icon:hover svg {
+  stroke: #acacac;
+}
+
+.sidebar__iconUnauthorized {
+  background-color: #b672ff;
+}
+
+.sidebar__iconUnauthorized:hover {
+  background-color: #9b59d6;
+}
+
+.sidebar__iconUnauthorized:active {
+  background-color: #8e44ad;
 }

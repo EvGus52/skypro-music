@@ -6,7 +6,7 @@ import Bar from '@/components/Bar/Bar';
 import Nav from '@/components/Nav/Nav';
 import Sidebar from '@/components/Sidebar/Sidebar';
 import FetchingTracks from '@/components/FetchingTracks/FetchingTracks';
-import { useInitAuth } from '@/utils/helper';
+import { useInitAuth } from '@/hooks/useInitAuth';
 
 export default function MusicLayout({ children }: { children: ReactNode }) {
   useInitAuth();

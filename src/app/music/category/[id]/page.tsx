@@ -20,7 +20,11 @@ export default function Category() {
   const id = params.id;
 
   useEffect(() => {
+    if (!id) return;
+
     setIsLoading(true);
+    setErrorRes(null);
+
     if (!fetchIsLoading && allTracks.length) {
       getCategories(id)
         .then((res) => {
@@ -32,18 +36,32 @@ export default function Category() {
           setTracks(resultTracks);
         })
         .catch((error) => {
-          if (error instanceof AxiosError)
+          if (error instanceof AxiosError) {
             if (error.response) {
-              setErrorRes(error.response.data);
+              const errorData = error.response.data;
+              setErrorRes(
+                typeof errorData === 'string'
+                  ? errorData
+                  : errorData?.message ||
+                      'Произошла ошибка при загрузке подборки',
+              );
             } else if (error.request) {
+              setErrorRes('Произошла ошибка при подключении к серверу');
+            } else {
               setErrorRes('Произошла ошибка');
             }
+          } else {
+            setErrorRes('Произошла неизвестная ошибка');
+          }
         })
         .finally(() => {
           setIsLoading(false);
         });
+    } else if (!fetchIsLoading && !allTracks.length) {
+      setIsLoading(false);
+      setErrorRes('Треки не загружены');
     }
-  }, [fetchIsLoading]);
+  }, [fetchIsLoading, id, allTracks]);
 
   return (
     <>

@@ -26,15 +26,11 @@ type refreshTokenType = {
 type tokensType = accessTokenType & refreshTokenType;
 
 export const getTokens = (data: createUserProp): Promise<tokensType> => {
-  return axios.post(BASE_URL + '/user/token/', data).then((res) => {
-    return res.data;
-  });
+  return axios.post(BASE_URL + '/user/token/', data).then((res) => res.data);
 };
 
-export const refreshToken = (
-  data: createUserProp,
-): Promise<accessTokenType> => {
-  return axios.post(BASE_URL + '/user/token/refresh/', data).then((res) => {
-    return res.data;
-  });
+export const refreshToken = (refresh: string): Promise<accessTokenType> => {
+  return axios
+    .post(BASE_URL + '/user/token/refresh/', { refresh })
+    .then((res) => res.data);
 };

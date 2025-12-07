@@ -35,13 +35,15 @@ export default function Centerblock({
           </div>
         </div>
         <div className={styles.content__playlist}>
-          {errorRes
-            ? errorRes
-            : isLoading
-              ? 'Загрузка'
-              : tracks.map((track) => (
-                  <Track key={track._id} track={track} tracks={tracks} />
-                ))}
+          {errorRes ? (
+            errorRes
+          ) : isLoading ? (
+            'Загрузка'
+          ) : tracks.length === 0 ? (
+            'Нет треков'
+          ) : (
+            <Track tracks={tracks} playlist={tracks} />
+          )}
         </div>
       </div>
     </div>
