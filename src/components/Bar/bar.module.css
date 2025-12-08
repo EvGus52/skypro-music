@@ -281,7 +281,15 @@
   width: 14px;
   height: 12px;
   fill: transparent;
-  stroke: #696969;
+  stroke: #fff;
+  transition:
+    fill 0.3s ease,
+    stroke 0.3s ease;
+}
+
+.trackPlay__likeSvgActive {
+  fill: #b672ff;
+  stroke: #b672ff;
 }
 
 .trackPlay__dislike {

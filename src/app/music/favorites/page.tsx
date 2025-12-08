@@ -1,7 +1,7 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useEffect, useState, useRef } from 'react';
+import { useRouter, usePathname } from 'next/navigation';
 import { useAppSelector, useAppDispatch } from '@/store/store';
 import Centerblock from '@/components/Centerblock/Centerblock';
 import { getFavoriteTracks } from '@/services/tracks/tracksApi';
@@ -11,20 +11,30 @@ import { AxiosError } from 'axios';
 
 export default function FavoritesPage() {
   const router = useRouter();
+  const pathname = usePathname();
   const dispatch = useAppDispatch();
   const { access, refresh } = useAppSelector((state) => state.auth);
   const { favoriteTracks } = useAppSelector((state) => state.tracks);
   const [isLoading, setIsLoading] = useState(true);
   const [errorRes, setErrorRes] = useState<string | null>(null);
+  const isNavigatingAway = useRef(false);
 
   useEffect(() => {
-    // Проверка авторизации
-    if (!access) {
-      router.push('/auth/signin');
+    // Если мы уже покинули страницу, не делаем редирект
+    if (isNavigatingAway.current) {
       return;
     }
 
-    // Загрузка избранных треков
+    // Проверка авторизации
+    if (!access) {
+      // Редирект на signin только если мы все еще на странице favorites
+      if (pathname === '/music/favorites') {
+        router.push('/auth/signin');
+      }
+      return;
+    }
+
+    // Загрузка избранных треков только если есть авторизация
     setIsLoading(true);
     setErrorRes(null);
 
@@ -56,8 +66,14 @@ export default function FavoritesPage() {
     };
 
     loadTracks();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [access, refresh]);
+  }, [access, refresh, pathname, router, dispatch]);
+
+  // Отслеживаем изменение pathname для определения навигации
+  useEffect(() => {
+    if (pathname !== '/music/favorites') {
+      isNavigatingAway.current = true;
+    }
+  }, [pathname]);
 
   // Если нет авторизации, не показываем контент
   if (!access) {

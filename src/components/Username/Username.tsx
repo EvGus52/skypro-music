@@ -15,9 +15,12 @@ export default function Username() {
 
   const handleIconClick = () => {
     if (isAuthorized) {
-      // Если авторизован - logout и редирект на главную
-      dispatch(clearUser());
+      // Если авторизован - сначала редирект, потом очистка данных
       router.push('/music/main');
+      // Очищаем данные пользователя с задержкой, чтобы редирект успел выполниться
+      setTimeout(() => {
+        dispatch(clearUser());
+      }, 300);
     } else {
       // Если не авторизован - редирект на signin
       router.push('/auth/signin');
@@ -26,7 +29,7 @@ export default function Username() {
 
   return (
     <div className={styles.sidebar__personal}>
-      <p className={styles.sidebar__personalName}>{authUsername || ' '}</p>
+      <p className={styles.sidebar__personalName}>{authUsername || 'Гость'}</p>
       <div
         className={`${styles.sidebar__icon} ${
           !isAuthorized ? styles.sidebar__iconUnauthorized : ''

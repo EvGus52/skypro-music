@@ -3,7 +3,7 @@
 import Centerblock from '@/components/Centerblock/Centerblock';
 import { TrackType } from '@/sharedTypes/sharedTypes';
 import { useAppSelector } from '@/store/store';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useParams } from 'next/navigation';
 import { AxiosError } from 'axios';
 import { getCategories } from '@/services/tracks/tracksApi';
@@ -17,6 +17,7 @@ export default function Category() {
   const [errorRes, setErrorRes] = useState<string | null>(null);
   const [tracks, setTracks] = useState<TrackType[]>([]);
   const [title, setTitle] = useState<string>('');
+  const [tracksIds, setTracksIds] = useState<number[]>([]);
   const id = params.id;
 
   useEffect(() => {
@@ -29,11 +30,7 @@ export default function Category() {
       getCategories(id)
         .then((res) => {
           setTitle(res.data.name);
-          const tracksIds = res.data.items;
-          const resultTracks = allTracks.filter((el) =>
-            tracksIds.includes(el._id),
-          );
-          setTracks(resultTracks);
+          setTracksIds(res.data.items);
         })
         .catch((error) => {
           if (error instanceof AxiosError) {
@@ -62,6 +59,17 @@ export default function Category() {
       setErrorRes('Треки не загружены');
     }
   }, [fetchIsLoading, id, allTracks]);
+
+  const filteredTracks = useMemo(() => {
+    if (!tracksIds || tracksIds.length === 0) return [];
+    return allTracks.filter((el) => tracksIds.includes(el._id));
+  }, [allTracks, tracksIds]);
+
+  useEffect(() => {
+    if (filteredTracks.length > 0 || tracksIds.length === 0) {
+      setTracks(filteredTracks);
+    }
+  }, [filteredTracks, tracksIds.length]);
 
   return (
     <>

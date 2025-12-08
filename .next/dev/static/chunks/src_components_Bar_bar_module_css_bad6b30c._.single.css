@@ -207,9 +207,15 @@
 
 .bar-module__AGniEW__trackPlay__likeSvg {
   fill: #0000;
-  stroke: #696969;
+  stroke: #fff;
   width: 14px;
   height: 12px;
+  transition: fill .3s, stroke .3s;
+}
+
+.bar-module__AGniEW__trackPlay__likeSvgActive {
+  fill: #b672ff;
+  stroke: #b672ff;
 }
 
 .bar-module__AGniEW__trackPlay__dislike {

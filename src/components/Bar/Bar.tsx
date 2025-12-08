@@ -12,11 +12,16 @@ import {
   toggleShuffle,
 } from '@/store/features/trackSlice';
 import ProgressBar from '@/components/ProgressBar/ProgressBar';
+import { useLikeTrack } from '@/hooks/useLikeTracks';
+
 export default function Bar() {
   const currentTrack = useAppSelector((state) => state.tracks.currentTrack);
   const isPlay = useAppSelector((state) => state.tracks.isPlay);
   const isShaffle = useAppSelector((state) => state.tracks.isShaffle);
+  const access = useAppSelector((state) => state.auth.access);
   const dispatch = useAppDispatch();
+  const isAuthorized = !!access;
+  const { toggleLike, isLike } = useLikeTrack(currentTrack);
   const [isLoop, setIsLoop] = useState(false);
   const [isLoadedTrack, setIsLoadedTrack] = useState(false);
   const [volume, setVolume] = useState(0.5);
@@ -64,7 +69,7 @@ export default function Bar() {
             }
           });
       } else {
-      dispatch(setIsPlay(true));
+        dispatch(setIsPlay(true));
       }
     }
   };
@@ -118,7 +123,7 @@ export default function Bar() {
         setTimePanel(panel);
       }
       setIsLoadedTrack(true);
-      
+
       // Автоматически запускаем воспроизведение, если флаг воспроизведения активен
       if (isPlay) {
         const playPromise = audioRef.current.play();
@@ -180,7 +185,6 @@ export default function Bar() {
             step={0.1}
             onChange={onChangeProgress}
             disabled={!isLoadedTrack}
-
           />
         </div>
         <div className={styles.bar__playerBlock}>
@@ -256,18 +260,24 @@ export default function Bar() {
                 </div>
               </div>
 
-              <div className={styles.trackPlay__dislike}>
-                <div className={cn(styles.player__btnShuffle, styles.btnIcon)}>
-                  <svg className={styles.trackPlay__likeSvg}>
-                    <use xlinkHref="/img/icon/sprite.svg#icon-like"></use>
-                  </svg>
+              {isAuthorized && (
+                <div className={styles.trackPlay__dislike}>
+                  <div
+                    className={cn(styles.player__btnShuffle, styles.btnIcon)}
+                    onClick={toggleLike}
+                  >
+                    <svg
+                      className={cn(styles.trackPlay__likeSvg, {
+                        [styles.trackPlay__likeSvgActive]: isLike,
+                      })}
+                    >
+                      <use
+                        xlinkHref={`/img/icon/sprite.svg#${isLike ? 'icon-like' : 'icon-dislike'}`}
+                      ></use>
+                    </svg>
+                  </div>
                 </div>
-                <div className={cn(styles.trackPlay__dislike, styles.btnIcon)}>
-                  <svg className={styles.trackPlay__dislikeSvg}>
-                    <use xlinkHref="/img/icon/sprite.svg#icon-dislike"></use>
-                  </svg>
-                </div>
-              </div>
+              )}
             </div>
           </div>
           <div className={styles.bar__volumeBlock}>

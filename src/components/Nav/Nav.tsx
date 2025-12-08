@@ -22,11 +22,12 @@ export default function Nav() {
 
   const logout = () => {
     setIsMenuOpen(false);
-    router.replace('/music/main');
-    // Очищаем данные пользователя после редиректа
+    // Сначала делаем редирект
+    router.push('/music/main');
+    // Очищаем данные пользователя с задержкой, чтобы редирект успел выполниться
     setTimeout(() => {
       dispatch(clearUser());
-    }, 0);
+    }, 300);
   };
 
   const handleLoginClick = () => {

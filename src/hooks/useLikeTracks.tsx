@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 import { AxiosError } from 'axios';
 import { TrackType } from '@/sharedTypes/sharedTypes';
 import { useAppSelector, useAppDispatch } from '@/store/store';
@@ -20,11 +20,15 @@ export const useLikeTrack = (track: TrackType | null): returnTypeHook => {
   const { access, refresh } = useAppSelector((state) => state.auth);
   const dispatch = useAppDispatch();
 
-  const isLike = favoriteTracks.some((t) => t._id === track?._id);
+  const isLike = useMemo(
+    () => favoriteTracks.some((t) => t._id === track?._id),
+    [favoriteTracks, track?._id],
+  );
+
   const [isLoading, setIsLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
-  const toggleLike = () => {
+  const toggleLike = useCallback(() => {
     if (!access) {
       return setErrorMsg('Нет авторизации');
     }
@@ -59,7 +63,7 @@ export const useLikeTrack = (track: TrackType | null): returnTypeHook => {
           setIsLoading(false);
         });
     }
-  };
+  }, [access, refresh, dispatch, track, isLike]);
 
   return {
     isLoading,

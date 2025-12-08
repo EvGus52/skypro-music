@@ -12,6 +12,7 @@ import {
   setIsPlay,
 } from '@/store/features/trackSlice';
 import { useLikeTrack } from '@/hooks/useLikeTracks';
+import { useCallback, useMemo } from 'react';
 
 type TrackProps = {
   tracks: TrackType[];
@@ -22,11 +23,16 @@ export default function Track({ tracks, playlist }: TrackProps) {
   const dispatch = useAppDispatch();
   const { isPlay, currentTrack } = useAppSelector((state) => state.tracks);
 
-  const onClickTrack = (track: TrackType) => {
-    dispatch(setCurrentTrack(track));
-    dispatch(setCurrentPlaylist(playlist || tracks));
-    dispatch(setIsPlay(true));
-  };
+  const currentPlaylist = useMemo(() => playlist || tracks, [playlist, tracks]);
+
+  const onClickTrack = useCallback(
+    (track: TrackType) => {
+      dispatch(setCurrentTrack(track));
+      dispatch(setCurrentPlaylist(currentPlaylist));
+      dispatch(setIsPlay(true));
+    },
+    [dispatch, currentPlaylist],
+  );
 
   return (
     <div className={styles.content__playlist}>
