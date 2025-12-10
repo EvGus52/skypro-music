@@ -63,6 +63,12 @@ function TrackItem({
   currentTrack,
 }: TrackItemProps) {
   const { toggleLike, isLike } = useLikeTrack(track);
+  const { access } = useAppSelector((state) => state.auth);
+
+  // Определяем, какую иконку показывать
+  const isAuthorized = !!access;
+  const iconName = isAuthorized ? 'icon-like' : 'icon-dislike';
+  const isLiked = isAuthorized && isLike;
 
   return (
     <div className={styles.playlist__item} onClick={() => onClickTrack(track)}>
@@ -100,15 +106,16 @@ function TrackItem({
         </div>
         <div className={styles.track__time}>
           <svg
-            className={styles.track__timeSvg}
+            className={cn(
+              styles.track__timeSvg,
+              isLiked && styles.track__timeSvgActive,
+            )}
             onClick={(e) => {
               e.stopPropagation();
               toggleLike();
             }}
           >
-            <use
-              xlinkHref={`/img/icon/sprite.svg#${isLike ? 'icon-like' : 'icon-dislike'}`}
-            ></use>
+            <use xlinkHref={`/img/icon/sprite.svg#${iconName}`}></use>
           </svg>
           <span className={styles.track__timeText}>
             {formatTime(track.duration_in_seconds)}

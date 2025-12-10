@@ -22,6 +22,10 @@ export default function Bar() {
   const dispatch = useAppDispatch();
   const isAuthorized = !!access;
   const { toggleLike, isLike } = useLikeTrack(currentTrack);
+
+  // Определяем, какую иконку показывать и нужно ли закрашивать
+  const iconName = isAuthorized ? 'icon-like' : 'icon-dislike';
+  const isLiked = isAuthorized && isLike;
   const [isLoop, setIsLoop] = useState(false);
   const [isLoadedTrack, setIsLoadedTrack] = useState(false);
   const [volume, setVolume] = useState(0.5);
@@ -260,24 +264,20 @@ export default function Bar() {
                 </div>
               </div>
 
-              {isAuthorized && (
-                <div className={styles.trackPlay__dislike}>
-                  <div
-                    className={cn(styles.player__btnShuffle, styles.btnIcon)}
-                    onClick={toggleLike}
+              <div className={styles.trackPlay__dislike}>
+                <div
+                  className={cn(styles.player__btnShuffle, styles.btnIcon)}
+                  onClick={toggleLike}
+                >
+                  <svg
+                    className={cn(styles.trackPlay__likeSvg, {
+                      [styles.trackPlay__likeSvgActive]: isLiked,
+                    })}
                   >
-                    <svg
-                      className={cn(styles.trackPlay__likeSvg, {
-                        [styles.trackPlay__likeSvgActive]: isLike,
-                      })}
-                    >
-                      <use
-                        xlinkHref={`/img/icon/sprite.svg#${isLike ? 'icon-like' : 'icon-dislike'}`}
-                      ></use>
-                    </svg>
-                  </div>
+                    <use xlinkHref={`/img/icon/sprite.svg#${iconName}`}></use>
+                  </svg>
                 </div>
-              )}
+              </div>
             </div>
           </div>
           <div className={styles.bar__volumeBlock}>

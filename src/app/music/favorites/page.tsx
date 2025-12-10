@@ -8,11 +8,13 @@ import { getFavoriteTracks } from '@/services/tracks/tracksApi';
 import { setFavoriteTracks } from '@/store/features/trackSlice';
 import { withReauth } from '@/utils/withReAuth';
 import { AxiosError } from 'axios';
+import { useInitAuth } from '@/hooks/useInitAuth';
 
 export default function FavoritesPage() {
   const router = useRouter();
   const pathname = usePathname();
   const dispatch = useAppDispatch();
+  const isAuthInitialized = useInitAuth();
   const { access, refresh } = useAppSelector((state) => state.auth);
   const { favoriteTracks } = useAppSelector((state) => state.tracks);
   const [isLoading, setIsLoading] = useState(true);
@@ -20,6 +22,11 @@ export default function FavoritesPage() {
   const isNavigatingAway = useRef(false);
 
   useEffect(() => {
+    // Ждем инициализации auth перед проверкой
+    if (!isAuthInitialized) {
+      return;
+    }
+
     // Если мы уже покинули страницу, не делаем редирект
     if (isNavigatingAway.current) {
       return;
@@ -35,6 +42,12 @@ export default function FavoritesPage() {
     }
 
     // Загрузка избранных треков только если есть авторизация
+    // Проверяем, не загружены ли уже треки при инициализации
+    if (favoriteTracks.length > 0) {
+      setIsLoading(false);
+      return;
+    }
+
     setIsLoading(true);
     setErrorRes(null);
 
@@ -66,7 +79,15 @@ export default function FavoritesPage() {
     };
 
     loadTracks();
-  }, [access, refresh, pathname, router, dispatch]);
+  }, [
+    isAuthInitialized,
+    access,
+    refresh,
+    pathname,
+    router,
+    dispatch,
+    favoriteTracks.length,
+  ]);
 
   // Отслеживаем изменение pathname для определения навигации
   useEffect(() => {
@@ -74,6 +95,20 @@ export default function FavoritesPage() {
       isNavigatingAway.current = true;
     }
   }, [pathname]);
+
+  // Если auth еще не инициализирован, показываем загрузку
+  if (!isAuthInitialized) {
+    return (
+      <>
+        <Centerblock
+          tracks={[]}
+          isLoading={true}
+          errorRes={null}
+          title="Мои любимые треки"
+        />
+      </>
+    );
+  }
 
   // Если нет авторизации, не показываем контент
   if (!access) {
