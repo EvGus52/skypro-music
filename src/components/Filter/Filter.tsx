@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 import styles from './filter.module.css';
 import { getUniqueValuesByKey } from '@/utils/helper';
 import { TrackType } from '@/sharedTypes/sharedTypes';
@@ -22,21 +22,24 @@ export default function Filter({ tracks }: FilterProps) {
     genre: [],
   });
 
-  const uniqueAuthors = getUniqueValuesByKey(tracks, 'author');
-  const uniqueGenres = getUniqueValuesByKey(tracks, 'genre');
+  const uniqueAuthors = useMemo(
+    () => getUniqueValuesByKey(tracks, 'author'),
+    [tracks],
+  );
+
+  const uniqueGenres = useMemo(
+    () => getUniqueValuesByKey(tracks, 'genre'),
+    [tracks],
+  );
 
   // Опции сортировки по году выпуска
   const yearSortOptions = ['Сначала новые', 'Сначала старые', 'По умолчанию'];
 
-  const handleFilterToggle = (filterType: string) => {
-    if (openFilter === filterType) {
-      setOpenFilter(null);
-    } else {
-      setOpenFilter(filterType);
-    }
-  };
+  const handleFilterToggle = useCallback((filterType: string) => {
+    setOpenFilter((prev) => (prev === filterType ? null : filterType));
+  }, []);
 
-  const handleItemClick = (filterType: string, item: string) => {
+  const handleItemClick = useCallback((filterType: string, item: string) => {
     setActiveItems((prev) => {
       const currentItems = prev[filterType as keyof typeof prev];
       const isActive = currentItems.includes(item);
@@ -53,7 +56,7 @@ export default function Filter({ tracks }: FilterProps) {
         };
       }
     });
-  };
+  }, []);
 
   return (
     <div className={styles.centerblock__filter}>

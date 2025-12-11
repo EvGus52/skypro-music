@@ -1,15 +1,43 @@
 'use client';
 
+import { useAppDispatch, useAppSelector } from '@/store/store';
 import styles from './nav.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import { useRouter, usePathname } from 'next/navigation';
+import { clearUser } from '@/store/features/authSlice';
 
 export default function Nav() {
+  const dispatch = useAppDispatch();
+  const router = useRouter();
+  const pathname = usePathname();
+  const { access } = useAppSelector((state) => state.auth);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const isAuthorized = !!access;
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const logout = () => {
+    setIsMenuOpen(false);
+    // Сначала делаем редирект
+    router.push('/music/main');
+    // Очищаем данные пользователя с задержкой, чтобы редирект успел выполниться
+    setTimeout(() => {
+      dispatch(clearUser());
+    }, 300);
+  };
+
+  const handleLoginClick = () => {
+    setIsMenuOpen(false);
+    router.push('/auth/signin');
+  };
+
+  const handleMainClick = () => {
+    setIsMenuOpen(false);
+    router.push('/music/main');
   };
 
   return (
@@ -33,19 +61,31 @@ export default function Nav() {
       >
         <ul className={styles.menu__list}>
           <li className={styles.menu__item}>
-            <Link href="#" className={styles.menu__link}>
+            <p onClick={handleMainClick} className={styles.menu__link}>
               Главное
-            </Link>
+            </p>
           </li>
+          {isAuthorized && (
+            <li className={styles.menu__item}>
+              <Link
+                href="/music/favorites"
+                className={styles.menu__link}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Мой плейлист
+              </Link>
+            </li>
+          )}
           <li className={styles.menu__item}>
-            <Link href="#" className={styles.menu__link}>
-              Мой плейлист
-            </Link>
-          </li>
-          <li className={styles.menu__item}>
-            <Link href="/signin" className={styles.menu__link}>
-              Войти
-            </Link>
+            {isAuthorized ? (
+              <p onClick={logout} className={styles.menu__link}>
+                Выйти
+              </p>
+            ) : (
+              <p onClick={handleLoginClick} className={styles.menu__link}>
+                Войти
+              </p>
+            )}
           </li>
         </ul>
       </div>

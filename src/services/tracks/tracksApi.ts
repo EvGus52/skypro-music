@@ -1,33 +1,51 @@
-import axios, { AxiosResponse } from 'axios';
 import { BASE_URL } from '../constants';
-import { TrackType, SelectionType } from '@/sharedTypes/sharedTypes';
-
-type ApiResponse<T> = {
-  data: T;
-};
+import { TrackType, CategoryResponse } from '@/sharedTypes/sharedTypes';
+import axios from 'axios';
 
 export const getTracks = (): Promise<TrackType[]> => {
-  return axios
-    .get<ApiResponse<TrackType[]>>(BASE_URL + '/catalog/track/all/')
-    .then((res: AxiosResponse<ApiResponse<TrackType[]>>) => {
-      return res.data.data;
-    });
+  return axios(BASE_URL + '/catalog/track/all/').then((res) => {
+    return res.data.data;
+  });
 };
 
-export const getSelectionsAll = (): Promise<SelectionType[]> => {
-  return axios
-    .get<ApiResponse<SelectionType[]>>(BASE_URL + '/catalog/selection/all/')
-    .then((res: AxiosResponse<ApiResponse<SelectionType[]>>) => {
-      return res.data.data;
-    });
+export const getCategories = (
+  categoryId: string,
+): Promise<CategoryResponse> => {
+  return axios(BASE_URL + `/catalog/selection/${Number(categoryId) + 1}`).then(
+    (res) => {
+      return res.data;
+    },
+  );
 };
 
-export const getSelectionById = (id: number): Promise<SelectionType> => {
+export const addLike = (access: string, id: number) => {
+  return axios.post(
+    BASE_URL + `/catalog/track/${id}/favorite/`,
+    {},
+    {
+      headers: {
+        Authorization: `Bearer ${access}`,
+      },
+    },
+  );
+};
+
+export const removeLike = (access: string, id: number) => {
+  return axios.delete(BASE_URL + `/catalog/track/${id}/favorite/`, {
+    headers: {
+      Authorization: `Bearer ${access}`,
+    },
+  });
+};
+
+export const getFavoriteTracks = (access: string): Promise<TrackType[]> => {
   return axios
-    .get<
-      ApiResponse<ApiResponse<SelectionType>>
-    >(BASE_URL + `/catalog/selection/${id}/`)
-    .then((res: AxiosResponse<ApiResponse<ApiResponse<SelectionType>>>) => {
-      return res.data.data?.data || res.data.data;
+    .get(BASE_URL + '/catalog/track/favorite/all/', {
+      headers: {
+        Authorization: `Bearer ${access}`,
+      },
+    })
+    .then((res) => {
+      return res.data.data;
     });
 };

@@ -1,96 +1,84 @@
 'use client';
 
+import Centerblock from '@/components/Centerblock/Centerblock';
+import { TrackType } from '@/sharedTypes/sharedTypes';
+import { useAppSelector } from '@/store/store';
+import { useState, useEffect, useMemo } from 'react';
 import { useParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
-import {
-  getSelectionsAll,
-  getSelectionById,
-  getTracks,
-} from '@/services/tracks/tracksApi';
 import { AxiosError } from 'axios';
-import Track from '@/components/Track/Track';
-import { useAppDispatch, useAppSelector } from '@/store/store';
-import { setTracks, setPageTitle } from '@/store/features/trackSlice';
+import { getCategories } from '@/services/tracks/tracksApi';
 
-export default function CategoryPage() {
+export default function Category() {
   const params = useParams<{ id: string }>();
-  const dispatch = useAppDispatch();
-  const tracks = useAppSelector((state) => state.tracks.tracks);
-  const [error, setError] = useState('');
+  const { allTracks, fetchIsLoading, fetchError } = useAppSelector(
+    (state) => state.tracks,
+  );
   const [isLoading, setIsLoading] = useState(true);
+  const [errorRes, setErrorRes] = useState<string | null>(null);
+  const [tracks, setTracks] = useState<TrackType[]>([]);
+  const [title, setTitle] = useState<string>('');
+  const [tracksIds, setTracksIds] = useState<number[]>([]);
+  const id = params.id;
 
   useEffect(() => {
-    const loadSelection = async () => {
-      if (!params.id) return;
+    if (!id) return;
 
-      setIsLoading(true);
-      setError('');
-      dispatch(setTracks([]));
+    setIsLoading(true);
+    setErrorRes(null);
 
-      try {
-        const allSelections = await getSelectionsAll();
-        const selectionId = Number(params.id) + 1;
-        const foundSelection = allSelections.find(
-          (sel) => sel._id === selectionId,
-        );
-
-        if (!foundSelection) {
-          setError('Подборка не найдена');
-          setIsLoading(false);
-          return;
-        }
-
-        const selectionData = await getSelectionById(foundSelection._id);
-        const allTracks = await getTracks();
-        const trackIds = selectionData?.items || [];
-        const selectionTracks = allTracks.filter((track) =>
-          trackIds.includes(track._id),
-        );
-
-        if (selectionTracks.length > 0) {
-          const pageTitle =
-            selectionData?.name || foundSelection?.name || 'Подборка';
-          dispatch(setPageTitle(pageTitle));
-          dispatch(setTracks(selectionTracks));
-        } else {
-          dispatch(setTracks([]));
-          setError('Не удалось загрузить треки подборки');
-        }
-      } catch (error) {
-        if (error instanceof AxiosError) {
-          if (error.response) {
-            setError(
-              error.response.data?.message ||
-                error.response.data ||
-                'Ошибка при загрузке подборки',
-            );
-          } else if (error.request) {
-            setError('Что-то с интернетом');
+    if (!fetchIsLoading && allTracks.length) {
+      getCategories(id)
+        .then((res) => {
+          setTitle(res.data.name);
+          setTracksIds(res.data.items);
+        })
+        .catch((error) => {
+          if (error instanceof AxiosError) {
+            if (error.response) {
+              const errorData = error.response.data;
+              setErrorRes(
+                typeof errorData === 'string'
+                  ? errorData
+                  : errorData?.message ||
+                      'Произошла ошибка при загрузке подборки',
+              );
+            } else if (error.request) {
+              setErrorRes('Произошла ошибка при подключении к серверу');
+            } else {
+              setErrorRes('Произошла ошибка');
+            }
           } else {
-            setError('Неизвестная ошибка');
+            setErrorRes('Произошла неизвестная ошибка');
           }
-        } else {
-          setError('Неизвестная ошибка');
-        }
-      } finally {
-        setIsLoading(false);
-      }
-    };
+        })
+        .finally(() => {
+          setIsLoading(false);
+        });
+    } else if (!fetchIsLoading && !allTracks.length) {
+      setIsLoading(false);
+      setErrorRes('Треки не загружены');
+    }
+  }, [fetchIsLoading, id, allTracks]);
 
-    loadSelection();
-  }, [params.id, dispatch]);
+  const filteredTracks = useMemo(() => {
+    if (!tracksIds || tracksIds.length === 0) return [];
+    return allTracks.filter((el) => tracksIds.includes(el._id));
+  }, [allTracks, tracksIds]);
 
-  if (error) {
-    return <div style={{ color: 'white' }}>{error}</div>;
-  }
+  useEffect(() => {
+    if (filteredTracks.length > 0 || tracksIds.length === 0) {
+      setTracks(filteredTracks);
+    }
+  }, [filteredTracks, tracksIds.length]);
 
-  if (isLoading) {
-    return <div style={{ color: 'white' }}>Загрузка подборки...</div>;
-  }
-
-  if (!tracks || tracks.length === 0) {
-    return <div style={{ color: 'white' }}>В подборке нет треков</div>;
-  }
-
-  return <Track tracks={tracks} playlist={tracks} />;
+  return (
+    <>
+      <Centerblock
+        errorRes={errorRes || fetchError}
+        tracks={tracks}
+        isLoading={isLoading}
+        title={title}
+      />
+    </>
+  );
 }

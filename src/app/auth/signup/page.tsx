@@ -60,7 +60,7 @@ export default function Signup() {
         setSuccessMessage('Поздравляем! Вы успешно зарегистрировались!');
         setTimeout(() => {
           router.push('/auth/signin');
-        }, 2000);
+        }, 1000);
       })
       .catch((error) => {
         if (error instanceof AxiosError) {
