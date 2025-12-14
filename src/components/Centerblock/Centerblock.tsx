@@ -19,8 +19,10 @@ export default function Centerblock({
     (state) => state.tracks,
   );
   const hasActiveFilters =
-    filters.authors.length > 0 || filters.genres.length > 0;
-  // Если есть активные фильтры, используем filteredTracks, иначе исходные tracks
+    filters.authors.length > 0 ||
+    filters.genres.length > 0 ||
+    filters.years !== 'По умолчанию' ||
+    filters.searchQuery.length >= 3;
   const displayTracks = hasActiveFilters ? filteredTracks : tracks;
   const hasNoResults =
     displayTracks.length === 0 && pagePlaylist.length > 0 && hasActiveFilters;

@@ -18,6 +18,7 @@ export type initialStateType = {
     authors: string[];
     genres: string[];
     years: string;
+    searchQuery: string;
   };
 };
 
@@ -37,6 +38,7 @@ const initialState: initialStateType = {
     authors: [],
     genres: [],
     years: 'По умолчанию',
+    searchQuery: '',
   },
 };
 
@@ -112,17 +114,18 @@ const trackSlice = createSlice({
     },
     setPagePlaylist: (state, action: PayloadAction<TrackType[]>) => {
       state.pagePlaylist = action.payload;
-      // Сбрасываем фильтры при переходе на другую страницу
       state.filters.authors = [];
       state.filters.genres = [];
-      state.filteredTracks = action.payload;
+      state.filters.years = 'По умолчанию';
+      state.filters.searchQuery = '';
+      state.filteredTracks = applyFilters(state);
     },
     setFilterAuthors: (state, action: PayloadAction<string>) => {
       const author = action.payload;
       if (state.filters.authors.includes(author)) {
-        state.filters.authors = state.filters.authors.filter((el) => {
-          return el !== author;
-        });
+        state.filters.authors = state.filters.authors.filter(
+          (el) => el !== author,
+        );
       } else {
         state.filters.authors = [...state.filters.authors, author];
       }
@@ -131,12 +134,20 @@ const trackSlice = createSlice({
     setFilterGenres: (state, action: PayloadAction<string>) => {
       const genres = action.payload;
       if (state.filters.genres.includes(genres)) {
-        state.filters.genres = state.filters.genres.filter((el) => {
-          return el !== genres;
-        });
+        state.filters.genres = state.filters.genres.filter(
+          (el) => el !== genres,
+        );
       } else {
         state.filters.genres = [...state.filters.genres, genres];
       }
+      state.filteredTracks = applyFilters(state);
+    },
+    setFilterYears: (state, action: PayloadAction<string>) => {
+      state.filters.years = action.payload;
+      state.filteredTracks = applyFilters(state);
+    },
+    setSearchQuery: (state, action: PayloadAction<string>) => {
+      state.filters.searchQuery = action.payload;
       state.filteredTracks = applyFilters(state);
     },
   },
@@ -158,5 +169,7 @@ export const {
   setPagePlaylist,
   setFilterAuthors,
   setFilterGenres,
+  setFilterYears,
+  setSearchQuery,
 } = trackSlice.actions;
 export const trackSliceReducer = trackSlice.reducer;
