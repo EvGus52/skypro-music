@@ -5,7 +5,10 @@ import { useRouter, usePathname } from 'next/navigation';
 import { useAppSelector, useAppDispatch } from '@/store/store';
 import Centerblock from '@/components/Centerblock/Centerblock';
 import { getFavoriteTracks } from '@/services/tracks/tracksApi';
-import { setFavoriteTracks } from '@/store/features/trackSlice';
+import {
+  setFavoriteTracks,
+  setPagePlaylist,
+} from '@/store/features/trackSlice';
 import { withReauth } from '@/utils/withReAuth';
 import { AxiosError } from 'axios';
 import { useInitAuth } from '@/hooks/useInitAuth';
@@ -45,6 +48,7 @@ export default function FavoritesPage() {
     // Проверяем, не загружены ли уже треки при инициализации
     if (favoriteTracks.length > 0) {
       setIsLoading(false);
+      dispatch(setPagePlaylist(favoriteTracks));
       return;
     }
 
@@ -60,6 +64,7 @@ export default function FavoritesPage() {
           dispatch,
         );
         dispatch(setFavoriteTracks(tracks));
+        dispatch(setPagePlaylist(tracks));
       } catch (error) {
         if (error instanceof AxiosError) {
           if (error.response) {

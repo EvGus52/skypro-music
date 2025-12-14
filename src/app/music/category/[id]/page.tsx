@@ -2,13 +2,15 @@
 
 import Centerblock from '@/components/Centerblock/Centerblock';
 import { TrackType } from '@/sharedTypes/sharedTypes';
-import { useAppSelector } from '@/store/store';
+import { useAppSelector, useAppDispatch } from '@/store/store';
+import { setPagePlaylist } from '@/store/features/trackSlice';
 import { useState, useEffect, useMemo } from 'react';
 import { useParams } from 'next/navigation';
 import { AxiosError } from 'axios';
 import { getCategories } from '@/services/tracks/tracksApi';
 
 export default function Category() {
+  const dispatch = useAppDispatch();
   const params = useParams<{ id: string }>();
   const { allTracks, fetchIsLoading, fetchError } = useAppSelector(
     (state) => state.tracks,
@@ -68,8 +70,11 @@ export default function Category() {
   useEffect(() => {
     if (filteredTracks.length > 0 || tracksIds.length === 0) {
       setTracks(filteredTracks);
+      if (filteredTracks.length > 0) {
+        dispatch(setPagePlaylist(filteredTracks));
+      }
     }
-  }, [filteredTracks, tracksIds.length]);
+  }, [filteredTracks, tracksIds.length, dispatch]);
 
   return (
     <>

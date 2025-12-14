@@ -5,22 +5,17 @@ import styles from './filter.module.css';
 import { getUniqueValuesByKey } from '@/utils/helper';
 import { TrackType } from '@/sharedTypes/sharedTypes';
 import FilterItem from '../FilterItem/FilterItem';
+import { useAppDispatch, useAppSelector } from '@/store/store';
+import { setFilterAuthors, setFilterGenres } from '@/store/features/trackSlice';
 
 type FilterProps = {
   tracks: TrackType[];
 };
 
 export default function Filter({ tracks }: FilterProps) {
+  const dispatch = useAppDispatch();
+  const { filters } = useAppSelector((state) => state.tracks);
   const [openFilter, setOpenFilter] = useState<string | null>(null);
-  const [activeItems, setActiveItems] = useState<{
-    author: string[];
-    year: string[];
-    genre: string[];
-  }>({
-    author: [],
-    year: [],
-    genre: [],
-  });
 
   const uniqueAuthors = useMemo(
     () => getUniqueValuesByKey(tracks, 'author'),
@@ -39,24 +34,17 @@ export default function Filter({ tracks }: FilterProps) {
     setOpenFilter((prev) => (prev === filterType ? null : filterType));
   }, []);
 
-  const handleItemClick = useCallback((filterType: string, item: string) => {
-    setActiveItems((prev) => {
-      const currentItems = prev[filterType as keyof typeof prev];
-      const isActive = currentItems.includes(item);
-
-      if (isActive) {
-        return {
-          ...prev,
-          [filterType]: currentItems.filter((i) => i !== item),
-        };
-      } else {
-        return {
-          ...prev,
-          [filterType]: [...currentItems, item],
-        };
+  const handleItemClick = useCallback(
+    (filterType: string, item: string) => {
+      if (filterType === 'author') {
+        dispatch(setFilterAuthors(item));
+      } else if (filterType === 'genre') {
+        dispatch(setFilterGenres(item));
       }
-    });
-  }, []);
+      // Для года пока не реализовано
+    },
+    [dispatch],
+  );
 
   return (
     <div className={styles.centerblock__filter}>
@@ -68,7 +56,7 @@ export default function Filter({ tracks }: FilterProps) {
           isOpen={openFilter === 'author'}
           items={uniqueAuthors}
           onToggle={() => handleFilterToggle('author')}
-          activeItems={activeItems.author}
+          activeItems={filters.authors}
           filterType="author"
           onItemClick={handleItemClick}
         />
@@ -77,7 +65,7 @@ export default function Filter({ tracks }: FilterProps) {
           isOpen={openFilter === 'year'}
           items={yearSortOptions}
           onToggle={() => handleFilterToggle('year')}
-          activeItems={activeItems.year}
+          activeItems={[]}
           filterType="year"
           onItemClick={handleItemClick}
         />
@@ -86,7 +74,7 @@ export default function Filter({ tracks }: FilterProps) {
           isOpen={openFilter === 'genre'}
           items={uniqueGenres}
           onToggle={() => handleFilterToggle('genre')}
-          activeItems={activeItems.genre}
+          activeItems={filters.genres}
           filterType="genre"
           onItemClick={handleItemClick}
         />
