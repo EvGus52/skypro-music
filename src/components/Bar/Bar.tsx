@@ -23,7 +23,6 @@ export default function Bar() {
   const isAuthorized = !!access;
   const { toggleLike, isLike } = useLikeTrack(currentTrack);
 
-  // Определяем, какую иконку показывать и нужно ли закрашивать
   const iconName = isAuthorized ? 'icon-like' : 'icon-dislike';
   const isLiked = isAuthorized && isLike;
   const [isLoop, setIsLoop] = useState(false);
@@ -39,18 +38,13 @@ export default function Bar() {
       const playPromise = audioRef.current.play();
       if (playPromise !== undefined) {
         playPromise.catch((error) => {
-          // Игнорируем AbortError - это нормально при переключении треков
           if (error.name !== 'AbortError') {
-            console.error('Ошибка воспроизведения:', error);
+            // Ошибка воспроизведения игнорируется
           }
         });
       }
     }
   }, [currentTrack, isPlay, isLoadedTrack]);
-
-  useEffect(() => {
-    setIsLoadedTrack(false);
-  }, [currentTrack]);
 
   useEffect(() => {
     setIsLoadedTrack(false);
@@ -67,9 +61,8 @@ export default function Bar() {
             dispatch(setIsPlay(true));
           })
           .catch((error) => {
-            // Игнорируем AbortError - это нормально при переключении треков
             if (error.name !== 'AbortError') {
-              console.error('Ошибка воспроизведения:', error);
+              // Ошибка воспроизведения игнорируется
             }
           });
       } else {
@@ -128,14 +121,12 @@ export default function Bar() {
       }
       setIsLoadedTrack(true);
 
-      // Автоматически запускаем воспроизведение, если флаг воспроизведения активен
       if (isPlay) {
         const playPromise = audioRef.current.play();
         if (playPromise !== undefined) {
           playPromise.catch((error) => {
-            // Игнорируем AbortError - это нормально при переключении треков
             if (error.name !== 'AbortError') {
-              console.error('Ошибка воспроизведения:', error);
+              // Ошибка воспроизведения игнорируется
             }
           });
         }

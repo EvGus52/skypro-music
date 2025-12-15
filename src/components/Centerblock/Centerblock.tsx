@@ -8,6 +8,8 @@ import { CenterBlockProps } from '@/sharedTypes/sharedTypes';
 import classNames from 'classnames';
 import { data } from '@/data';
 import { useAppSelector } from '@/store/store';
+import { useEffect, useRef } from 'react';
+import { toast } from 'react-toastify';
 
 export default function Centerblock({
   errorRes,
@@ -18,6 +20,15 @@ export default function Centerblock({
   const { filteredTracks, filters, pagePlaylist } = useAppSelector(
     (state) => state.tracks,
   );
+  const prevErrorRef = useRef<string | null>(null);
+
+  useEffect(() => {
+    if (errorRes && errorRes !== prevErrorRef.current) {
+      toast.error(errorRes);
+      prevErrorRef.current = errorRes;
+    }
+  }, [errorRes]);
+
   const hasActiveFilters =
     filters.authors.length > 0 ||
     filters.genres.length > 0 ||
@@ -49,18 +60,19 @@ export default function Centerblock({
           </div>
         </div>
         <div className={styles.content__playlist}>
-          {errorRes ? (
-            <span className={styles.content__message}>{errorRes}</span>
-          ) : isLoading ? (
-            <span className={styles.content__message}>Загрузка</span>
-          ) : hasNoResults ? (
+          {hasNoResults ? (
             <span className={styles.content__message}>
               Нет подходящих треков
             </span>
-          ) : displayTracks.length === 0 ? (
+          ) : displayTracks.length === 0 && !isLoading ? (
             <span className={styles.content__message}>Нет треков</span>
           ) : (
-            <Track tracks={displayTracks} playlist={displayTracks} />
+            <Track
+              tracks={displayTracks}
+              playlist={displayTracks}
+              isLoading={isLoading}
+              skeletonCount={10}
+            />
           )}
         </div>
       </div>

@@ -31,7 +31,6 @@ export default function Filter({ tracks }: FilterProps) {
     [tracks],
   );
 
-  // Опции сортировки по году выпуска
   const yearSortOptions = ['Сначала новые', 'Сначала старые', 'По умолчанию'];
 
   const handleFilterToggle = useCallback((filterType: string) => {

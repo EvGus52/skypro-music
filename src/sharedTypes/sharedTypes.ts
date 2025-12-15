@@ -11,11 +11,6 @@ export type TrackType = {
   stared_user: number[];
 };
 
-export type ApiErrorResponse = {
-  message?: string;
-  [key: string]: unknown;
-};
-
 export type CategoryResponse = {
   data: {
     name: string;

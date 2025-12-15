@@ -7,10 +7,10 @@ import { useAppSelector, useAppDispatch } from '@/store/store';
 import { addLikedTracks, removeLikedTracks } from '@/store/features/trackSlice';
 import { withReauth } from '@/utils/withReAuth';
 import { addLike, removeLike } from '@/services/tracks/tracksApi';
+import { toast } from 'react-toastify';
 
 type returnTypeHook = {
   isLoading: boolean;
-  errorMsg: string | null;
   toggleLike: () => void;
   isLike: boolean;
 };
@@ -26,18 +26,17 @@ export const useLikeTrack = (track: TrackType | null): returnTypeHook => {
   );
 
   const [isLoading, setIsLoading] = useState(false);
-  const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   const toggleLike = useCallback(() => {
     if (!access) {
-      return setErrorMsg('Нет авторизации');
+      toast.error('Нет авторизации');
+      return;
     }
 
     const actionApi = isLike ? removeLike : addLike;
     const actionSlice = isLike ? removeLikedTracks : addLikedTracks;
 
     setIsLoading(true);
-    setErrorMsg(null);
     if (track) {
       withReauth(
         (newToken) => actionApi(newToken, track._id),
@@ -47,15 +46,20 @@ export const useLikeTrack = (track: TrackType | null): returnTypeHook => {
       )
         .then(() => {
           dispatch(actionSlice(track));
+          toast.success(
+            isLike
+              ? 'Трек удален из избранного'
+              : 'Трек добавлен в избранное',
+          );
         })
         .catch((error) => {
           if (error instanceof AxiosError) {
             if (error.response) {
-              setErrorMsg(error.response.data.message);
+              toast.error(error.response.data.message || 'Произошла ошибка');
             } else if (error.request) {
-              setErrorMsg('Произошла ошибка. Попробуйте позже');
+              toast.error('Произошла ошибка. Попробуйте позже');
             } else {
-              setErrorMsg('Неизвестная ошибка');
+              toast.error('Неизвестная ошибка');
             }
           }
         })
@@ -67,7 +71,6 @@ export const useLikeTrack = (track: TrackType | null): returnTypeHook => {
 
   return {
     isLoading,
-    errorMsg,
     toggleLike,
     isLike,
   };

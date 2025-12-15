@@ -1,24 +1,3 @@
-[00:00:01.809] Server  LOG      ✓ Ready in 1416ms
-[02:45:12.002] Server  LOG      ✓ Compiled in 36ms
-[02:45:15.666] Server  LOG      ✓ Compiled in 21ms
-[02:45:19.469] Server  LOG      ✓ Compiled in 71ms
-[02:45:32.195] Server  LOG      ✓ Compiled in 10ms
-[02:45:40.828] Server  LOG      ✓ Compiled in 8ms
-[02:45:43.958] Server  LOG      ✓ Compiled in 26ms
-[02:45:47.326] Server  LOG      ✓ Compiled in 12ms
-[02:45:58.404] Server  LOG      ✓ Compiled in 11ms
-[02:52:57.012] Server  LOG      ✓ Compiled in 8ms
-[02:55:12.529] Server  LOG      ✓ Compiled in 6ms
-[02:57:26.670] Server  LOG      ✓ Compiled in 14ms
-[02:57:34.812] Server  LOG      ✓ Compiled in 10ms
-[03:02:06.368] Server  LOG      ✓ Compiled in 13ms
-[03:02:12.818] Server  LOG      ✓ Compiled in 6ms
-[03:02:14.989] Server  LOG      ✓ Compiled in 11ms
-[03:05:15.096] Server  LOG      ✓ Compiled in 10ms
-[03:05:17.453] Server  LOG      ✓ Compiled in 11ms
-[03:05:19.993] Server  LOG      ✓ Compiled in 12ms
-[03:05:24.140] Server  LOG      ✓ Compiled in 11ms
-[03:05:34.924] Server  LOG      ✓ Compiled in 13ms
-[03:05:45.333] Server  LOG      ✓ Compiled in 37ms
-[03:05:50.866] Server  LOG      ✓ Compiled in 8ms
-[03:05:51.038] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'length')
+[00:00:02.512] Server  LOG      ✓ Ready in 1839ms
+[00:00:05.572] Server  LOG      ○ Compiling /music/main ...
+[00:08:50.110] Server  LOG      ✓ Compiled in 37ms

@@ -4,6 +4,7 @@
 import { useRef } from 'react';
 import { Provider } from 'react-redux';
 import { makeStore, AppStore } from './store';
+import ToastContainer from '@/components/ToastContainer/ToastContainer';
 
 export default function ReduxProvider({
   children,
@@ -15,5 +16,10 @@ export default function ReduxProvider({
     storeRef.current = makeStore();
   }
 
-  return <Provider store={storeRef.current}>{children}</Provider>;
+  return (
+    <Provider store={storeRef.current}>
+      {children}
+      <ToastContainer />
+    </Provider>
+  );
 }

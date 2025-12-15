@@ -2,15 +2,6 @@ import { BASE_URL } from '../constants';
 import axios from 'axios';
 import { createUserProp } from '@/sharedTypes/sharedTypes';
 
-export const createUser = ({ email, password }: createUserProp) => {
-  const data = {
-    email,
-    password,
-    username: email,
-  };
-  return axios.post(BASE_URL + '/user/signup/', data);
-};
-
 export const loginUser = (data: createUserProp) => {
   return axios.post(BASE_URL + '/user/login/', data);
 };

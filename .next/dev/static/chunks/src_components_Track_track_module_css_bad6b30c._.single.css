@@ -221,4 +221,56 @@
   line-height: 24px;
 }
 
+.track-module__lumbXa__skeleton {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.track-module__lumbXa__track__titleImage {
+  overflow: hidden;
+}
+
+.track-module__lumbXa__track__titleImage .track-module__lumbXa__skeleton {
+  width: 51px;
+  height: 51px;
+}
+
+.track-module__lumbXa__track__title-text {
+  flex: 1;
+  overflow: hidden;
+}
+
+.track-module__lumbXa__track__title-text .track-module__lumbXa__skeleton {
+  height: 24px;
+}
+
+.track-module__lumbXa__track__author {
+  overflow: hidden;
+}
+
+.track-module__lumbXa__track__author .track-module__lumbXa__skeleton {
+  height: 24px;
+}
+
+.track-module__lumbXa__track__album {
+  overflow: hidden;
+}
+
+.track-module__lumbXa__track__album .track-module__lumbXa__skeleton {
+  height: 24px;
+}
+
+.track-module__lumbXa__track__time {
+  overflow: hidden;
+}
+
+.track-module__lumbXa__track__time .track-module__lumbXa__skeleton {
+  height: 24px;
+}
+
+.track-module__lumbXa__playlist__item:has(.track-module__lumbXa__skeleton) {
+  cursor: default;
+}
+
 /*# sourceMappingURL=src_components_Track_track_module_css_bad6b30c._.single.css.map*/

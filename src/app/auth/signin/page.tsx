@@ -13,13 +13,13 @@ import {
   setRefreshToken,
   setUsername,
 } from '@/store/features/authSlice';
+import { toast } from 'react-toastify';
 
 export default function Signin() {
   const dispatch = useAppDispatch();
   const router = useRouter();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
   const onChangeEmail = (e: ChangeEvent<HTMLInputElement>) => {
@@ -32,10 +32,10 @@ export default function Signin() {
 
   const onSubmit = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
-    setErrorMessage('');
 
     if (!email.trim() || !password.trim()) {
-      return setErrorMessage('Заполните все поля!');
+      toast.error('Заполните все поля!');
+      return;
     }
     setIsLoading(true);
 
@@ -47,17 +47,18 @@ export default function Signin() {
       .then((res) => {
         dispatch(setAccessToken(res.access));
         dispatch(setRefreshToken(res.refresh));
+        toast.success('Вход выполнен успешно');
         router.push('/music/main');
       })
-      .catch((error: AxiosError) => {
+      .catch((error) => {
         if (error instanceof AxiosError) {
           if (error.response) {
             const errorData = error.response.data as { message: string };
-            setErrorMessage(errorData.message);
+            toast.error(errorData.message);
           } else if (error.request) {
-            setErrorMessage('Пропал интернет');
+            toast.error('Пропал интернет');
           } else {
-            setErrorMessage('Неизвестная ошибка, попробуйте позже');
+            toast.error('Неизвестная ошибка, попробуйте позже');
           }
         }
       })
@@ -87,7 +88,6 @@ export default function Signin() {
         placeholder="Пароль"
         onChange={onChangePassword}
       />
-      <div className={styles.errorContainer}>{errorMessage}</div>
       <button
         onClick={onSubmit}
         disabled={isLoading}

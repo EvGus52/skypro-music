@@ -22,9 +22,7 @@ export default function Nav() {
 
   const logout = () => {
     setIsMenuOpen(false);
-    // Сначала делаем редирект
     router.push('/music/main');
-    // Очищаем данные пользователя с задержкой, чтобы редирект успел выполниться
     setTimeout(() => {
       dispatch(clearUser());
     }, 300);

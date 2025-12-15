@@ -9,13 +9,13 @@ import {
 import { useAppDispatch, useAppSelector } from '@/store/store';
 import { useEffect } from 'react';
 import { AxiosError } from 'axios';
+import { toast } from 'react-toastify';
 
 export default function FetchingTracks() {
   const dispatch = useAppDispatch();
   const { allTracks } = useAppSelector((state) => state.tracks);
 
   useEffect(() => {
-    // Если треки уже загружены, не делаем повторный запрос
     if (allTracks.length > 0) {
       return;
     }
@@ -27,13 +27,20 @@ export default function FetchingTracks() {
       })
       .catch((error) => {
         if (error instanceof AxiosError) {
+          let errorMessage = 'Неизвестная ошибка';
           if (error.response) {
-            dispatch(setFetchError(error.response.data));
+            errorMessage =
+              typeof error.response.data === 'string'
+                ? error.response.data
+                : error.response.data?.message || 'Ошибка при загрузке треков';
+            dispatch(setFetchError(errorMessage));
           } else if (error.request) {
-            dispatch(setFetchError('Произошла ошибка, попробуйте позже'));
+            errorMessage = 'Произошла ошибка, попробуйте позже';
+            dispatch(setFetchError(errorMessage));
           } else {
-            dispatch(setFetchError('Неизвестная ошибка'));
+            dispatch(setFetchError(errorMessage));
           }
+          toast.error(errorMessage);
         }
       })
       .finally(() => {
