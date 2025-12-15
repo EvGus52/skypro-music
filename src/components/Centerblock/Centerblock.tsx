@@ -1,3 +1,5 @@
+'use client';
+
 import styles from './centerblock.module.css';
 import Search from '../Search/Search';
 import Filter from '../Filter/Filter';
@@ -5,6 +7,7 @@ import Track from '../Track/Track';
 import { CenterBlockProps } from '@/sharedTypes/sharedTypes';
 import classNames from 'classnames';
 import { data } from '@/data';
+import { useAppSelector } from '@/store/store';
 
 export default function Centerblock({
   errorRes,
@@ -12,6 +15,17 @@ export default function Centerblock({
   tracks,
   title,
 }: CenterBlockProps) {
+  const { filteredTracks, filters, pagePlaylist } = useAppSelector(
+    (state) => state.tracks,
+  );
+  const hasActiveFilters =
+    filters.authors.length > 0 ||
+    filters.genres.length > 0 ||
+    filters.years !== 'По умолчанию' ||
+    filters.searchQuery.length >= 3;
+  const displayTracks = hasActiveFilters ? filteredTracks : tracks;
+  const hasNoResults =
+    displayTracks.length === 0 && pagePlaylist.length > 0 && hasActiveFilters;
   return (
     <div className={styles.centerblock}>
       <Search />
@@ -36,13 +50,17 @@ export default function Centerblock({
         </div>
         <div className={styles.content__playlist}>
           {errorRes ? (
-            errorRes
+            <span className={styles.content__message}>{errorRes}</span>
           ) : isLoading ? (
-            'Загрузка'
-          ) : tracks.length === 0 ? (
-            'Нет треков'
+            <span className={styles.content__message}>Загрузка</span>
+          ) : hasNoResults ? (
+            <span className={styles.content__message}>
+              Нет подходящих треков
+            </span>
+          ) : displayTracks.length === 0 ? (
+            <span className={styles.content__message}>Нет треков</span>
           ) : (
-            <Track tracks={tracks} playlist={tracks} />
+            <Track tracks={displayTracks} playlist={displayTracks} />
           )}
         </div>
       </div>

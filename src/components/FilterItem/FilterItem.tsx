@@ -20,8 +20,13 @@ export default function FilterItem({
   filterType,
   onItemClick,
 }: FilterItemProps) {
-  const handleItemClick = (item: string) => {
+  const handleItemClick = (e: React.MouseEvent, item: string) => {
+    e.stopPropagation(); // Предотвращаем всплытие события, чтобы фильтр не закрывался
     onItemClick(filterType, item);
+  };
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    e.stopPropagation(); // Предотвращаем закрытие фильтра при клике внутри
   };
 
   const activeCount = activeItems.length;
@@ -40,13 +45,18 @@ export default function FilterItem({
         )}
       </div>
       {isOpen && (
-        <div className={styles.filter__dropdown}>
+        <div
+          className={styles.filter__dropdown}
+          onMouseDown={handleMouseDown}
+          onClick={(e) => e.stopPropagation()}
+        >
           <ul className={styles.filter__list}>
             {items.map((item) => (
               <li
                 key={item}
                 className={styles.filter__item}
-                onClick={() => handleItemClick(item)}
+                onMouseDown={(e) => e.stopPropagation()}
+                onClick={(e) => handleItemClick(e, item)}
               >
                 <span
                   className={cn(styles.filter__link, {
