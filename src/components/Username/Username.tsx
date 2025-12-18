@@ -15,14 +15,11 @@ export default function Username() {
 
   const handleIconClick = () => {
     if (isAuthorized) {
-      // Если авторизован - сначала редирект, потом очистка данных
       router.push('/music/main');
-      // Очищаем данные пользователя с задержкой, чтобы редирект успел выполниться
       setTimeout(() => {
         dispatch(clearUser());
       }, 300);
     } else {
-      // Если не авторизован - редирект на signin
       router.push('/auth/signin');
     }
   };

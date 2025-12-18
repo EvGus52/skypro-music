@@ -13,13 +13,21 @@ import {
 } from '@/store/features/trackSlice';
 import { useLikeTrack } from '@/hooks/useLikeTracks';
 import { useCallback, useMemo } from 'react';
+import TrackSkeletonItem from './TrackSkeletonItem';
 
 type TrackProps = {
   tracks: TrackType[];
   playlist: TrackType[];
+  isLoading?: boolean;
+  skeletonCount?: number;
 };
 
-export default function Track({ tracks, playlist }: TrackProps) {
+export default function Track({
+  tracks,
+  playlist,
+  isLoading = false,
+  skeletonCount = 10,
+}: TrackProps) {
   const dispatch = useAppDispatch();
   const { isPlay, currentTrack } = useAppSelector((state) => state.tracks);
 
@@ -33,6 +41,16 @@ export default function Track({ tracks, playlist }: TrackProps) {
     },
     [dispatch, currentPlaylist],
   );
+
+  if (isLoading) {
+    return (
+      <div className={styles.content__playlist}>
+        {Array.from({ length: skeletonCount }).map((_, index) => (
+          <TrackSkeletonItem key={`skeleton-${index}`} />
+        ))}
+      </div>
+    );
+  }
 
   return (
     <div className={styles.content__playlist}>
@@ -65,7 +83,6 @@ function TrackItem({
   const { toggleLike, isLike } = useLikeTrack(track);
   const { access } = useAppSelector((state) => state.auth);
 
-  // Определяем, какую иконку показывать
   const isAuthorized = !!access;
   const iconName = isAuthorized ? 'icon-like' : 'icon-dislike';
   const isLiked = isAuthorized && isLike;

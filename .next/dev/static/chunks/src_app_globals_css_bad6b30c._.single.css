@@ -25,4 +25,43 @@ a {
   cursor: pointer;
 }
 
+.Toastify__toast-container {
+  font-family: var(--font-montserrat), Arial;
+}
+
+.Toastify__toast {
+  color: #fff;
+  background-color: #1c1c1c;
+  border-radius: 8px;
+}
+
+.Toastify__toast--error {
+  background-color: #d32f2f;
+}
+
+.Toastify__toast--success {
+  background-color: #2e7d32;
+}
+
+.Toastify__toast--info {
+  background-color: #1976d2;
+}
+
+.Toastify__toast--warning {
+  background-color: #ed6c02;
+}
+
+.Toastify__progress-bar {
+  background-color: #ffffff4d;
+}
+
+.Toastify__close-button {
+  color: #fff;
+  opacity: .7;
+}
+
+.Toastify__close-button:hover {
+  opacity: 1;
+}
+
 /*# sourceMappingURL=src_app_globals_css_bad6b30c._.single.css.map*/

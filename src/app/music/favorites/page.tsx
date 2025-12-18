@@ -12,6 +12,7 @@ import {
 import { withReauth } from '@/utils/withReAuth';
 import { AxiosError } from 'axios';
 import { useInitAuth } from '@/hooks/useInitAuth';
+import { toast } from 'react-toastify';
 
 export default function FavoritesPage() {
   const router = useRouter();
@@ -21,31 +22,24 @@ export default function FavoritesPage() {
   const { access, refresh } = useAppSelector((state) => state.auth);
   const { favoriteTracks } = useAppSelector((state) => state.tracks);
   const [isLoading, setIsLoading] = useState(true);
-  const [errorRes, setErrorRes] = useState<string | null>(null);
   const isNavigatingAway = useRef(false);
 
   useEffect(() => {
-    // Ждем инициализации auth перед проверкой
     if (!isAuthInitialized) {
       return;
     }
 
-    // Если мы уже покинули страницу, не делаем редирект
     if (isNavigatingAway.current) {
       return;
     }
 
-    // Проверка авторизации
     if (!access) {
-      // Редирект на signin только если мы все еще на странице favorites
       if (pathname === '/music/favorites') {
         router.push('/auth/signin');
       }
       return;
     }
 
-    // Загрузка избранных треков только если есть авторизация
-    // Проверяем, не загружены ли уже треки при инициализации
     if (favoriteTracks.length > 0) {
       setIsLoading(false);
       dispatch(setPagePlaylist(favoriteTracks));
@@ -53,7 +47,6 @@ export default function FavoritesPage() {
     }
 
     setIsLoading(true);
-    setErrorRes(null);
 
     const loadTracks = async () => {
       try {
@@ -68,14 +61,14 @@ export default function FavoritesPage() {
       } catch (error) {
         if (error instanceof AxiosError) {
           if (error.response) {
-            setErrorRes(
+            toast.error(
               error.response.data?.message ||
                 'Не удалось загрузить избранные треки',
             );
           } else if (error.request) {
-            setErrorRes('Произошла ошибка. Попробуйте позже');
+            toast.error('Произошла ошибка. Попробуйте позже');
           } else {
-            setErrorRes('Неизвестная ошибка');
+            toast.error('Неизвестная ошибка');
           }
         }
       } finally {
@@ -94,14 +87,12 @@ export default function FavoritesPage() {
     favoriteTracks.length,
   ]);
 
-  // Отслеживаем изменение pathname для определения навигации
   useEffect(() => {
     if (pathname !== '/music/favorites') {
       isNavigatingAway.current = true;
     }
   }, [pathname]);
 
-  // Если auth еще не инициализирован, показываем загрузку
   if (!isAuthInitialized) {
     return (
       <>
@@ -115,7 +106,6 @@ export default function FavoritesPage() {
     );
   }
 
-  // Если нет авторизации, не показываем контент
   if (!access) {
     return null;
   }
@@ -125,7 +115,7 @@ export default function FavoritesPage() {
       <Centerblock
         tracks={favoriteTracks}
         isLoading={isLoading}
-        errorRes={errorRes}
+        errorRes={null}
         title="Мои любимые треки"
       />
     </>

@@ -53,6 +53,7 @@
 }
 
 .bar-module__AGniEW__player__btnPrev, .bar-module__AGniEW__player__btnPlay, .bar-module__AGniEW__player__btnNext, .bar-module__AGniEW__player__btnRepeat, .bar-module__AGniEW__player__btnShuffle {
+  cursor: pointer;
   align-items: center;
   padding: 5px;
   display: flex;

@@ -38,8 +38,6 @@ export const useInitAuth = () => {
           dispatch(setFavoriteTracks(tracks));
         } catch (error) {
           // Если не удалось загрузить избранные треки, просто игнорируем ошибку
-          // (возможно, токен истек или пользователь не авторизован)
-          console.error('Failed to load favorite tracks:', error);
         } finally {
           setIsInitialized(true);
         }

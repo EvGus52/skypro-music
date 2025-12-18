@@ -8,6 +8,7 @@ import { useState, useEffect, useMemo } from 'react';
 import { useParams } from 'next/navigation';
 import { AxiosError } from 'axios';
 import { getCategories } from '@/services/tracks/tracksApi';
+import { toast } from 'react-toastify';
 
 export default function Category() {
   const dispatch = useAppDispatch();
@@ -16,7 +17,6 @@ export default function Category() {
     (state) => state.tracks,
   );
   const [isLoading, setIsLoading] = useState(true);
-  const [errorRes, setErrorRes] = useState<string | null>(null);
   const [tracks, setTracks] = useState<TrackType[]>([]);
   const [title, setTitle] = useState<string>('');
   const [tracksIds, setTracksIds] = useState<number[]>([]);
@@ -26,7 +26,6 @@ export default function Category() {
     if (!id) return;
 
     setIsLoading(true);
-    setErrorRes(null);
 
     if (!fetchIsLoading && allTracks.length) {
       getCategories(id)
@@ -38,19 +37,19 @@ export default function Category() {
           if (error instanceof AxiosError) {
             if (error.response) {
               const errorData = error.response.data;
-              setErrorRes(
+              toast.error(
                 typeof errorData === 'string'
                   ? errorData
                   : errorData?.message ||
                       'Произошла ошибка при загрузке подборки',
               );
             } else if (error.request) {
-              setErrorRes('Произошла ошибка при подключении к серверу');
+              toast.error('Произошла ошибка при подключении к серверу');
             } else {
-              setErrorRes('Произошла ошибка');
+              toast.error('Произошла ошибка');
             }
           } else {
-            setErrorRes('Произошла неизвестная ошибка');
+            toast.error('Произошла неизвестная ошибка');
           }
         })
         .finally(() => {
@@ -58,7 +57,7 @@ export default function Category() {
         });
     } else if (!fetchIsLoading && !allTracks.length) {
       setIsLoading(false);
-      setErrorRes('Треки не загружены');
+      toast.error('Треки не загружены');
     }
   }, [fetchIsLoading, id, allTracks]);
 
@@ -79,7 +78,7 @@ export default function Category() {
   return (
     <>
       <Centerblock
-        errorRes={errorRes || fetchError}
+        errorRes={fetchError}
         tracks={tracks}
         isLoading={isLoading}
         title={title}
